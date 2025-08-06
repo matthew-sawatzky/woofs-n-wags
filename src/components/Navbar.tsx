@@ -3,30 +3,44 @@ import logo from "../assets/logo.png";
 
 function Navbar() {
   return (
-    <div className="mt-8 mx-8">
-      <nav className="flex items-center px-8 py-4 w-full">
-        <img src={logo} alt="Logo" className="h-20 mr-8" />
-        <div className="flex flex-1 items-center justify-between text-white">
-          <div className="flex items-center space-x-6">
-            <Link to="/" className="hover:text-gray-300 transition-colors">Home</Link>
-            <div className="w-px h-4 bg-white opacity-50"></div>
-            <Link to="/st-annes-location" className="hover:text-gray-300 transition-colors">St. Anne's</Link>
-            <div className="w-px h-4 bg-white opacity-50"></div>
-            <Link to="/donald-location" className="hover:text-gray-300 transition-colors">Donald</Link>
-            <div className="w-px h-4 bg-white opacity-50"></div>
-            <Link to="/k9-education" className="hover:text-gray-300 transition-colors">K9 Education</Link>
-            <div className="w-px h-4 bg-white opacity-50"></div>
-            <Link to="/grooming" className="hover:text-gray-300 transition-colors">Grooming</Link>
-            <div className="w-px h-4 bg-white opacity-50"></div>
-            <Link to="/sleep-over-service" className="hover:text-gray-300 transition-colors">Sleep Over</Link>
-            <div className="w-px h-4 bg-white opacity-50"></div>
-            <Link to="/the-team" className="hover:text-gray-300 transition-colors">The Team</Link>
+    <div>
+      <div className="mx-8">
+        <nav className="flex items-center px-8 py-4 w-full">
+          <img src={logo} alt="Logo" className="h-20 mr-8" />
+          <div className="flex flex-1 items-center justify-end text-white space-x-8">
+            <div className="flex items-center space-x-6">
+              <Link to="/">Home</Link>
+              <Link to="/st-annes-location">St. Anne's</Link>
+              <Link to="/donald-location">Donald</Link>
+              <Link to="/k9-education">K9 Education</Link>
+              <Link to="/grooming">Grooming</Link>
+              <Link to="/sleep-over-service">Sleep Over</Link>
+              <Link to="/the-team">The Team</Link>
+            </div>
+            <button
+              className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 transition-colors"
+              style={{ backgroundColor: "#385662" }}
+            >
+              Book Now
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </button>
           </div>
-          <button className="bg-white text-blue-500 px-4 py-2 rounded-full hover:bg-gray-200 transition-colors ml-8">
-            It all starts with our Meet n Greet
-          </button>
-        </div>
-      </nav>
+        </nav>
+      </div>
+      <div className="w-full h-px bg-gray-200"></div>
     </div>
   );
 }
