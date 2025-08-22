@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
 import { client } from "../sanityClient";
 import Footer from "../components/Footer";
-import InstagramSection from "../components/InstagramSection";
-import { useInstagram } from "../hooks/useInstagram";
 import BackgroundImage from "../assets/dogs_playing.jpeg";
 import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
@@ -13,11 +11,15 @@ function Home() {
   const [textSection, setTextSection] = useState("");
   const navigate = useNavigate();
 
-
-  const { posts, loading, error } = useInstagram();
-
   const handleServiceClick = (servicePath: string) => {
     navigate(servicePath);
+  };
+
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   useEffect(() => {
@@ -28,6 +30,17 @@ function Home() {
         setTextSection(data?.textSection || "");
       })
       .catch((err) => console.error("Sanity fetch error:", err));
+
+    // Load lightwidget script
+    const script = document.createElement("script");
+    script.src = "https://cdn.lightwidget.com/widgets/lightwidget.js";
+    script.async = true;
+    document.head.appendChild(script);
+
+    return () => {
+      // Cleanup script on unmount
+      document.head.removeChild(script);
+    };
   }, []);
 
   return (
@@ -50,7 +63,7 @@ function Home() {
               </h2>
               <div className="flex gap-4">
                 <button
-                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 transition-colors"
+                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: "#385662" }}
                 >
                   It all starts with our Meet n Greet
@@ -70,8 +83,9 @@ function Home() {
                   </svg>
                 </button>
                 <button
-                  className="bg-white px-4 py-2 rounded-full"
+                  className="bg-white px-4 py-2 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ color: "#385662" }}
+                  onClick={scrollToServices}
                 >
                   View Our Services
                 </button>
@@ -160,7 +174,20 @@ function Home() {
         >
           <p>{textSection}</p>
         </section>
-        <InstagramSection posts={posts} loading={loading} error={error} />
+        <div className="max-w-6xl mx-auto px-6 py-8">
+          <iframe
+            src="//lightwidget.com/widgets/ebfe0b4567c352c185f92a46eec30e71.html"
+            scrolling="no"
+            allowTransparency={true}
+            className="lightwidget-widget rounded-lg shadow-lg"
+            style={{
+              width: "100%",
+              border: 0,
+              overflow: "hidden",
+              minHeight: "400px",
+            }}
+          />
+        </div>
       </div>
       <Footer />
     </>

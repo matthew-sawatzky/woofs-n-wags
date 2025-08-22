@@ -9,19 +9,54 @@ function Navbar() {
           <img src={logo} alt="Logo" className="h-20 mr-8" />
           <div className="flex flex-1 items-center justify-end text-white space-x-8">
             <div className="flex items-center space-x-6">
-              <Link to="/">Home</Link>
-              <Link to="/st-annes-location">St. Anne's</Link>
-              <Link to="/donald-location">Donald</Link>
-              <Link to="/k9-education">K9 Education</Link>
-              <Link to="/grooming">Grooming</Link>
-              <Link to="/sleep-over-service">Sleep Over</Link>
-              <Link to="/the-team">The Team</Link>
+              <Link
+                to="/"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                Home
+              </Link>
+              <Link
+                to="/st-annes-location"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                St. Anne's
+              </Link>
+              <Link
+                to="/donald-location"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                Donald
+              </Link>
+              <Link
+                to="/k9-education"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                K9 Education
+              </Link>
+              <Link
+                to="/grooming"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                Grooming
+              </Link>
+              <Link
+                to="/sleep-over-service"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                Sleep Over
+              </Link>
+              <Link
+                to="/the-team"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                The Team
+              </Link>
             </div>
             <a
               href="https://secure.petexec.net/login.php"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 transition-colors"
+              className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105"
               style={{ backgroundColor: "#385662" }}
             >
               Book Now
