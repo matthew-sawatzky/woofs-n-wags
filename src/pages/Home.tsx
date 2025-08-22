@@ -1,13 +1,24 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Layout from "../components/Layout";
 import { client } from "../sanityClient";
 import Footer from "../components/Footer";
+import InstagramSection from "../components/InstagramSection";
+import { useInstagram } from "../hooks/useInstagram";
 import BackgroundImage from "../assets/dogs_playing.jpeg";
 import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
 
 function Home() {
   const [textSection, setTextSection] = useState("");
+  const navigate = useNavigate();
+
+
+  const { posts, loading, error } = useInstagram();
+
+  const handleServiceClick = (servicePath: string) => {
+    navigate(servicePath);
+  };
 
   useEffect(() => {
     client
@@ -91,7 +102,10 @@ function Home() {
               socialize
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
+          <div
+            className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
+            onClick={() => handleServiceClick("/grooming")}
+          >
             <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={GroomingLogo}
@@ -104,7 +118,10 @@ function Home() {
               Professional grooming services for all breeds with expert care
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
+          <div
+            className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
+            onClick={() => handleServiceClick("/k9-education")}
+          >
             <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={K9EduLogo}
@@ -119,7 +136,10 @@ function Home() {
               Training and education programs for well-behaved, happy pets
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
+          <div
+            className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
+            onClick={() => handleServiceClick("/sleepover-service")}
+          >
             <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
               SO
             </div>
@@ -140,6 +160,7 @@ function Home() {
         >
           <p>{textSection}</p>
         </section>
+        <InstagramSection posts={posts} loading={loading} error={error} />
       </div>
       <Footer />
     </>
