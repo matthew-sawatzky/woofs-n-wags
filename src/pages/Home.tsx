@@ -7,6 +7,12 @@ import BackgroundImage from "../assets/dogs_playing.jpeg";
 import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
 
+declare global {
+  interface Window {
+    renderApp?: (options: any) => void;
+  }
+}
+
 function Home() {
   const [textSection, setTextSection] = useState("");
   const navigate = useNavigate();
@@ -31,16 +37,43 @@ function Home() {
       })
       .catch((err) => console.error("Sanity fetch error:", err));
 
-    // Load lightwidget script
-    const script = document.createElement("script");
-    script.src = "https://cdn.lightwidget.com/widgets/lightwidget.js";
-    script.async = true;
-    document.head.appendChild(script);
+    // Add Google Fonts links
+    const preconnectGoogle = document.createElement("link");
+    preconnectGoogle.rel = "preconnect";
+    preconnectGoogle.href = "https://fonts.googleapis.com";
+    document.head.appendChild(preconnectGoogle);
 
-    return () => {
-      // Cleanup script on unmount
-      document.head.removeChild(script);
+    const preconnectGstatic = document.createElement("link");
+    preconnectGstatic.rel = "preconnect";
+    preconnectGstatic.href = "https://fonts.gstatic.com";
+    preconnectGstatic.crossOrigin = "anonymous";
+    document.head.appendChild(preconnectGstatic);
+
+    const fontsLink = document.createElement("link");
+    fontsLink.href =
+      "https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap";
+    fontsLink.rel = "stylesheet";
+    document.head.appendChild(fontsLink);
+
+    // Add Instagram widget script
+    const instagramScript = document.createElement("script");
+    instagramScript.async = true;
+    instagramScript.src = "https://app.instaplug.app/platform/instaplug.js";
+    instagramScript.onload = () => {
+      if (window.renderApp) {
+        window.renderApp({
+          containerId: "d5bec290-fbff-4f2a-88ee-c72b71383051",
+          domain: "https://app.instaplug.app/",
+          widgetClass: "",
+          fontFamily: "",
+          color: "",
+          colorLink: "",
+          colorLinkActive: "",
+          colorLinkHover: "",
+        });
+      }
     };
+    document.head.appendChild(instagramScript);
   }, []);
 
   return (
@@ -175,18 +208,7 @@ function Home() {
           <p>{textSection}</p>
         </section>
         <div className="max-w-6xl mx-auto px-6 py-8">
-          <iframe
-            src="//lightwidget.com/widgets/ebfe0b4567c352c185f92a46eec30e71.html"
-            scrolling="no"
-            allowTransparency={true}
-            className="lightwidget-widget rounded-lg shadow-lg"
-            style={{
-              width: "100%",
-              border: 0,
-              overflow: "hidden",
-              minHeight: "400px",
-            }}
-          />
+          <div id="d5bec290-fbff-4f2a-88ee-c72b71383051"></div>
         </div>
       </div>
       <Footer />
