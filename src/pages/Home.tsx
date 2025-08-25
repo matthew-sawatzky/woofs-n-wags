@@ -37,7 +37,6 @@ function Home() {
       })
       .catch((err) => console.error("Sanity fetch error:", err));
 
-    // Add Google Fonts links
     const preconnectGoogle = document.createElement("link");
     preconnectGoogle.rel = "preconnect";
     preconnectGoogle.href = "https://fonts.googleapis.com";
@@ -55,7 +54,6 @@ function Home() {
     fontsLink.rel = "stylesheet";
     document.head.appendChild(fontsLink);
 
-    // Add Instagram widget script
     const instagramScript = document.createElement("script");
     instagramScript.async = true;
     instagramScript.src = "https://app.instaplug.app/platform/instaplug.js";
