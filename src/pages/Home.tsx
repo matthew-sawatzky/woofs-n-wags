@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import BackgroundImage from "../assets/dogs_playing.jpeg";
 import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
+import DogTwins from "../assets/dog_twins.jpeg";
 
 declare global {
   interface Window {
@@ -201,9 +202,18 @@ function Home() {
         <section id="reviews" className="p-6"></section>
         <section
           id="cta"
-          className="bg-white bg-opacity-90 p-6 rounded-lg mt-4 mx-6"
+          className="bg-white bg-opacity-90 p-6 rounded-lg mt-4 mx-6 flex gap-8 items-center"
         >
-          <p>{textSection}</p>
+          <div className="flex-2">
+            <p>{textSection}</p>
+          </div>
+          <div className="flex-1">
+            <img
+              src={DogTwins}
+              alt="Dog Twins"
+              className="w-4/5 h-auto rounded-lg shadow-lg mx-auto"
+            />
+          </div>
         </section>
         <div className="max-w-6xl mx-auto px-6 py-8">
           <div id="d5bec290-fbff-4f2a-88ee-c72b71383051"></div>
