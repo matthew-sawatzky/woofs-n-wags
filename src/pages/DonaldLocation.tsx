@@ -31,8 +31,6 @@ import Donald24 from "../assets/donald st images/woofs-3_orig.jpeg";
 import Donald25 from "../assets/donald st images/woofs-3-b_orig.jpeg";
 import Donald26 from "../assets/donald st images/woofs-3a_orig.jpeg";
 
-
-
 const galleryImages = [
   Donald1,
   Donald2,
@@ -113,10 +111,125 @@ function DonaldLocation() {
         </Layout>
       </div>
 
-      {/* Pricing Section */}
+      {/* Play Areas */}
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
+            Play Areas - Over 6000 Square Feet
+          </h2>
+
+          <div className="text-center mb-8 text-white">
+            <p className="text-lg mb-4">
+              Over 6000 square feet of customized dog play space, customized Spa
+              area and a Sleep area.
+            </p>
+            <p className="text-lg mb-4">
+              Three areas of play designed for size, play style, age, and
+              behaviour.
+            </p>
+            <p className="text-xl font-semibold">
+              We have a play area for every personality! Which one does your
+              little one fit into?
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            {/* Woofer Play Space */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
+                style={{ color: "#385662" }}
+              >
+                Woofer Play Space
+              </h3>
+              <p className="text-lg font-semibold mb-4 text-center">
+                For dogs over 55 pounds
+              </p>
+              <p className="text-lg font-semibold mb-4 text-center">
+                Over 2000 Square Feet
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <p>
+                    This area hosts 3 play spaces that may be used as one large
+                    play area or 3 separate areas
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Waggler Play Space */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
+                style={{ color: "#385662" }}
+              >
+                Waggler Play Space
+              </h3>
+              <p className="text-lg font-semibold mb-4 text-center">
+                For dogs 20-55 pounds
+              </p>
+              <p className="text-lg font-semibold mb-4 text-center">
+                Over 1500 Square Feet
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <p>Offers an open play area with zoom areas</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <p>Can be configured to offer 2 feature play areas</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Wiggler Play Space */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
+                style={{ color: "#385662" }}
+              >
+                Wiggler Play Space
+              </h3>
+              <p className="text-lg font-semibold mb-4 text-center">
+                For dogs under 20 pounds
+              </p>
+              <p className="text-lg font-semibold mb-4 text-center">
+                Over 1000 Square Feet
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <p>
+                    Perfect for toy poodles, chihuahuas, pomeranians, papillons,
+                    and many more! :)
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <p>
+                    Can open to one larger play space or 2 separated areas for
+                    our little ones to play
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-12 px-8 bg-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <h2
+            className="text-3xl font-bold text-center mb-8"
+            style={{ color: "#385662" }}
+          >
             Pricing
           </h2>
 
@@ -242,7 +355,7 @@ function DonaldLocation() {
       </section>
 
       {/* Hours of Operation */}
-      <section className="py-12 px-8 bg-gray-100">
+      <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2
             className="text-3xl font-bold text-center mb-8"
@@ -332,118 +445,6 @@ function DonaldLocation() {
         </div>
       </section>
 
-      {/* Play Areas */}
-      <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-white">
-            Play Areas - Over 6000 Square Feet
-          </h2>
-
-          <div className="text-center mb-8 text-white">
-            <p className="text-lg mb-4">
-              Over 6000 square feet of customized dog play space, customized Spa
-              area and a Sleep area.
-            </p>
-            <p className="text-lg mb-4">
-              Three areas of play designed for size, play style, age, and
-              behaviour.
-            </p>
-            <p className="text-xl font-semibold">
-              We have a play area for every personality! Which one does your
-              little one fit into?
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Woofer Play Space */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
-              <h3
-                className="text-2xl font-bold mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Woofer Play Space
-              </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs over 55 pounds
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Over 2000 Square Feet
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>
-                    This area hosts 3 play spaces that may be used as one large
-                    play area or 3 separate areas
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Waggler Play Space */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
-              <h3
-                className="text-2xl font-bold mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Waggler Play Space
-              </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs 20-55 pounds
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Over 1500 Square Feet
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>Offers an open play area with zoom areas</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>Can be configured to offer 2 feature play areas</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Wiggler Play Space */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
-              <h3
-                className="text-2xl font-bold mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Wiggler Play Space
-              </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs under 20 pounds
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Over 1000 Square Feet
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>
-                    Perfect for toy poodles, chihuahuas, pomeranians, papillons,
-                    and many more! :)
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
-                  <p>
-                    Can open to one larger play space or 2 separated areas for
-                    our little ones to play
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Photo Gallery */}
       <section className="py-12 px-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
@@ -451,7 +452,7 @@ function DonaldLocation() {
             className="text-3xl font-bold text-center mb-8"
             style={{ color: "#385662" }}
           >
-            Photo Gallery
+            View Our Location
           </h2>
 
           <div className="relative">
