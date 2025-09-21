@@ -10,19 +10,33 @@ function K9Education() {
         style={{ backgroundImage: `url(${K9EduImage})` }}
       >
         <Layout>
-          <section className="py-20 px-6">
+          <section className="py-90 px-6">
             <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
               K9 Education
             </h1>
+          </section>
+        </Layout>
+      </div>
 
+      {/* Instructors, Classes and Courses Overview */}
+      <section className="py-12 px-8 bg-gray-100">
+        <div className="max-w-6xl mx-auto">
+          <h2
+            className="text-3xl font-bold text-center mb-8"
+            style={{ color: "#385662" }}
+          >
+            K9 Education Overview
+          </h2>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Instructors */}
-            <div className="bg-white bg-opacity-95 rounded-xl p-8 mb-8 shadow-xl">
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-6 text-center"
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
                 style={{ color: "#385662" }}
               >
                 Our Certified Instructors
-              </h2>
+              </h3>
               <div className="text-center space-y-3">
                 <p className="text-xl font-semibold text-gray-800">
                   Victoria Scott
@@ -33,14 +47,14 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Class Info */}
-            <div className="bg-white bg-opacity-95 rounded-xl p-8 mb-8 shadow-xl">
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-6 text-center"
+            {/* Classes */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
                 style={{ color: "#385662" }}
               >
                 Our Classes
-              </h2>
+              </h3>
               <div className="text-center space-y-3">
                 <p className="text-lg">
                   Small class sizes of 5 dog/handler teams in a class
@@ -51,14 +65,14 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Course Structure */}
-            <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-6 text-center"
+            {/* Courses */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
                 style={{ color: "#385662" }}
               >
                 Our Courses
-              </h2>
+              </h3>
               <div className="space-y-4">
                 <p className="text-lg">
                   Our first class enrollment is 5 weeks in duration.
@@ -77,9 +91,9 @@ function K9Education() {
                 </p>
               </div>
             </div>
-          </section>
-        </Layout>
-      </div>
+          </div>
+        </div>
+      </section>
 
       {/* Classes We Offer */}
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>

@@ -221,6 +221,59 @@ function Home() {
           </div>
         </section>
 
+        {/* Contact Information */}
+        <section className="py-12 px-6" style={{ backgroundColor: "#385662" }}>
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-3xl font-bold text-center mb-8 text-white">
+              Visit Our Locations
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* St. Anne's Location */}
+              <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
+                <h4
+                  className="text-xl font-bold text-center mb-4"
+                  style={{ color: "#385662" }}
+                >
+                  St. Anne's Location
+                </h4>
+                <div className="text-center space-y-2">
+                  <p className="text-lg font-semibold text-gray-800">
+                    491 St. Anne's Road
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    (Just north of Bishop Grandin)
+                  </p>
+                  <p className="text-lg font-semibold text-gray-800">
+                    204-255-9247
+                  </p>
+                  <p className="text-sm text-gray-600">info@woofsnwags.ca</p>
+                </div>
+              </div>
+
+              {/* Donald Location */}
+              <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
+                <h4
+                  className="text-xl font-bold text-center mb-4"
+                  style={{ color: "#385662" }}
+                >
+                  Donald Location
+                </h4>
+                <div className="text-center space-y-2">
+                  <p className="text-lg font-semibold text-gray-800">
+                    7 Donald Street
+                  </p>
+                  <p className="text-lg font-semibold text-gray-800">
+                    204-505-4041
+                  </p>
+                  <p className="text-sm text-gray-600">
+                    info.donald@woofsnwags.ca
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Google Reviews Section */}
         <section className="py-12 px-6" style={{ backgroundColor: "#f8f9fa" }}>
           <div className="max-w-6xl mx-auto">

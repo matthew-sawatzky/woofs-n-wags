@@ -81,32 +81,10 @@ function DonaldLocation() {
         style={{ backgroundImage: `url(${DonaldImage})` }}
       >
         <Layout>
-          <section className="py-20 px-6">
+          <section className="py-90 px-6">
             <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
               Donald Location
             </h1>
-
-            {/* Contact Information */}
-            <div className="bg-white bg-opacity-95 rounded-xl p-8 mb-8 shadow-xl">
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Contact Information - NEW LOCATION
-              </h2>
-              <div className="text-center space-y-3">
-                <p className="text-xl font-semibold text-gray-800">
-                  7 Donald Street
-                </p>
-                <p className="text-xl font-semibold text-gray-800">
-                  204-505-4041
-                </p>
-                <p className="text-lg text-gray-600">
-                  info.donald@woofsnwags.ca
-                </p>
-                <p className="text-lg text-gray-600">PetExec Registration</p>
-              </div>
-            </div>
           </section>
         </Layout>
       </div>

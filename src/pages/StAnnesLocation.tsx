@@ -53,7 +53,7 @@ function StAnnesLocation() {
         style={{ backgroundImage: `url(${StAnnesImage})` }}
       >
         <Layout>
-          <section className="py-20 px-6">
+          <section className="py-90 px-6">
             <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
               St. Anne's Location
             </h1>
