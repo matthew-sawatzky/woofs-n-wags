@@ -7,6 +7,7 @@ import BackgroundImage from "../assets/dogs_playing.jpeg";
 import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
 import DogTwins from "../assets/dog_twins.jpeg";
+import Logo from "../assets/logo.png";
 
 declare global {
   interface Window {
@@ -137,8 +138,12 @@ function Home() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
-            <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-              DC
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+              <img
+                src={Logo}
+                alt="Dog Daycare"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">
               Dog Daycare

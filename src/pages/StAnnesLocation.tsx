@@ -470,7 +470,7 @@ function StAnnesLocation() {
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
             Contact Information
           </h2>
-          <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
+          <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl mb-8">
             <div className="text-center space-y-3">
               <p className="text-xl font-semibold text-gray-800">
                 491 St. Anne's Road
@@ -483,6 +483,50 @@ function StAnnesLocation() {
               </p>
               <p className="text-lg text-gray-600">info@woofsnwags.ca</p>
               <p className="text-lg text-gray-600">PetExec Registration</p>
+            </div>
+          </div>
+
+          {/* Google Map */}
+          <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
+            <h3
+              className="text-xl font-bold text-center mb-4"
+              style={{ color: "#385662" }}
+            >
+              Find Us Here
+            </h3>
+            <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.4567890123456!2d-97.1234567!3d49.7890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715ecf123456%3A0x1234567890abcdef!2s491%20St%20Anne's%20Rd%2C%20Winnipeg%2C%20MB%2C%20Canada!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Woofs n Wags St. Anne's Location"
+              ></iframe>
+            </div>
+            <div className="text-center mt-4">
+              <a
+                href="https://www.google.com/maps/place/491+St+Anne's+Rd,+Winnipeg,+MB,+Canada"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-white hover:opacity-90 transition-all duration-300 hover:scale-105"
+                style={{ backgroundColor: "#385662" }}
+              >
+                <svg
+                  className="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Get Directions
+              </a>
             </div>
           </div>
         </div>
