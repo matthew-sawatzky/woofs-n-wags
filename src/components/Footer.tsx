@@ -7,7 +7,20 @@ function Footer() {
         <img src={logo} alt="Woofs n Wags Logo" className="h-8" />
         <p className="text-sm text-center text-gray-800">
           &copy; {new Date().getFullYear()} Woofs n Wags. All rights reserved.
-          &nbsp;|&nbsp; (204) 123-4567 &nbsp;|&nbsp; info@woofsnwags.com
+          &nbsp;|&nbsp;
+          <a
+            href="tel:204-123-4567"
+            className="transition-colors hover:text-[#385662]"
+          >
+            (204) 123-4567
+          </a>
+          &nbsp;|&nbsp;
+          <a
+            href="mailto:info@woofsnwags.com"
+            className="transition-colors hover:text-[#385662]"
+          >
+            info@woofsnwags.com
+          </a>
         </p>
       </div>
     </footer>

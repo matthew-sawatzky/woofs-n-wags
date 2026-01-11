@@ -8,6 +8,7 @@ import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
 import DogTwins from "../assets/dog_twins.jpeg";
 import Logo from "../assets/logo.png";
+import WoofsLogo from "../assets/Woofs logo-1.jpeg";
 
 declare global {
   interface Window {
@@ -191,8 +192,12 @@ function Home() {
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/sleepover-service")}
           >
-            <div className="w-16 h-16 mx-auto mb-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-              SO
+            <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+              <img
+                src={WoofsLogo}
+                alt="Sleep Over Service"
+                className="w-full h-full object-cover"
+              />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">
               Sleep Over Service

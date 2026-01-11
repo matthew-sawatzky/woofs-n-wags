@@ -49,15 +49,21 @@ function StAnnesLocation() {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat"
+        className="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col"
         style={{ backgroundImage: `url(${StAnnesImage})` }}
       >
         <Layout>
-          <section className="py-90 px-6">
-            <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
-              St. Anne's Location
-            </h1>
-          </section>
+          <div className="flex-1 flex items-end pb-12 px-6 mt-200">
+            <div>
+              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-4">
+                St. Anne's Location
+              </h1>
+              <div className="text-white space-y-2">
+                <p className="text-xl font-semibold drop-shadow-lg">491 St. Anne's Road</p>
+                <p className="text-xl font-semibold drop-shadow-lg">204-255-9247</p>
+              </div>
+            </div>
+          </div>
         </Layout>
       </div>
 
