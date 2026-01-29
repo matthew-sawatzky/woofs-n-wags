@@ -89,12 +89,10 @@ function Home() {
             className="flex items-center justify-between gap-8 p-6 mt-100"
           >
             <div className="flex-1">
-              <h1 className="text-5xl font-bold text-white drop-shadow-xl">
+              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-6">
                 We Know What Dogs Like
               </h1>
-              <h2 className="text-white mb-4 drop-shadow-xl">
-                Dogs do speak, but only to those who know how to listen.
-              </h2>
+
               <div className="flex gap-4">
                 <button
                   className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"

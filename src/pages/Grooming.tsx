@@ -1,6 +1,6 @@
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
-import GroomingImage from "../assets/Woof tub.jpg";
+import GroomingImage from "../assets/IMG_3618.jpeg";
 
 function Grooming() {
   return (

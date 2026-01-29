@@ -4,16 +4,16 @@ import logo from "../assets/logo.png";
 function Navbar() {
   return (
     <div>
-      <div className="mx-8">
-        <nav className="flex items-center px-8 py-4 w-full">
+      <div>
+        <nav className="flex items-center px-4 py-0 w-full">
           <Link to="/">
             <img
               src={logo}
               alt="Logo"
-              className="h-20 mr-8 cursor-pointer hover:opacity-90 transition-opacity duration-300"
+              className="h-32 mr-4 cursor-pointer hover:opacity-90 transition-opacity duration-300"
             />
           </Link>
-          <div className="flex flex-1 items-center justify-end text-white space-x-8">
+          <div className="flex flex-1 items-center justify-end text-white space-x-8 text-2xl">
             <div className="flex items-center space-x-6">
               <Link
                 to="/"
