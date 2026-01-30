@@ -49,21 +49,53 @@ function StAnnesLocation() {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat min-h-screen flex flex-col"
+        className="bg-cover bg-center bg-no-repeat pb-50"
         style={{ backgroundImage: `url(${StAnnesImage})` }}
       >
         <Layout>
-          <div className="flex-1 flex items-end pb-12 px-6 mt-200">
-            <div>
+          <section className="flex items-center justify-between gap-8 p-6 mt-100">
+            <div className="flex-1">
               <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-4">
                 St. Anne's Location
               </h1>
-              <div className="text-white space-y-2">
-                <p className="text-xl font-semibold drop-shadow-lg">491 St. Anne's Road</p>
-                <p className="text-xl font-semibold drop-shadow-lg">204-255-9247</p>
+              <div className="flex gap-4">
+                <button
+                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ backgroundColor: "#385662" }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.google.com/maps/place/491+St+Anne's+Rd,+Winnipeg,+MB,+Canada",
+                      "_blank"
+                    )
+                  }
+                >
+                  491 St. Anne's Road
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </button>
+                <button
+                  className="bg-white px-4 py-2 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ color: "#385662" }}
+                  onClick={() => window.open("tel:204-255-9247", "_self")}
+                >
+                  204-255-9247
+                </button>
               </div>
             </div>
-          </div>
+            <div className="flex-1"></div>
+          </section>
         </Layout>
       </div>
 
@@ -92,7 +124,10 @@ function StAnnesLocation() {
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     3/8 inch rubber flooring that is sealed - the safest floor
                     for all dogs, adding cushion for bones and joints and
@@ -100,21 +135,30 @@ function StAnnesLocation() {
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Larger play equipment specifically designed for dogs to play
                     hide and seek and run over, under and through
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     HRV system and air conditioning for the perfect temperature
                     for play
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Central vac system to minimize odor and contagions in our
                     facility
@@ -140,7 +184,10 @@ function StAnnesLocation() {
 
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     3/8 inch rubber flooring that is sealed - adds cushion for
                     bones and joints, and traction during play. Little dogs need
@@ -148,21 +195,30 @@ function StAnnesLocation() {
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Play equipment specifically designed for small dogs to play
                     hide and seek, and run over, under, and through!
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Independent furnace and air conditioner for the Waggler
                     level as their needs are much different than our Woofer dogs
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Central vac system to minimize odor and contagions in our
                     facility

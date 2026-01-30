@@ -137,7 +137,7 @@ function Home() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={Logo}
                 alt="Dog Daycare"
@@ -156,7 +156,7 @@ function Home() {
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/grooming")}
           >
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={GroomingLogo}
                 alt="Grooming"
@@ -172,7 +172,7 @@ function Home() {
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/k9-education")}
           >
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={K9EduLogo}
                 alt="K9 Education"
@@ -190,7 +190,7 @@ function Home() {
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/sleepover-service")}
           >
-            <div className="w-16 h-16 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={WoofsLogo}
                 alt="Sleep Over Service"
@@ -208,19 +208,34 @@ function Home() {
       </section>
       <div className="bg-white">
         <section id="reviews" className="p-6"></section>
-        <section
-          id="cta"
-          className="bg-white bg-opacity-90 p-6 rounded-lg mt-4 mx-6 flex gap-8 items-center"
-        >
-          <div className="flex-2">
-            <p>{textSection}</p>
-          </div>
-          <div className="flex-1">
-            <img
-              src={DogTwins}
-              alt="Dog Twins"
-              className="w-4/5 h-auto rounded-lg shadow-lg mx-auto"
-            />
+
+        {/* Our Story Section */}
+        <section className="py-16 px-6" style={{ backgroundColor: "#f8f9fa" }}>
+          <div className="max-w-6xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <h2
+                    className="text-4xl font-bold mb-6"
+                    style={{ color: "#385662" }}
+                  >
+                    Our Story
+                  </h2>
+                  <div className="prose prose-lg text-gray-700">
+                    <p className="text-lg leading-relaxed">{textSection}</p>
+                  </div>
+                </div>
+                <div className="p-8 lg:p-12 flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">
+                  <div className="relative">
+                    <img
+                      src={DogTwins}
+                      alt="Happy dogs at Woofs N Wags"
+                      className="w-full max-w-md h-auto rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -232,7 +247,10 @@ function Home() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* St. Anne's Location */}
-              <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
+              <div
+                className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                onClick={() => handleServiceClick("/st-annes-location")}
+              >
                 <h4
                   className="text-xl font-bold text-center mb-4"
                   style={{ color: "#385662" }}
@@ -240,21 +258,40 @@ function Home() {
                   St. Anne's Location
                 </h4>
                 <div className="text-center space-y-2">
-                  <p className="text-lg font-semibold text-gray-800">
+                  <a
+                    href="https://maps.google.com/?q=491+St.+Anne's+Road,+Winnipeg,+MB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-gray-800 hover:underline block"
+                    style={{ color: "#385662" }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     491 St. Anne's Road
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    (Just north of Bishop Grandin)
-                  </p>
-                  <p className="text-lg font-semibold text-gray-800">
+                  </a>
+                  <a
+                    href="tel:+12042559247"
+                    className="text-lg font-semibold text-gray-800 hover:underline block"
+                    style={{ color: "#385662" }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     204-255-9247
-                  </p>
-                  <p className="text-sm text-gray-600">info@woofsnwags.ca</p>
+                  </a>
+                  <a
+                    href="mailto:info@woofsnwags.ca"
+                    className="text-sm text-gray-600 hover:underline block"
+                    style={{ color: "#385662" }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    info@woofsnwags.ca
+                  </a>
                 </div>
               </div>
 
               {/* Donald Location */}
-              <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
+              <div
+                className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                onClick={() => handleServiceClick("/donald-location")}
+              >
                 <h4
                   className="text-xl font-bold text-center mb-4"
                   style={{ color: "#385662" }}
@@ -262,15 +299,32 @@ function Home() {
                   Donald Location
                 </h4>
                 <div className="text-center space-y-2">
-                  <p className="text-lg font-semibold text-gray-800">
+                  <a
+                    href="https://maps.google.com/?q=7+Donald+Street,+Winnipeg,+MB"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-lg font-semibold text-gray-800 hover:underline block"
+                    style={{ color: "#385662" }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     7 Donald Street
-                  </p>
-                  <p className="text-lg font-semibold text-gray-800">
+                  </a>
+                  <a
+                    href="tel:+12045054041"
+                    className="text-lg font-semibold text-gray-800 hover:underline block"
+                    style={{ color: "#385662" }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     204-505-4041
-                  </p>
-                  <p className="text-sm text-gray-600">
+                  </a>
+                  <a
+                    href="mailto:info.donald@woofsnwags.ca"
+                    className="text-sm text-gray-600 hover:underline block"
+                    style={{ color: "#385662" }}
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     info.donald@woofsnwags.ca
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

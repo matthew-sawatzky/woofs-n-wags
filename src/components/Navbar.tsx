@@ -13,7 +13,10 @@ function Navbar() {
               className="h-32 mr-4 cursor-pointer hover:opacity-90 transition-opacity duration-300"
             />
           </Link>
-          <div className="flex flex-1 items-center justify-end text-white space-x-8 text-2xl">
+          <div
+            className="flex flex-1 items-center justify-end text-white space-x-8 text-2xl"
+            style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+          >
             <div className="flex items-center space-x-6">
               <Link
                 to="/"
