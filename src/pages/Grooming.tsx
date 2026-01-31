@@ -6,39 +6,42 @@ function Grooming() {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat"
+        className="bg-cover bg-center bg-no-repeat pb-50"
         style={{ backgroundImage: `url(${GroomingImage})` }}
       >
         <Layout>
-          <section className="py-20 px-6">
-            <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
-              Woofs 'n Wags Dog Salon
-            </h1>
+          <section className="flex items-center justify-between gap-8 p-6 mt-100">
+            <div className="flex-1">
+              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
+                Woofs 'n Wags Dog Salon
+              </h1>
 
-            {/* Introduction */}
-            <div className="bg-white bg-opacity-95 rounded-xl p-8 mb-8 shadow-xl">
-              <h2
-                className="text-3xl font-bold text-gray-800 mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Styling from both Locations
-              </h2>
-              <div className="space-y-4">
-                <p className="text-lg">
-                  Our Exclusive Dog Salon combines patience and expertise which
-                  promotes an environment that caters to each dogs' unique
-                  individual grooming needs.
-                </p>
-                <p className="text-lg font-semibold">
-                  Specializes in everything dog. Just ask us.
-                </p>
-                <p className="text-lg">
-                  We have certified groomers who specialize in DOODLES, DESHEDS,
-                  DOUBLE COATS, SMALL DOGS, WIRE COATS... Our stylist have
-                  certificates in every coat...just ask.
-                </p>
+              {/* Introduction */}
+              <div className="bg-white bg-opacity-95 rounded-xl p-8 mb-8 shadow-xl">
+                <h2
+                  className="text-3xl font-bold text-gray-800 mb-6 text-center"
+                  style={{ color: "#385662" }}
+                >
+                  Styling from both Locations
+                </h2>
+                <div className="space-y-4">
+                  <p className="text-lg">
+                    Our Exclusive Dog Salon combines patience and expertise
+                    which promotes an environment that caters to each dogs'
+                    unique individual grooming needs.
+                  </p>
+                  <p className="text-lg font-semibold">
+                    Specializes in everything dog. Just ask us.
+                  </p>
+                  <p className="text-lg">
+                    We have certified groomers who specialize in DOODLES,
+                    DESHEDS, DOUBLE COATS, SMALL DOGS, WIRE COATS... Our stylist
+                    have certificates in every coat...just ask.
+                  </p>
+                </div>
               </div>
             </div>
+            <div className="flex-1"></div>
           </section>
         </Layout>
       </div>
@@ -209,8 +212,9 @@ function Grooming() {
                 Vaccination Requirements
               </h2>
               <p className="text-lg font-semibold">
-                **All dogs must be fully vaccinated with up to date Distemper
-                and parvo to book an appointment**
+                **All dogs must be fully vaccinated with up to date core
+                vaccinations including Rabies, Distemper and Parvo to book an
+                appointment**
               </p>
             </div>
           </div>

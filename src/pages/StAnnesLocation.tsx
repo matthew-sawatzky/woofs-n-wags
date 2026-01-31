@@ -622,8 +622,8 @@ function StAnnesLocation() {
                     date vaccinations and bordetella vaccine
                   </p>
                   <p>
-                    Dogs are not required to be spayed or neutered to attend
-                    classes
+                    Our visitors must be spayed or neutered at 7 months of age.
+                    Please contact us for more information.
                   </p>
                   <p>
                     Dogs in heat are asked not to attend classes during heat

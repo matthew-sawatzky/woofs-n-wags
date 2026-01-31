@@ -1,15 +1,46 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
+import K9EduLogo from "../assets/Woof edu.jpg";
+import GroomingLogo from "../assets/Woof tub.jpg";
+import WoofsLogo from "../assets/Woofs logo-1.jpeg";
 
 function Navbar() {
+  const location = useLocation();
+
+  // Determine which logo to show based on current route
+  const getCurrentLogo = () => {
+    switch (location.pathname) {
+      case "/k9-education":
+        return K9EduLogo;
+      case "/grooming":
+        return GroomingLogo;
+      case "/sleep-over-service":
+        return WoofsLogo;
+      default:
+        return logo;
+    }
+  };
+
+  const getCurrentLogoAlt = () => {
+    switch (location.pathname) {
+      case "/k9-education":
+        return "K9 Education Logo";
+      case "/grooming":
+        return "Grooming Logo";
+      case "/sleep-over-service":
+        return "Sleep Over Service Logo";
+      default:
+        return "Logo";
+    }
+  };
   return (
     <div>
       <div>
         <nav className="flex items-center px-4 py-0 w-full">
           <Link to="/">
             <img
-              src={logo}
-              alt="Logo"
+              src={getCurrentLogo()}
+              alt={getCurrentLogoAlt()}
               className="h-32 mr-4 cursor-pointer hover:opacity-90 transition-opacity duration-300"
             />
           </Link>
