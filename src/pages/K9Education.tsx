@@ -57,7 +57,7 @@ function K9Education() {
               </h3>
               <div className="text-center space-y-3">
                 <p className="text-lg">
-                  Small class sizes of 5 dog/handler teams in a class
+                  Small class sizes of 6 dog/handler teams in a class
                 </p>
                 <p className="text-lg font-semibold">
                   **Polite Puppy is open to 7 teams**
@@ -75,10 +75,7 @@ function K9Education() {
               </h3>
               <div className="space-y-4">
                 <p className="text-lg">
-                  Our first class enrollment is 5 weeks in duration.
-                </p>
-                <p className="text-lg">
-                  All subsequent courses will be 4 weeks in duration.
+                  Our class enrollment is 5 weeks in duration.
                 </p>
                 <p className="text-lg">
                   Introduction Week is a one-time class attended only at time of

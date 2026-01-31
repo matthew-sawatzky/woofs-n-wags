@@ -328,31 +328,9 @@ function StAnnesLocation() {
                 </div>
               </div>
             </div>
-
-            {/* Triple Dog */}
-            <div className="mt-6 max-w-md mx-auto">
-              <div className="bg-white p-6 rounded-xl shadow-xl">
-                <h3
-                  className="text-xl font-bold mb-4 text-center"
-                  style={{ color: "#385662" }}
-                >
-                  All Day of Play - Triple Dog
-                </h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span>Full Day</span>
-                    <span className="font-semibold">$75.00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>10 Day</span>
-                    <span className="font-semibold">$591.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div className="text-center mt-8 text-white">
+          <div className="text-center mt-8 text-gray-800">
             <p className="text-lg font-semibold mb-2">
               **All packages are non-refundable and have expiration dates**
             </p>
@@ -477,7 +455,7 @@ function StAnnesLocation() {
               <img
                 src={galleryImages[currentImageIndex]}
                 alt={`St. Anne's Location ${currentImageIndex + 1}`}
-                className="w-full h-96 object-cover"
+                className="w-full h-[500px] object-cover"
               />
 
               {/* Previous button */}
@@ -589,6 +567,86 @@ function StAnnesLocation() {
                 </svg>
                 Get Directions
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Vaccination Requirements */}
+      <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">
+            Vaccination Requirements
+          </h2>
+
+          <div className="bg-white p-8 rounded-xl shadow-xl mb-6">
+            <p className="text-lg mb-6">
+              To keep our facility safe from potentially serious and deadly
+              disease we require all our visitors to have up to date
+              vaccinations and bordetella.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Puppies */}
+              <div>
+                <h3
+                  className="text-xl font-bold mb-4"
+                  style={{ color: "#385662" }}
+                >
+                  Puppies:
+                </h3>
+                <div className="space-y-3">
+                  <p>
+                    Puppies are invited to come to play in our daycare and
+                    attend our K9 Classes as young as 12 weeks of age.
+                  </p>
+                  <p>
+                    They require their first 2 sets of vaccinations and the
+                    bordetella vaccine (to protect from the most serious strain
+                    of kennel cough).
+                  </p>
+                </div>
+              </div>
+
+              {/* Adult Dogs */}
+              <div>
+                <h3
+                  className="text-xl font-bold mb-4"
+                  style={{ color: "#385662" }}
+                >
+                  Dogs over the age of 7 Months:
+                </h3>
+                <div className="space-y-3">
+                  <p>
+                    Dogs over the age of 7 months are required to have all up to
+                    date vaccinations and bordetella vaccine
+                  </p>
+                  <p>
+                    Dogs are not required to be spayed or neutered to attend
+                    classes
+                  </p>
+                  <p>
+                    Dogs in heat are asked not to attend classes during heat
+                    cycle.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center">
+            <div className="bg-white p-6 rounded-xl shadow-xl">
+              <h3
+                className="text-xl font-bold mb-4"
+                style={{ color: "#385662" }}
+              >
+                OUR FACILITY ACCEPTS TITER TESTS IN LIEU OF VACCINATIONS!
+              </h3>
+              <p>
+                To learn more about our vaccination requirements please contact
+                us to read about what each vaccination is protecting your dogs
+                from.
+              </p>
             </div>
           </div>
         </div>
