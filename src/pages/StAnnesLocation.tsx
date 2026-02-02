@@ -43,7 +43,7 @@ function StAnnesLocation() {
   const prevImage = () => {
     setCurrentImageIndex(
       (prevIndex) =>
-        (prevIndex - 1 + galleryImages.length) % galleryImages.length
+        (prevIndex - 1 + galleryImages.length) % galleryImages.length,
     );
   };
   return (
@@ -65,7 +65,7 @@ function StAnnesLocation() {
                   onClick={() =>
                     window.open(
                       "https://www.google.com/maps/place/491+St+Anne's+Rd,+Winnipeg,+MB,+Canada",
-                      "_blank"
+                      "_blank",
                     )
                   }
                 >
@@ -252,15 +252,15 @@ function StAnnesLocation() {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span>Half day</span>
-                  <span className="font-semibold">$24.00</span>
+                  <span className="font-semibold">$27.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Half day 10 day</span>
-                  <span className="font-semibold">$210.00</span>
+                  <span className="font-semibold">$225.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Half day monthly</span>
-                  <span className="font-semibold">$380.00</span>
+                  <span className="font-semibold">$410.00</span>
                 </div>
               </div>
             </div>
@@ -276,23 +276,27 @@ function StAnnesLocation() {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span>Full Day</span>
-                  <span className="font-semibold">$35.00</span>
+                  <span className="font-semibold">$36.50</span>
                 </div>
                 <div className="flex justify-between">
                   <span>5 Day</span>
-                  <span className="font-semibold">$159.10</span>
+                  <span className="font-semibold">$175.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>10 Day</span>
-                  <span className="font-semibold">$318.20</span>
+                  <span className="font-semibold">$335.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>20 Day</span>
-                  <span className="font-semibold">$605.80</span>
+                  <span className="font-semibold">$625.00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Monthly</span>
-                  <span className="font-semibold">$450.00</span>
+                  <span>Monthly 5 day (21 days)</span>
+                  <span className="font-semibold">$470.00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Monthly 6 day (25 days)</span>
+                  <span className="font-semibold">$500.00</span>
                 </div>
               </div>
             </div>
@@ -308,23 +312,27 @@ function StAnnesLocation() {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span>Full Day</span>
-                  <span className="font-semibold">$55.00</span>
+                  <span className="font-semibold">$60.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>5 Day</span>
-                  <span className="font-semibold">$240.00</span>
+                  <span className="font-semibold">$270.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>10 Day</span>
-                  <span className="font-semibold">$454.60</span>
+                  <span className="font-semibold">$480.00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>20 Day</span>
-                  <span className="font-semibold">$809.60</span>
+                  <span className="font-semibold">$900.00</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Monthly</span>
-                  <span className="font-semibold">$750.00</span>
+                  <span>Monthly 5 day (21 days)</span>
+                  <span className="font-semibold">$825.00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Monthly 6 day (25 days)</span>
+                  <span className="font-semibold">$960.00</span>
                 </div>
               </div>
             </div>
@@ -334,6 +342,24 @@ function StAnnesLocation() {
             <p className="text-lg font-semibold mb-2">
               **All packages are non-refundable and have expiration dates**
             </p>
+            <div className="text-sm mb-4 max-w-4xl mx-auto">
+              <p className="mb-2">
+                <strong>Expiry Dates:</strong>
+              </p>
+              <p>• 5 day packages expire 7 weeks after purchase date</p>
+              <p>• 10 day packages expire 14 weeks after purchase date</p>
+              <p>• 20 day packages expire 25 weeks after purchase date</p>
+              <p className="mt-2">
+                <strong>Note:</strong> Monthly 5 day is based on 21 days in a
+                month average. Monthly 6 day is based on 25 days including the
+                Saturdays in a month average.
+              </p>
+              <p className="mt-2">
+                **If not used within expiration date the days used will be
+                calculated to single day use and any credit remaining will be
+                placed on account for daycare use only.
+              </p>
+            </div>
             <p className="text-lg">*All prices are subject to GST</p>
           </div>
         </div>
