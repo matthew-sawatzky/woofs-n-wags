@@ -52,6 +52,22 @@ const galleryImages = [
   StAnnes13,
 ];
 
+const facilityDescriptions = [
+  "Our spacious bathing rooms with professional grooming equipment",
+  "Clean and comfortable reception area for pet parents",
+  "Another view of our well-equipped bathing facilities",
+  "Meet our friendly staff member ready to care for your pup",
+  "Cozy nap time area where tired dogs can rest and recharge",
+  "Welcoming reception desk where we greet you and your dog",
+  "The Wag Yard - our secure outdoor play area for exercise",
+  "Inside the Waggler room designed for smaller dogs under 30lbs",
+  "Another angle of our comfortable Waggler play space",
+  "Happy Wagglers enjoying supervised playtime together",
+  "More Wagglers having fun in their dedicated play area",
+  "The Woof Yard - outdoor space for our larger dog friends",
+  "Inside the Woofer room built for dogs 30+ pounds",
+];
+
 const stAnnesGalleryImages = [
   GalleryImg1,
   GalleryImg2,
@@ -623,6 +639,13 @@ function StAnnesLocation() {
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                 {currentImageIndex + 1} / {galleryImages.length}
               </div>
+            </div>
+
+            {/* Image Description */}
+            <div className="mt-6 text-center bg-gray-50 p-4 rounded-lg">
+              <p className="text-xl font-medium text-gray-800">
+                {facilityDescriptions[currentImageIndex]}
+              </p>
             </div>
 
             {/* Thumbnail Navigation */}

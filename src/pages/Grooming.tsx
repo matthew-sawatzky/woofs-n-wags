@@ -12,39 +12,72 @@ function Grooming() {
         <Layout>
           <section className="flex items-center justify-between gap-8 p-6 mt-100">
             <div className="flex-1">
-              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-4">
+              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-6">
                 Woofs 'n Wags Dog Salon
               </h1>
 
-              {/* Introduction */}
-              <div className="bg-white bg-opacity-95 rounded-xl p-8 mb-8 shadow-xl">
-                <h2
-                  className="text-3xl font-bold text-gray-800 mb-6 text-center"
+              <div className="flex gap-4">
+                <button
+                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ backgroundColor: "#385662" }}
+                >
+                  Professional Grooming Services
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                    />
+                  </svg>
+                </button>
+                <button
+                  className="bg-white px-4 py-2 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ color: "#385662" }}
                 >
-                  Styling from both Locations
-                </h2>
-                <div className="space-y-4">
-                  <p className="text-lg">
-                    Our Exclusive Dog Salon combines patience and expertise
-                    which promotes an environment that caters to each dogs'
-                    unique individual grooming needs.
-                  </p>
-                  <p className="text-lg font-semibold">
-                    Specializes in everything dog. Just ask us.
-                  </p>
-                  <p className="text-lg">
-                    We have certified groomers who specialize in DOODLES,
-                    DESHEDS, DOUBLE COATS, SMALL DOGS, WIRE COATS... Our stylist
-                    have certificates in every coat...just ask.
-                  </p>
-                </div>
+                  View Our Services
+                </button>
               </div>
             </div>
             <div className="flex-1"></div>
           </section>
         </Layout>
       </div>
+
+      {/* Styling from both Locations */}
+      <section className="py-12 px-8 bg-gray-100">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-xl p-8 shadow-xl">
+            <h2
+              className="text-3xl font-bold text-center mb-6"
+              style={{ color: "#385662" }}
+            >
+              Styling from both Locations
+            </h2>
+            <div className="space-y-4">
+              <p className="text-lg text-center">
+                Our Exclusive Dog Salon combines patience and expertise which
+                promotes an environment that caters to each dogs' unique
+                individual grooming needs.
+              </p>
+              <p className="text-lg font-semibold text-center">
+                Specializes in everything dog. Just ask us.
+              </p>
+              <p className="text-lg text-center">
+                We have certified groomers who specialize in DOODLES, DESHEDS,
+                DOUBLE COATS, SMALL DOGS, WIRE COATS... Our stylist have
+                certificates in every coat...just ask.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Our Facilities */}
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>

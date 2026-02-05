@@ -75,6 +75,35 @@ const galleryImages = [
   Donald26,
 ];
 
+const donaldFacilityDescriptions = [
+  "Professional bathing room with specialized grooming equipment",
+  "Second bathing room for efficient pet grooming services",
+  "Climate-controlled drying room for comfortable pet care",
+  "Additional drying space with professional equipment",
+  "Finishing room where the final grooming touches happen",
+  "Second finishing area for detailed grooming work",
+  "Bright and welcoming interior space for pets and owners",
+  "Clean hallways connecting our different service areas",
+  "Well-organized facility layout for smooth operations",
+  "Professional workspace designed for pet comfort",
+  "Another view of our organized and clean facility",
+  "Spacious areas designed for easy pet movement",
+  "The Waggler area - play space for smaller dogs under 30lbs",
+  "More of the Waggler room with safe play equipment",
+  "Waggler play area with engaging activities for small dogs",
+  "Additional Waggler space for supervised small dog play",
+  "Final view of our dedicated small dog play area",
+  "The Wiggler room - specialized space for very small dogs",
+  "More Wiggler area designed for the tiniest pups",
+  "Additional Wiggler play space with appropriate equipment",
+  "Final section of our Wiggler room for smallest dogs",
+  "The Woofs area - play space for larger dogs 30+ pounds",
+  "Additional Woofs room space for big dog activities",
+  "More of the Woofs area with equipment for large dogs",
+  "Extended Woofs play space for energetic larger dogs",
+  "Final view of our spacious Woofs play area",
+];
+
 const donaldGalleryImages = [
   DonaldGalleryImg1,
   DonaldGalleryImg2,
@@ -632,6 +661,13 @@ function DonaldLocation() {
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg">
                 {currentImageIndex + 1} / {galleryImages.length}
               </div>
+            </div>
+
+            {/* Image Description */}
+            <div className="mt-6 text-center bg-gray-50 p-4 rounded-lg">
+              <p className="text-xl font-medium text-gray-800">
+                {donaldFacilityDescriptions[currentImageIndex]}
+              </p>
             </div>
 
             {/* Thumbnail Navigation */}
