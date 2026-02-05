@@ -29,6 +29,23 @@ import Donald22 from "../assets/donald st images/woofs-2_orig.jpeg";
 import Donald23 from "../assets/donald st images/woofs-2a_orig.jpeg";
 import Donald24 from "../assets/donald st images/woofs-3_orig.jpeg";
 import Donald25 from "../assets/donald st images/woofs-3-b_orig.jpeg";
+// Gallery images from DonaldGallery folder
+import DonaldGalleryImg1 from "../assets/DonaldGallery/IMG_0112.JPG";
+import DonaldGalleryImg2 from "../assets/DonaldGallery/IMG_0126.JPG";
+import DonaldGalleryImg3 from "../assets/DonaldGallery/IMG_0178.JPG";
+import DonaldGalleryImg4 from "../assets/DonaldGallery/IMG_0210.JPG";
+import DonaldGalleryImg5 from "../assets/DonaldGallery/IMG_0246.JPG";
+import DonaldGalleryImg6 from "../assets/DonaldGallery/IMG_0280.JPG";
+import DonaldGalleryImg7 from "../assets/DonaldGallery/IMG_0412.JPG";
+import DonaldGalleryImg8 from "../assets/DonaldGallery/IMG_1409.JPEG";
+import DonaldGalleryImg9 from "../assets/DonaldGallery/IMG_9818.JPG";
+import DonaldGalleryImg10 from "../assets/DonaldGallery/IMG_9896.JPG";
+import DonaldGalleryImg11 from "../assets/DonaldGallery/IMG_9957.JPG";
+import DonaldGalleryImg12 from "../assets/DonaldGallery/IMG_9961.JPG";
+import DonaldGalleryImg13 from "../assets/DonaldGallery/Unknown copy 2.jpeg";
+import DonaldGalleryImg14 from "../assets/DonaldGallery/Unknown copy.jpeg";
+import DonaldGalleryImg15 from "../assets/DonaldGallery/Unknown-1.jpeg";
+import DonaldGalleryImg16 from "../assets/DonaldGallery/Unknown.jpeg";
 import Donald26 from "../assets/donald st images/woofs-3a_orig.jpeg";
 
 const galleryImages = [
@@ -60,8 +77,28 @@ const galleryImages = [
   Donald26,
 ];
 
+const donaldGalleryImages = [
+  DonaldGalleryImg1,
+  DonaldGalleryImg2,
+  DonaldGalleryImg3,
+  DonaldGalleryImg4,
+  DonaldGalleryImg5,
+  DonaldGalleryImg6,
+  DonaldGalleryImg7,
+  DonaldGalleryImg8,
+  DonaldGalleryImg9,
+  DonaldGalleryImg10,
+  DonaldGalleryImg11,
+  DonaldGalleryImg12,
+  DonaldGalleryImg13,
+  DonaldGalleryImg14,
+  DonaldGalleryImg15,
+  DonaldGalleryImg16,
+];
+
 function DonaldLocation() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
@@ -71,6 +108,20 @@ function DonaldLocation() {
     setCurrentImageIndex(
       (prevIndex) =>
         (prevIndex - 1 + galleryImages.length) % galleryImages.length,
+    );
+  };
+
+  const nextGalleryImage = () => {
+    setCurrentGalleryIndex(
+      (prevIndex) => (prevIndex + 1) % donaldGalleryImages.length,
+    );
+  };
+
+  const prevGalleryImage = () => {
+    setCurrentGalleryIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + donaldGalleryImages.length) %
+        donaldGalleryImages.length,
     );
   };
 
@@ -234,6 +285,71 @@ function DonaldLocation() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Donald Gallery */}
+      <section className="py-12 px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2
+            className="text-3xl font-bold text-center mb-8"
+            style={{ color: "#385662" }}
+          >
+            Come Join the Fun!
+          </h2>
+
+          <div className="relative">
+            {/* Main Image Display */}
+            <div className="relative rounded-lg overflow-hidden shadow-xl">
+              <img
+                src={donaldGalleryImages[currentGalleryIndex]}
+                alt={`Donald Gallery ${currentGalleryIndex + 1}`}
+                className="w-full h-[500px] object-cover"
+              />
+
+              {/* Previous button */}
+              <button
+                onClick={prevGalleryImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+              >
+                ‹
+              </button>
+
+              {/* Next button */}
+              <button
+                onClick={nextGalleryImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+              >
+                ›
+              </button>
+
+              {/* Image counter */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                {currentGalleryIndex + 1} / {donaldGalleryImages.length}
+              </div>
+            </div>
+
+            {/* Thumbnail Navigation */}
+            <div className="flex justify-center mt-6 space-x-2 overflow-x-auto">
+              {donaldGalleryImages.map((image, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentGalleryIndex(index)}
+                  className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                    index === currentGalleryIndex
+                      ? "border-blue-500 scale-110"
+                      : "border-gray-300 hover:border-blue-300"
+                  }`}
+                >
+                  <img
+                    src={image}
+                    alt={`Thumbnail ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
             </div>
           </div>
         </div>

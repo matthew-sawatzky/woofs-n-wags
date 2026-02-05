@@ -17,6 +17,25 @@ import StAnnes11 from "../assets/st annes images/st-annes-wagglerss_orig.jpg";
 import StAnnes12 from "../assets/st annes images/st-annes-woof-yard_orig.jpg";
 import StAnnes13 from "../assets/st annes images/st-annes-woofer-room_orig.jpg";
 
+// Gallery images from St.AnnesGallery folder
+import GalleryImg1 from "../assets/St.AnnesGallery/IMG_1914.jpg";
+import GalleryImg2 from "../assets/St.AnnesGallery/IMG_1932.jpg";
+import GalleryImg3 from "../assets/St.AnnesGallery/IMG_2032.jpg";
+import GalleryImg4 from "../assets/St.AnnesGallery/IMG_2060.jpg";
+import GalleryImg5 from "../assets/St.AnnesGallery/IMG_2084.jpg";
+import GalleryImg6 from "../assets/St.AnnesGallery/IMG_2094.jpg";
+import GalleryImg7 from "../assets/St.AnnesGallery/IMG_2216.jpg";
+import GalleryImg8 from "../assets/St.AnnesGallery/IMG_2246.jpg";
+import GalleryImg9 from "../assets/St.AnnesGallery/IMG_4074.jpg";
+import GalleryImg10 from "../assets/St.AnnesGallery/IMG_4150.jpg";
+import GalleryImg11 from "../assets/St.AnnesGallery/Unknown-3.jpeg";
+import GalleryImg12 from "../assets/St.AnnesGallery/image0.jpeg";
+import GalleryImg13 from "../assets/St.AnnesGallery/image1 2 copy.jpeg";
+import GalleryImg14 from "../assets/St.AnnesGallery/image1 2.jpeg";
+import GalleryImg15 from "../assets/St.AnnesGallery/image1 3.jpeg";
+import GalleryImg16 from "../assets/St.AnnesGallery/image1 copy.jpeg";
+import GalleryImg17 from "../assets/St.AnnesGallery/image1.jpeg";
+
 const galleryImages = [
   StAnnes1,
   StAnnes2,
@@ -33,8 +52,29 @@ const galleryImages = [
   StAnnes13,
 ];
 
+const stAnnesGalleryImages = [
+  GalleryImg1,
+  GalleryImg2,
+  GalleryImg3,
+  GalleryImg4,
+  GalleryImg5,
+  GalleryImg6,
+  GalleryImg7,
+  GalleryImg8,
+  GalleryImg9,
+  GalleryImg10,
+  GalleryImg11,
+  GalleryImg12,
+  GalleryImg13,
+  GalleryImg14,
+  GalleryImg15,
+  GalleryImg16,
+  GalleryImg17,
+];
+
 function StAnnesLocation() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
 
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
@@ -44,6 +84,20 @@ function StAnnesLocation() {
     setCurrentImageIndex(
       (prevIndex) =>
         (prevIndex - 1 + galleryImages.length) % galleryImages.length,
+    );
+  };
+
+  const nextGalleryImage = () => {
+    setCurrentGalleryIndex(
+      (prevIndex) => (prevIndex + 1) % stAnnesGalleryImages.length,
+    );
+  };
+
+  const prevGalleryImage = () => {
+    setCurrentGalleryIndex(
+      (prevIndex) =>
+        (prevIndex - 1 + stAnnesGalleryImages.length) %
+        stAnnesGalleryImages.length,
     );
   };
   return (
@@ -225,6 +279,71 @@ function StAnnesLocation() {
                   </p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* St. Annes Gallery */}
+      <section className="py-12 px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2
+            className="text-3xl font-bold text-center mb-8"
+            style={{ color: "#385662" }}
+          >
+            Come Join the Fun!
+          </h2>
+
+          <div className="relative">
+            {/* Main Image Display */}
+            <div className="relative rounded-lg overflow-hidden shadow-xl">
+              <img
+                src={stAnnesGalleryImages[currentGalleryIndex]}
+                alt={`St. Anne's Gallery ${currentGalleryIndex + 1}`}
+                className="w-full h-[500px] object-cover"
+              />
+
+              {/* Previous button */}
+              <button
+                onClick={prevGalleryImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+              >
+                ‹
+              </button>
+
+              {/* Next button */}
+              <button
+                onClick={nextGalleryImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+              >
+                ›
+              </button>
+
+              {/* Image counter */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+                {currentGalleryIndex + 1} / {stAnnesGalleryImages.length}
+              </div>
+            </div>
+
+            {/* Thumbnail Navigation */}
+            <div className="flex justify-center mt-6 space-x-2 overflow-x-auto">
+              {stAnnesGalleryImages.map((image, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentGalleryIndex(index)}
+                  className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                    index === currentGalleryIndex
+                      ? "border-blue-500 scale-110"
+                      : "border-gray-300 hover:border-blue-300"
+                  }`}
+                >
+                  <img
+                    src={image}
+                    alt={`Thumbnail ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
             </div>
           </div>
         </div>

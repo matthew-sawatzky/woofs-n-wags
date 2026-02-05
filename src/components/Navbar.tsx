@@ -133,8 +133,8 @@ function Navbar() {
           {/* Mobile Hamburger Button */}
           <button
             onClick={toggleMenu}
-            className="xl:hidden p-2 hover:bg-black hover:bg-opacity-20 rounded-md transition-colors duration-300"
-            style={{ color: "#385662" }}
+            className="xl:hidden p-2 rounded-md transition-colors duration-300 relative z-50"
+            style={{ color: "white" }}
           >
             <svg
               className="w-8 h-8"
@@ -164,67 +164,90 @@ function Navbar() {
 
         {/* Mobile Navigation Menu */}
         <div
-          className={`xl:hidden transition-all duration-300 ease-in-out ${
+          className={`xl:hidden fixed top-0 right-0 h-full w-80 z-50 transition-transform duration-300 ease-in-out bg-white shadow-2xl ${
             isMenuOpen
-              ? "max-h-96 opacity-100"
-              : "max-h-0 opacity-0 overflow-hidden"
+              ? "transform translate-x-0"
+              : "transform translate-x-full"
           }`}
-          style={{ backgroundColor: "rgba(0,0,0,0.9)" }}
         >
-          <div className="flex flex-col py-4 px-6 space-y-4">
+          {/* Close button at top right of menu */}
+          <div className="flex justify-end p-4">
+            <button
+              onClick={closeMenu}
+              className="p-2 hover:bg-gray-100 rounded-md transition-colors duration-300"
+              style={{ color: "#385662" }}
+            >
+              <svg
+                className="w-8 h-8"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div className="flex flex-col px-6 space-y-4">
             <Link
               to="/"
               onClick={closeMenu}
-              className="text-white text-xl hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
-              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
             >
               Home
             </Link>
             <Link
               to="/st-annes-location"
               onClick={closeMenu}
-              className="text-white text-xl hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
-              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
             >
               St. Anne's
             </Link>
             <Link
               to="/donald-location"
               onClick={closeMenu}
-              className="text-white text-xl hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
-              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
             >
               Donald
             </Link>
             <Link
               to="/k9-education"
               onClick={closeMenu}
-              className="text-white text-xl hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
-              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
             >
               K9 Education
             </Link>
             <Link
               to="/grooming"
               onClick={closeMenu}
-              className="text-white text-xl hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
-              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
             >
               Grooming
             </Link>
             <Link
               to="/sleep-over-service"
               onClick={closeMenu}
-              className="text-white text-xl hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
-              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
             >
               Sleep Over
             </Link>
             <Link
               to="/the-team"
               onClick={closeMenu}
-              className="text-white text-xl hover:bg-white hover:bg-opacity-20 px-3 py-2 rounded transition-all duration-300"
-              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
             >
               The Team
             </Link>
@@ -233,7 +256,7 @@ function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}
-              className="text-white px-4 py-3 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 mt-4"
+              className="text-white px-4 py-3 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 mt-6"
               style={{ backgroundColor: "#385662" }}
             >
               Book Now
