@@ -12,7 +12,7 @@ function Grooming() {
         <Layout>
           <section className="flex items-center justify-between gap-8 p-6 mt-100">
             <div className="flex-1">
-              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
+              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-4">
                 Woofs 'n Wags Dog Salon
               </h1>
 
@@ -57,15 +57,24 @@ function Grooming() {
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>Certified Groomers</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>Groomers with experience in Canine Behaviour</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     All our groomers attend regular seminars and conventions in
                     Dog Grooming and Dog Behaviour
@@ -77,7 +86,10 @@ function Grooming() {
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     All our groomers are long term which means that your K9 kids
                     will be groomed by the same person (as requested). This
@@ -85,7 +97,10 @@ function Grooming() {
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Our groomers are keen dog handlers with an innate ability
                     and passion to learn. They continue to develop their skill
@@ -123,15 +138,24 @@ function Grooming() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>Full groom</p>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>Bath and Brush</p>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>Blow outs</p>
                   </div>
                 </div>
@@ -146,11 +170,17 @@ function Grooming() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>Spawdicure</p>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>Face, Paws, and bum clean ups</p>
                   </div>
                 </div>
@@ -165,15 +195,24 @@ function Grooming() {
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>Tails</p>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>Stencilling</p>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full flex-shrink-0"></div>
+                    <div
+                      className="w-2 h-2 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: "#385662" }}
+                    ></div>
                     <p>
                       Up to your imagination - our pet stylists are award
                       winning in this area!

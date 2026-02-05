@@ -10,10 +10,12 @@ function K9Education() {
         style={{ backgroundImage: `url(${K9EduImage})` }}
       >
         <Layout>
-          <section className="py-90 px-6">
-            <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-8 text-center">
-              K9 Education
-            </h1>
+          <section className="flex items-center justify-between gap-8 p-6 mt-100">
+            <div className="flex-1">
+              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-4">
+                K9 Education
+              </h1>
+            </div>
           </section>
         </Layout>
       </div>

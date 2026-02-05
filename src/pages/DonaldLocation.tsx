@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import DonaldImage from "../assets/donaldbackground.jpg";
 
-// Import Donald Street gallery images
 import Donald1 from "../assets/donald st images/bathing-room-1_orig.jpeg";
 import Donald2 from "../assets/donald st images/bathing-room-2_orig.jpeg";
 import Donald3 from "../assets/donald st images/drying-room-1_orig.jpeg";
@@ -29,7 +28,7 @@ import Donald22 from "../assets/donald st images/woofs-2_orig.jpeg";
 import Donald23 from "../assets/donald st images/woofs-2a_orig.jpeg";
 import Donald24 from "../assets/donald st images/woofs-3_orig.jpeg";
 import Donald25 from "../assets/donald st images/woofs-3-b_orig.jpeg";
-// Gallery images from DonaldGallery folder
+
 import DonaldGalleryImg1 from "../assets/DonaldGallery/IMG_0112.JPG";
 import DonaldGalleryImg2 from "../assets/DonaldGallery/IMG_0126.JPG";
 import DonaldGalleryImg3 from "../assets/DonaldGallery/IMG_0178.JPG";
@@ -37,7 +36,6 @@ import DonaldGalleryImg4 from "../assets/DonaldGallery/IMG_0210.JPG";
 import DonaldGalleryImg5 from "../assets/DonaldGallery/IMG_0246.JPG";
 import DonaldGalleryImg6 from "../assets/DonaldGallery/IMG_0280.JPG";
 import DonaldGalleryImg7 from "../assets/DonaldGallery/IMG_0412.JPG";
-import DonaldGalleryImg8 from "../assets/DonaldGallery/IMG_1409.JPEG";
 import DonaldGalleryImg9 from "../assets/DonaldGallery/IMG_9818.JPG";
 import DonaldGalleryImg10 from "../assets/DonaldGallery/IMG_9896.JPG";
 import DonaldGalleryImg11 from "../assets/DonaldGallery/IMG_9957.JPG";
@@ -85,7 +83,6 @@ const donaldGalleryImages = [
   DonaldGalleryImg5,
   DonaldGalleryImg6,
   DonaldGalleryImg7,
-  DonaldGalleryImg8,
   DonaldGalleryImg9,
   DonaldGalleryImg10,
   DonaldGalleryImg11,
@@ -218,7 +215,10 @@ function DonaldLocation() {
 
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     This area hosts 3 play spaces that may be used as one large
                     play area or 3 separate areas
@@ -244,11 +244,17 @@ function DonaldLocation() {
 
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>Offers an open play area with zoom areas</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>Can be configured to offer 2 feature play areas</p>
                 </div>
               </div>
@@ -271,14 +277,20 @@ function DonaldLocation() {
 
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Perfect for toy poodles, chihuahuas, pomeranians, papillons,
                     and many more! :)
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
                   <p>
                     Can open to one larger play space or 2 separated areas for
                     our little ones to play
