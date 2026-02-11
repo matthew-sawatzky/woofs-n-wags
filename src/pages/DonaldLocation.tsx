@@ -702,13 +702,30 @@ function DonaldLocation() {
           </h2>
           <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl mb-8">
             <div className="text-center space-y-3">
-              <p className="text-xl font-semibold text-gray-800">
+              <button
+                className="text-xl font-semibold text-gray-800 cursor-pointer hover:underline"
+                onClick={() =>
+                  window.open(
+                    "https://www.google.com/maps/place/7+Donald+St,+Winnipeg,+MB,+Canada",
+                    "_blank",
+                  )
+                }
+              >
                 7 Donald Street
-              </p>
-              <p className="text-xl font-semibold text-gray-800">
+              </button>
+              <br />
+              <button
+                className="text-xl font-semibold text-gray-800 cursor-pointer hover:underline"
+                onClick={() => window.open("tel:204-505-4041", "_self")}
+              >
                 204-505-4041
-              </p>
-              <p className="text-lg text-gray-600">info.donald@woofsnwags.ca</p>
+              </button>
+              <a
+                href="mailto:info.donald@woofsnwags.ca"
+                className="block text-lg text-gray-600 hover:underline"
+              >
+                info.donald@woofsnwags.ca
+              </a>
               <p className="text-lg text-gray-600">PetExec Registration</p>
             </div>
           </div>

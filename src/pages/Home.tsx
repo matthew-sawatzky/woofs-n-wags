@@ -8,7 +8,7 @@ import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
 import DogTwins from "../assets/dog_twins.jpeg";
 import Logo from "../assets/logo.png";
-import WoofsLogo from "../assets/Woofs logo-1.jpeg";
+import WoofsLogo from "../assets/Woofs_logo-1.jpg";
 
 declare global {
   interface Window {

@@ -3,13 +3,13 @@ import { useState } from "react";
 import logo from "../assets/logo.png";
 import K9EduLogo from "../assets/Woof edu.jpg";
 import GroomingLogo from "../assets/Woof tub.jpg";
-import WoofsLogo from "../assets/Woofs logo-1.jpeg";
+import WoofsLogo from "../assets/Woofs_logo-1.jpg";
 
 function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Determine which logo to show based on current route
+
   const getCurrentLogo = () => {
     switch (location.pathname) {
       case "/k9-education":
