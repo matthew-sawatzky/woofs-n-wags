@@ -5,10 +5,11 @@ import { client } from "../sanityClient";
 import Footer from "../components/Footer";
 import BackgroundImage from "../assets/dogs_playing.jpeg";
 import K9EduLogo from "../assets/Woof edu.jpg";
-import GroomingLogo from "../assets/Woof tub.jpg";
+import GroomingLogo from "../assets/woof_tub.png";
 import DogTwins from "../assets/dog_twins.jpeg";
-import Logo from "../assets/logo.png";
 import WoofsLogo from "../assets/Woofs_logo-1.jpg";
+import LocationLogo from "../assets/Woofs location.png";
+import BarksFromTheGuildPdf from "../assets/barks_from_the_guild_-_choosing_the_right_environment.pdf";
 
 declare global {
   interface Window {
@@ -139,9 +140,9 @@ function Home() {
           <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
-                src={Logo}
+                src={LocationLogo}
                 alt="Dog Daycare"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">
@@ -209,7 +210,6 @@ function Home() {
       <div className="bg-white">
         <section id="reviews" className="p-6"></section>
 
-        {/* Our Story Section */}
         <section className="py-16 px-6" style={{ backgroundColor: "#f8f9fa" }}>
           <div className="max-w-6xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -223,6 +223,15 @@ function Home() {
                   </h2>
                   <div className="prose prose-lg text-gray-700">
                     <p className="text-lg leading-relaxed">{textSection}</p>
+                    <a
+                      href={BarksFromTheGuildPdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block mt-4 font-semibold underline"
+                      style={{ color: "#385662" }}
+                    >
+                      Barks from the Guild (PDF)
+                    </a>
                   </div>
                 </div>
                 <div className="p-8 lg:p-12 flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">

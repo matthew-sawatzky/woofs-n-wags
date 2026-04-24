@@ -89,10 +89,7 @@ function K9Education() {
               </h3>
               <div className="text-center space-y-3">
                 <p className="text-lg">
-                  Small class sizes of 6 dog/handler teams in a class
-                </p>
-                <p className="text-lg font-semibold">
-                  **Polite Puppy is open to 7 teams**
+                  All small classes: student to instructor ratio
                 </p>
               </div>
             </div>
@@ -106,18 +103,7 @@ function K9Education() {
                 Our Courses
               </h3>
               <div className="space-y-4">
-                <p className="text-lg">
-                  Our class enrollment is 5 weeks in duration.
-                </p>
-                <p className="text-lg">
-                  Introduction Week is a one-time class attended only at time of
-                  first course attended. This introduction evening sets the
-                  stage for all future classes and levels offered by Woofs 'n
-                  Wags.
-                </p>
-                <p className="text-lg font-semibold">
-                  Introduction night is a human only class.
-                </p>
+                <p className="text-lg">All classes are 5 weeks in duration.</p>
               </div>
             </div>
           </div>
@@ -132,269 +118,247 @@ function K9Education() {
           </h2>
 
           <div className="space-y-12">
-            {/* Foundation Classes */}
+            {/* Leash Reactivity */}
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
-                Foundation Classes
+                Leash Reactivity
               </h3>
-
-              <div className="space-y-8">
-                {/* Family Foundation */}
-                <div className="text-white">
-                  <h4 className="text-xl font-bold mb-3">FAMILY FOUNDATION</h4>
-                  <p className="text-gray-200 mb-4 italic">
-                    Relationship-Based Training
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <p className="mb-4">
-                        Our classes are dedicated to relationship-based training
-                        where you'll learn the difference between making your
-                        dog listen and having your dog actively learn while both
-                        of you are having fun!
-                      </p>
-                      <p className="text-sm text-gray-300">
-                        Family Foundation starts with the simple sit and builds
-                        through the weeks and levels to a dog who will pay
-                        attention, listen and accomplish many foundation
-                        exercises.
-                      </p>
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-2">What You'll Learn:</p>
-                      <ul className="space-y-1 text-sm text-gray-200">
-                        <li>• Body handling & connecting exercises</li>
-                        <li>• Self-control & foundation obedience</li>
-                        <li>• Downs, stays & attention work</li>
-                        <li>• Positive communication techniques</li>
-                      </ul>
-                    </div>
+              <div className="text-white">
+                <p className="text-gray-200 mb-4 italic">
+                  Only 3 dog/handler teams • First week is humans only • $200.00
+                </p>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <p className="mb-4">
+                      This is an exclusive class with only 3 dogs and is managed
+                      safely for entry, exit and interaction. Partitioned areas
+                      are used to give privacy while your dog learns to choose
+                      to pay attention to their owners and not the distractions.
+                    </p>
+                    <p className="mb-4 font-semibold">
+                      This course is for the dogs that while on walks barks or
+                      pulls towards:
+                    </p>
+                    <ul className="space-y-1 text-sm text-gray-200 mb-4">
+                      <li>• People</li>
+                      <li>• Other dogs</li>
+                      <li>• Bikes</li>
+                      <li>• Cars</li>
+                    </ul>
                   </div>
-                </div>
-
-                {/* Polite Puppies */}
-                <div className="text-white">
-                  <h4 className="text-xl font-bold mb-3">POLITE PUPPIES</h4>
-                  <p className="text-gray-200 mb-4 italic">
-                    Ages 3-6 Months • Prerequisite for Family Foundation
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <p className="mb-4">
-                        Designed specifically for puppies 3-6 months of age. Our
-                        Puppy Manners class will guide them in building
-                        confidence, navigate their puppy world and set them on a
-                        positive path.
-                      </p>
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-2">
-                        Your Puppy Will Learn:
-                      </p>
-                      <ul className="space-y-1 text-sm text-gray-200">
-                        <li>• Pay attention in busy environments</li>
-                        <li>• Feel safe around other dogs</li>
-                        <li>• Build confidence through fun exercises</li>
-                        <li>• Navigate their puppy world positively</li>
-                      </ul>
-                    </div>
+                  <div>
+                    <p className="mb-4">
+                      These dogs are not aggressive dogs. These dogs may be
+                      fearful, high energy dogs and super happy dogs.
+                    </p>
+                    <p className="text-sm text-gray-200">
+                      Energy is energy but this class is to aid in having your
+                      high pulling dog calm themselves down and cue to their
+                      owner and learn positive alternative choices to barking or
+                      pulling.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Specialized Training */}
+            {/* Agility Foundations */}
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
-                Specialized Training
+                Agility Foundations
               </h3>
-
-              <div className="space-y-8">
-                {/* Walk With Me */}
-                <div className="text-white">
-                  <h4 className="text-xl font-bold mb-3">WALK WITH ME</h4>
-                  <p className="text-gray-200 mb-4 italic">
-                    Loose Leash Training
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <p className="mb-4">
-                        This course offers an in-depth variety of approaches and
-                        techniques to connect with your dog and give you the
-                        tools to teach your dog that a loose leash is a good
-                        leash! Our class is positive, active and educational.
-                      </p>
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-2">
-                        In this class you will learn:
-                      </p>
-                      <ul className="space-y-1 text-sm text-gray-200">
-                        <li>• Why dogs pull</li>
-                        <li>
-                          • Understand the leash as a tool and means to
-                          communicate
-                        </li>
-                        <li>• About different types of collars</li>
-                        <li>• How to connect with your dog</li>
-                        <li>• How to get your dog's focus on you</li>
-                      </ul>
-                    </div>
+              <div className="text-white">
+                <p className="text-gray-200 mb-4 italic">$150.00</p>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <p className="mb-4">
+                      This class is our general introduction into the sport of
+                      dog agility. The primary focus will be on having fun with
+                      our dogs while we introduce the skills necessary to safely
+                      interact with equipment and obstacles. We'll begin to
+                      develop the core competencies needed to continue in the
+                      sport as we progress.
+                    </p>
+                    <p className="text-sm text-gray-300">
+                      Aside from safe equipment use, topics may include shaping
+                      behaviour, impulse control, body awareness skills and
+                      more.
+                    </p>
                   </div>
-                </div>
-
-                {/* Come To Me */}
-                <div className="text-white">
-                  <h4 className="text-xl font-bold mb-3">COME TO ME</h4>
-                  <p className="text-gray-200 mb-4 italic">
-                    Reliable Recall Training
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <p className="mb-4">
-                        Teach your dog that coming to you is more fun and
-                        interesting than anything they are distracted with!
-                        Teaching your dog to come to you is all about your
-                        relationship.
-                      </p>
-                      <p className="text-yellow-200 font-semibold">
-                        A recall may save your dog's life in an emergency!
-                      </p>
-                    </div>
-                    <div>
-                      <p className="mb-4 text-sm text-gray-200">
-                        This course will teach you how to build up a reliable
-                        recall successfully, using effective and positive
-                        training techniques and train your dog to respond to the
-                        cue "come".
-                      </p>
-                      <p className="text-sm text-gray-200">
-                        Achieving a fantastic recall response is a process. Join
-                        our class and begin the process to positively train,
-                        connect, have fun and make steps to creating peace of
-                        mind with your dog's safety in mind.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Leash Reactivity */}
-                <div className="text-white">
-                  <h4 className="text-xl font-bold mb-3">LEASH REACTIVITY</h4>
-                  <p className="text-gray-200 mb-4 italic">
-                    Specialty Class - Maximum 3 Dogs Only
-                  </p>
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div>
-                      <p className="mb-4">
-                        This class is a specialty class for dogs that react on
-                        leash to people, dogs, bicycles, or cars. Our certified
-                        instructor has specialized in helping K9 kids navigate
-                        their environment safely on leash for many years.
-                      </p>
-                      <p className="text-sm text-gray-200">
-                        This is an exclusive class with only 3 dogs and is
-                        managed safely for entry, exit and interaction.
-                      </p>
-                    </div>
-                    <div>
-                      <p className="font-semibold mb-2">Exclusive Benefits:</p>
-                      <ul className="space-y-1 text-sm text-gray-200">
-                        <li>• Small class size (only 3 dogs)</li>
-                        <li>• Certified specialized instructor</li>
-                        <li>• Safe managed interactions</li>
-                        <li>• Positive behavior modification tools</li>
-                      </ul>
-                    </div>
+                  <div>
+                    <p className="font-semibold mb-2 text-yellow-200">
+                      ** Life Skills class or equivalent is strongly recommended
+                      prior to participating in Agility Foundations.
+                    </p>
+                    <p className="text-sm text-gray-200">
+                      Dogs must be able to work comfortably around other dogs in
+                      class, be able to sit and down stay with some basic
+                      distraction and be comfortable with other dogs moving.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Sports & Activities */}
+            {/* K9 Aerobics */}
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
-                Sports & Activities
+                K9 Aerobics
               </h3>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                {/* Tricklinks */}
-                <div className="text-white">
-                  <h4 className="text-lg font-bold mb-2">TRICKLINKS</h4>
-                  <p className="text-gray-200 mb-3 text-sm italic">
-                    Fun Tricks & Titles
-                  </p>
-                  <p className="text-sm mb-3">
-                    This class is all about the tricks. The focus is on having
-                    fun with your dog while teaching practical and fun
-                    behaviours that you can show off to your friends and family.
-                    We'll work through a wide range of Novice and Intermediate
-                    level tricks.
-                  </p>
+              <div className="text-white">
+                <p className="text-gray-200 mb-4 italic">$150.00</p>
+                <p className="mb-4">
+                  This one-of-a-kind class combines music, movement, and
+                  motivation while focusing on:
+                </p>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <ul className="space-y-2 text-sm text-gray-200">
+                    <li>
+                      • Warm-up routines to prep dogs for active lifestyles and
+                      sports
+                    </li>
+                    <li>
+                      • Strengthening and conditioning to keep them fit, strong,
+                      and healthy
+                    </li>
+                    <li>
+                      • Relationship building through tricks, games, and plenty
+                      of FUN!
+                    </li>
+                  </ul>
                   <p className="text-sm text-gray-300">
-                    This class will give your dog the opportunity to earn a
-                    title through "Do More With Your Dog". Our family dog level
-                    1 class or equivalent is a recommended prerequisite.
+                    Get ready to move, groove, and bond with your pup like never
+                    before!
                   </p>
                 </div>
+              </div>
+            </div>
 
-                {/* Agility */}
-                <div className="text-white">
-                  <h4 className="text-lg font-bold mb-2">AGILITY</h4>
-                  <p className="text-gray-200 mb-3 text-sm italic">
-                    Equipment & Obstacles
-                  </p>
-                  <p className="text-sm mb-3">
-                    This class is our general introduction into the sport of dog
-                    agility. The primary focus will be on having fun with our
-                    dogs while we introduce the skills necessary to safely
-                    interact with equipment and obstacles.
-                  </p>
+            {/* K9 Life Skills Program */}
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
+                K9 Life Skills Program
+              </h3>
+              <div className="text-white">
+                <p className="text-gray-200 mb-4 italic">$140.00</p>
+                <p className="mb-4">
+                  This five-week course is designed to help dogs develop the
+                  essential skills needed to confidently navigate everyday life.
+                </p>
+                <p className="font-semibold mb-3">We focus on:</p>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <ul className="space-y-2 text-sm text-gray-200">
+                    <li>• Polite manners and calm behaviour</li>
+                    <li>• Leash skills and real-world control</li>
+                    <li>• Patience and impulse regulation</li>
+                    <li>
+                      • Addressing excessive behaviours such as jumping,
+                      mouthing, or biting
+                    </li>
+                    <li>
+                      • Building reliable, practical skills for daily routines
+                    </li>
+                  </ul>
                   <p className="text-sm text-gray-300">
-                    Topics may include shaping behaviour, impulse control, body
-                    awareness skills and more. Our family dog level 1 class or
-                    equivalent is strongly recommended for this class.
+                    This program supports dogs in learning how to settle, focus,
+                    and smoothly integrate into real-life environments—creating
+                    a more balanced and enjoyable relationship between dog and
+                    handler.
                   </p>
                 </div>
+              </div>
+            </div>
 
-                {/* Ahead by a Nose */}
-                <div className="text-white">
-                  <h4 className="text-lg font-bold mb-2">AHEAD BY A NOSE</h4>
-                  <p className="text-gray-200 mb-3 text-sm italic">
-                    Scent Detection
-                  </p>
-                  <p className="text-sm mb-3">
-                    This class is our general introduction into scent detection
-                    for enrichment and sport. The primary focus will be on
-                    having fun with our dogs and building the necessary skills
-                    needed in scent detection for sport and for enrichment in
-                    the home.
-                  </p>
-                  <p className="text-sm text-gray-300">
-                    Topics may include building value for odour, teaching an
-                    indication behaviour, reading your dog's body language,
-                    building search patterns and more.
-                  </p>
-                </div>
+            {/* Rally-O */}
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
+                Rally-O
+              </h3>
+              <div className="text-white">
+                <p className="text-gray-200 mb-4 italic">$150.00</p>
+                <p className="mb-4">
+                  Rally Obedience is a fun, engaging training class that
+                  strengthens communication and teamwork between you and your
+                  dog. Working through a series of signs and exercises, handlers
+                  guide their dogs through skills such as heeling, sits, downs,
+                  turns, and stays—at a steady pace and with encouragement.
+                </p>
+                <p className="mb-4">
+                  Unlike traditional obedience, Rally allows handlers to talk to
+                  and praise their dogs, creating a positive and motivating
+                  learning environment. This class is ideal for dogs who enjoy
+                  learning, benefit from structure, or want to build confidence,
+                  focus, and reliability in distracting environments.
+                </p>
+                <p className="mb-4">
+                  Rally Obedience is suitable for pet dogs and sport-curious
+                  teams alike and helps translate foundational obedience into
+                  real-world control and responsiveness.
+                </p>
+                <p className="font-semibold mb-3">
+                  What a 5-Week Rally Obedience Course Offers:
+                </p>
+                <p className="mb-3">Over five weeks, teams will work on:</p>
+                <ul className="space-y-2 text-sm text-gray-200">
+                  <li>
+                    • Heeling & Positioning - Developing consistent leash and
+                    off-leash heeling with attention and engagement.
+                  </li>
+                  <li>
+                    • Rally Signs & Skills - Learning common Rally exercises
+                    including sits, downs, stands, pivots, turns, halts, and
+                    changes of pace.
+                  </li>
+                  <li>
+                    • Focus & Engagement - Building sustained attention around
+                    other dogs and environmental distractions.
+                  </li>
+                  <li>
+                    • Handler Communication - Improving timing, cues, and body
+                    language for clearer guidance.
+                  </li>
+                  <li>
+                    • Confidence & Teamwork - Encouraging problem-solving and
+                    trust between dog and handler.
+                  </li>
+                  <li>
+                    • Mini Courses & Transitions - Practicing short Rally-style
+                    courses to connect skills smoothly and confidently.
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-                {/* Rally O */}
-                <div className="text-white">
-                  <h4 className="text-lg font-bold mb-2">RALLY O</h4>
-                  <p className="text-gray-200 mb-3 text-sm italic">
-                    Rally Obedience Sport
-                  </p>
-                  <p className="text-sm mb-3">
-                    This class is our general introduction into the sport of
-                    Rally Obedience. The primary focus will be on learning the
-                    individual exercises and signs in the Canadian Association
-                    of Rally Obedience (CARO) Novice class.
-                  </p>
-                  <p className="text-sm text-gray-300">
-                    Our family dog Level 1 class or equivalent is a strongly
-                    recommended prerequisite. Dogs must be able to work
-                    comfortably around other dogs in class.
-                  </p>
-                </div>
+            {/* Puppy Manners & Socialization */}
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
+                Puppy Manners & Socialization
+              </h3>
+              <div className="text-white">
+                <p className="text-gray-200 mb-4 italic">
+                  Ages 3-7 months old • $140.00
+                </p>
+                <p className="mb-4 font-semibold">
+                  All pups age 3 - 7 months start here
+                </p>
+                <p className="mb-4">
+                  This class is open and designed for puppies 3 - 7 months of
+                  age. Our class is not a prerequisite to continuing onto our
+                  Life Skills Class BUT STRONGLY SUGGESTED.
+                </p>
+                <p className="mb-4">
+                  Our Puppy Manners class will guide them in building
+                  confidence, navigate their puppy world and set them on a
+                  positive path and have fun.
+                </p>
+                <p className="font-semibold mb-3">
+                  What you may expect in this class:
+                </p>
+                <ul className="space-y-2 text-sm text-gray-200">
+                  <li>• To pay attention to you in a busy environment</li>
+                  <li>• To feel safe and confident around other dogs</li>
+                  <li>• Some fun exercises and games and much more</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -426,26 +390,33 @@ function K9Education() {
               >
                 Course Fees
               </h3>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span>Our 5 week course:</span>
-                  <span className="font-semibold text-lg">$140.00</span>
-                </div>
-                <div className="border-t pt-3">
-                  <p className="text-sm italic mb-2">
-                    *Exception is our specialized 5 week Leash Reactivity
-                    class.*
+              <div className="space-y-4">
+                <div>
+                  <p className="font-semibold mb-3">
+                    Life Skills & Puppy Class:
                   </p>
                   <div className="flex justify-between items-center">
-                    <span>Leash Reactivity:</span>
+                    <span>5 week course:</span>
+                    <span className="font-semibold text-lg">$140.00</span>
+                  </div>
+                </div>
+                <div className="border-t pt-4">
+                  <p className="font-semibold mb-3">
+                    Agility, K9 Aerobics & Rally-O:
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <span>5 week course:</span>
+                    <span className="font-semibold text-lg">$150.00</span>
+                  </div>
+                </div>
+                <div className="border-t pt-4">
+                  <p className="font-semibold mb-3">Leash Reactivity:</p>
+                  <div className="flex justify-between items-center">
+                    <span>5 week course (3 teams only):</span>
                     <span className="font-semibold text-lg">$200.00</span>
                   </div>
-                  <p className="text-sm mt-2">
-                    This class is not included in our bundled package deal.
-                  </p>
-                  <p className="text-sm">
-                    This class is a limited entrance with only 3 dogs per class
-                    and is longer in length to ensure a safe entry and exit.
+                  <p className="text-sm mt-2 text-gray-600">
+                    *First week is humans only and dogs do not attend.
                   </p>
                 </div>
               </div>

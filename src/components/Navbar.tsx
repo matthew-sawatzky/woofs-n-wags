@@ -2,13 +2,13 @@ import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import K9EduLogo from "../assets/Woof edu.jpg";
-import GroomingLogo from "../assets/Woof tub.jpg";
+import GroomingLogo from "../assets/Woof_tub.png";
 import WoofsLogo from "../assets/Woofs_logo-1.jpg";
+import LocationLogo from "../assets/Woofs location.png";
 
 function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 
   const getCurrentLogo = () => {
     switch (location.pathname) {
@@ -18,6 +18,10 @@ function Navbar() {
         return GroomingLogo;
       case "/sleep-over-service":
         return WoofsLogo;
+      case "/st-annes-location":
+        return LocationLogo;
+      case "/donald-location":
+        return LocationLogo;
       default:
         return logo;
     }
@@ -52,13 +56,13 @@ function Navbar() {
             <img
               src={getCurrentLogo()}
               alt={getCurrentLogoAlt()}
-              className="h-32 cursor-pointer hover:opacity-90 transition-opacity duration-300"
+              className="h-34 cursor-pointer hover:opacity-90 transition-opacity duration-300"
             />
           </Link>
 
           {/* Desktop Navigation */}
           <div
-            className="hidden xl:flex flex-1 items-center justify-end text-white space-x-8 text-2xl"
+            className="hidden xl:flex flex-1 items-center justify-end text-white space-x-8 text-2xl font-semibold"
             style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
           >
             <div className="flex items-center space-x-6">
@@ -112,7 +116,7 @@ function Navbar() {
               className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105"
               style={{ backgroundColor: "#385662" }}
             >
-              Book Now
+              Sign Up
               <svg
                 className="w-4 h-4"
                 fill="none"
@@ -198,7 +202,7 @@ function Navbar() {
             <Link
               to="/"
               onClick={closeMenu}
-              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               Home
@@ -206,7 +210,7 @@ function Navbar() {
             <Link
               to="/st-annes-location"
               onClick={closeMenu}
-              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               St. Anne's
@@ -214,7 +218,7 @@ function Navbar() {
             <Link
               to="/donald-location"
               onClick={closeMenu}
-              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               Donald
@@ -222,7 +226,7 @@ function Navbar() {
             <Link
               to="/k9-education"
               onClick={closeMenu}
-              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               K9 Education
@@ -230,7 +234,7 @@ function Navbar() {
             <Link
               to="/grooming"
               onClick={closeMenu}
-              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               Grooming
@@ -238,7 +242,7 @@ function Navbar() {
             <Link
               to="/sleep-over-service"
               onClick={closeMenu}
-              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               Sleep Over
@@ -246,7 +250,7 @@ function Navbar() {
             <Link
               to="/the-team"
               onClick={closeMenu}
-              className="text-xl hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               The Team
@@ -259,7 +263,7 @@ function Navbar() {
               className="text-white px-4 py-3 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 mt-6"
               style={{ backgroundColor: "#385662" }}
             >
-              Book Now
+              Sign Up
               <svg
                 className="w-4 h-4"
                 fill="none"

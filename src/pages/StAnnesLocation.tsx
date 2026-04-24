@@ -88,6 +88,65 @@ const stAnnesGalleryImages = [
   GalleryImg17,
 ];
 
+const weekSchedule = [
+  {
+    day: "Monday",
+    location: "St. Anne's",
+    playTime: "6:30am - 7:00pm",
+    dropOff: "6:30am - 10:00am",
+    napTime: "12:30pm - 2:00pm",
+    notes: [],
+  },
+  {
+    day: "Tuesday",
+    location: "St. Anne's",
+    playTime: "6:30am - 7:00pm",
+    dropOff: "6:30am - 10:00am",
+    napTime: "12:30pm - 2:00pm",
+    notes: [],
+  },
+  {
+    day: "Wednesday",
+    location: "St. Anne's",
+    playTime: "6:30am - 7:00pm",
+    dropOff: "6:30am - 10:00am",
+    napTime: "12:30pm - 2:00pm",
+    notes: [],
+  },
+  {
+    day: "Thursday",
+    location: "St. Anne's",
+    playTime: "6:30am - 7:00pm",
+    dropOff: "6:30am - 10:00am",
+    napTime: "12:30pm - 2:00pm",
+    notes: [],
+  },
+  {
+    day: "Friday",
+    location: "St. Anne's",
+    playTime: "6:30am - 7:00pm",
+    dropOff: "6:30am - 10:00am",
+    napTime: "12:30pm - 2:00pm",
+    notes: [],
+  },
+  {
+    day: "Saturday",
+    location: "Donald Location",
+    playTime: "7:00am - 6:00pm",
+    dropOff: "Call to join",
+    napTime: "N/A",
+    notes: ["Please call 204-505-4041"],
+  },
+  {
+    day: "Sunday",
+    location: "Donald Location",
+    playTime: "Call for details",
+    dropOff: "Call to join",
+    napTime: "N/A",
+    notes: ["Please call 204-505-4041"],
+  },
+];
+
 function StAnnesLocation() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentGalleryIndex, setCurrentGalleryIndex] = useState(0);
@@ -503,86 +562,50 @@ function StAnnesLocation() {
       {/* Hours of Operation */}
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
-          <h2
-            className="text-3xl font-bold text-center mb-8"
-            style={{ color: "#385662" }}
-          >
+          <h2 className="text-3xl font-bold text-center mb-8 text-white">
             Hours of Operation
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Weekday Hours */}
-            <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#385662" }}
-              >
-                OUR PLAY TIME
-              </h3>
-              <div className="space-y-2">
-                <p>
-                  <strong>Monday - Friday:</strong> 6:30am - 7:00pm
-                </p>
-                <p>
-                  <strong>Drop off time:</strong> 6:30 - 10:00am
-                </p>
-              </div>
+          <div className="bg-white rounded-xl shadow-xl p-4 md:p-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-4">
+              {weekSchedule.map((entry) => (
+                <div
+                  key={entry.day}
+                  className="rounded-lg border border-slate-200 p-4 bg-slate-50"
+                >
+                  <h3
+                    className="text-lg font-bold mb-2"
+                    style={{ color: "#385662" }}
+                  >
+                    {entry.day}
+                  </h3>
+                  <p className="text-sm font-semibold text-gray-800 mb-2">
+                    {entry.location}
+                  </p>
+                  <div className="space-y-1 text-sm text-gray-700">
+                    <p>
+                      <strong>Play:</strong> {entry.playTime}
+                    </p>
+                    <p>
+                      <strong>Drop-off:</strong> {entry.dropOff}
+                    </p>
+                    <p>
+                      <strong>Nap:</strong> {entry.napTime}
+                    </p>
+                    {entry.notes.map((note) => (
+                      <p key={note} className="text-xs italic text-gray-600">
+                        {note}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
             </div>
 
-            {/* Nap Time */}
-            <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#385662" }}
-              >
-                DAILY NAP TIME
-              </h3>
-              <div className="space-y-2">
-                <p>
-                  <strong>Nap Time:</strong> 12:30 - 2:00pm
-                </p>
-                <p className="text-sm">Our doors do not open until 2:15pm</p>
-                <p className="text-sm italic">
-                  *During this time we do not answer our door. Please call our
-                  office with any questions.
-                </p>
-              </div>
-            </div>
-
-            {/* Saturday */}
-            <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#385662" }}
-              >
-                SATURDAYS
-              </h3>
-              <div className="space-y-2">
-                <p>Play time is located at our Donald Location</p>
-                <p>
-                  <strong>Hours:</strong> 7:00am - 6:00pm
-                </p>
-                <p>
-                  Please call to join: <strong>204-505-4041</strong>
-                </p>
-              </div>
-            </div>
-
-            {/* Sunday */}
-            <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#385662" }}
-              >
-                SUNDAY FUNTIME
-              </h3>
-              <div className="space-y-2">
-                <p>Sunday Playtime is at our Donald Location</p>
-                <p>
-                  Call for details: <strong>204-505-4041</strong>
-                </p>
-              </div>
-            </div>
+            <p className="text-sm italic text-gray-600 mt-4 text-center">
+              Doors reopen at 2:15pm after nap time. During nap time we do not
+              answer the door. Please call our office with any questions.
+            </p>
           </div>
 
           <div className="text-center mt-8">
