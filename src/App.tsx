@@ -1,5 +1,7 @@
-import './App.css'
+import "./App.css";
+import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import StAnnesLocation from "./pages/StAnnesLocation";
 import DonaldLocation from "./pages/DonaldLocation";
@@ -8,9 +10,20 @@ import Grooming from "./pages/Grooming";
 import SleepOverService from "./pages/SleepOverService";
 import TheTeam from "./pages/TheTeam";
 
+function ScrollToTop() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" as ScrollBehavior });
+  }, [location.pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/st-annes-location" element={<StAnnesLocation />} />
@@ -24,4 +37,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

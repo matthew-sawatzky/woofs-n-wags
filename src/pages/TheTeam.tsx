@@ -185,18 +185,39 @@ function TheTeam() {
                 Victoria
               </h2>
               <div className="space-y-4 text-gray-700">
+                <p>Victoria joined the Woofs ’n Wags team in 2008.</p>
                 <p>
-                  Victoria joined Woofs 'n Wags in 2008 and brings over 15 years
-                  of experience blending education, behaviour, and grooming.
+                  Victoria boasts a comprehensive skill set and extensive
+                  experience in both teaching and behaviour management,
+                  supported by a well-rounded portfolio of grooming and training
+                  certifications. This multifaceted approach has been
+                  instrumental in shaping her career since 2011. Victoria
+                  actively advocates, exemplifies, and upholds the fundamental
+                  principles that Woofs ’n Wags embodies on a daily basis.
+                  Victoria continues to actively evolve Woofs ’n Wags’s values,
+                  which have contributed to Woofs ’n Wags’s position as a leader
+                  in compassionate, education-driven canine care.
                 </p>
                 <p>
-                  She is Manager of our Donald location, founded our grooming
-                  department, and also led our K9 Education Department where she
-                  mentored staff and helped shape our behaviour-based training
+                  Victoria has been an invaluable member of Woofs ’n Wags in
+                  every department. Her expertise encompasses management,
+                  grooming, and our K9 Education department.
+                </p>
+                <p>
+                  Since 2020, Victoria has held the position of Manager at our
+                  Donald location. Notably, she founded our grooming department
+                  in 2012, transforming it into the esteemed and professional
+                  program it is today. During her tenure, Victoria imparted and
+                  guided numerous new stylists, who have since become the
+                  backbone of our grooming team. Furthermore, she served as Head
+                  of our K9 Education Department, where she mentored staff and
+                  contributed to the development of our behaviour-based training
                   philosophy.
                 </p>
-                <p className="font-semibold">
-                  Professional Pet Stylist - training areas include:
+                <p className="font-semibold">Professional Pet Stylist</p>
+                <p>
+                  Victoria is a professional Pet Stylist with extensive
+                  certifications and continuing education in:
                 </p>
                 <ul className="list-disc pl-6 space-y-1">
                   <li>Creative Grooming</li>
@@ -215,20 +236,30 @@ function TheTeam() {
                   <li>Paw Care</li>
                 </ul>
                 <p>
-                  Victoria specializes in helping reactive and sensitive dogs
-                  feel safe in grooming, using a calm, respectful, force-free
-                  approach.
+                  She specializes in working with reactive and sensitive dogs,
+                  assisting in transforming the grooming experience for dogs who
+                  have previously experienced fear or stress. Her composed,
+                  respectful, and force-free approach has positively impacted
+                  the lives of numerous dogs and their families.
                 </p>
                 <p>
-                  She has coached new stylists and led our certified stylist
-                  team since 2011.
+                  Victoria has also completed numerous courses and holds
+                  certifications in behaviour, handling, pressure points, and
+                  fear-free, force-free grooming approaches.
                 </p>
                 <p className="font-semibold">Educational Background</p>
                 <p>
-                  Victoria studied four years toward a Kinesiology degree at the
-                  University of Winnipeg while working part-time at Woofs 'n
-                  Wags. Her passion for movement, anatomy, and motor skills
-                  naturally transitioned to canine work and rescue support.
+                  Victoria attended the University of Winnipeg, where she
+                  completed four years toward a Kinesiology degree while working
+                  part-time at Woofs ’n Wags.
+                </p>
+                <p>
+                  During this time, she realized that her passion for movement,
+                  motor skills, and anatomy translated naturally to the canine
+                  world. Although her academic path began in kinesiology, Woofs
+                  ’n Wags ultimately revealed her true passion and lifelong
+                  career working with dogs and supporting the canine and rescue
+                  community.
                 </p>
                 <p className="font-semibold">Professional Memberships</p>
                 <ul className="list-disc pl-6 space-y-1">
@@ -236,14 +267,15 @@ function TheTeam() {
                   <li>CPPS</li>
                 </ul>
                 <p>
-                  Victoria has completed many additional certifications in
-                  behaviour, handling, pressure points, and fear-free,
-                  force-free grooming methods.
+                  Beyond Woofs ’n Wags, outside of work, you can find her
+                  training and competing in dog sports, hiking, and exploring
+                  nature.
                 </p>
                 <p>
-                  Outside of work, she trains and competes in dog sports,
-                  explores nature, and works as a professional wildlife
-                  photographer.
+                  She is also a professional wildlife photographer, a passion
+                  that reflects her deep respect for animals and her commitment
+                  to ethical treatment of all species with whom we share our
+                  planet.
                 </p>
               </div>
             </article>

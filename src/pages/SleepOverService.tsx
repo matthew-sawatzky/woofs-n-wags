@@ -1,9 +1,96 @@
 import Layout from "../components/Layout";
+import Footer from "../components/Footer";
 
 function SleepOverService() {
   return (
     <Layout>
-      <h1>Sleep Over Service</h1>
+      <section className="py-12 px-6" style={{ backgroundColor: "#f8f9fa" }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+            <p
+              className="text-center text-sm font-semibold uppercase tracking-[0.2em] mb-4"
+              style={{ color: "#385662" }}
+            >
+              Sleepy Howls
+            </p>
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
+              Two Exceptional Services Under One "Woof"
+            </h1>
+            <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
+              Welcome to Sleepy Howls Sleep Over Service and Woofs 'n Wags Dog
+              Daycare, where two trusted names have come together to provide
+              unparalleled care for your canine kids.
+            </p>
+
+            <div className="space-y-6 text-gray-700 leading-relaxed">
+              <p>
+                Sleepy Howls offers their exclusive sleepover service within the
+                facility of Woofs 'n Wags. This exclusive service is provided by
+                Sleepy Howls, owned and managed by Clara Bestard.
+              </p>
+              <p>
+                Sleepy Howls ensures that your beloved pets are cherished and
+                well-cared for during their sleepovers. Our service stands out
+                as an exceptional overnight experience.
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                <h2
+                  className="text-2xl font-bold mb-4"
+                  style={{ color: "#385662" }}
+                >
+                  Key Features of Our Exclusive Service
+                </h2>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Maximum capacity of 10 sleepover guests</li>
+                  <li>Auntie Clara's presence with guests</li>
+                  <li>Overnights in a bedroom atmosphere</li>
+                  <li>Private feeding times</li>
+                  <li>No crates unless requested</li>
+                  <li>Medication by discussion and approval</li>
+                </ul>
+              </div>
+
+              <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                <h2
+                  className="text-2xl font-bold mb-4"
+                  style={{ color: "#385662" }}
+                >
+                  Pricing
+                </h2>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  The cost of this exclusive service is{" "}
+                  <strong>$70 per night plus GST</strong>. This price
+                  encompasses both the playtime at Woofs 'n Wags and the
+                  sleepovers at Sleepy Howls.
+                </p>
+                <p className="mt-4 text-gray-700 leading-relaxed">
+                  For further information, please contact the reception at Woofs
+                  'n Wags at <strong>204-505-4041</strong>.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="mt-10 rounded-xl p-6"
+              style={{ backgroundColor: "#385662" }}
+            >
+              <h2 className="text-2xl font-bold mb-3 text-white">
+                Important Note
+              </h2>
+              <p className="text-white/95 leading-relaxed">
+                Woofs 'n Wags is responsible for supervising daily play during
+                their operating hours. After Woofs 'n Wags' hours, Sleepy Howls
+                assumes sole responsibility for the care and well-being of the
+                canine guests.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </Layout>
   );
 }
