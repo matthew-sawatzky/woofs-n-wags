@@ -26,8 +26,7 @@ import Donald20 from "../assets/donald st images/wiggler-4_orig.jpeg";
 import Donald21 from "../assets/donald st images/wiggler-5_orig.jpeg";
 import Donald22 from "../assets/donald st images/woofs-2_orig.jpeg";
 import Donald23 from "../assets/donald st images/woofs-2a_orig.jpeg";
-import Donald24 from "../assets/donald st images/woofs-3_orig.jpeg";
-import Donald25 from "../assets/donald st images/woofs-3-b_orig.jpeg";
+import Donald24 from "../assets/donald st images/woofs-3-b_orig.jpeg";
 
 import DonaldGalleryImg1 from "../assets/DonaldGallery/IMG_0112.JPG";
 import DonaldGalleryImg2 from "../assets/DonaldGallery/IMG_0126.JPG";
@@ -44,7 +43,6 @@ import DonaldGalleryImg13 from "../assets/DonaldGallery/Unknown copy 2.jpeg";
 import DonaldGalleryImg14 from "../assets/DonaldGallery/Unknown copy.jpeg";
 import DonaldGalleryImg15 from "../assets/DonaldGallery/Unknown-1.jpeg";
 import DonaldGalleryImg16 from "../assets/DonaldGallery/Unknown.jpeg";
-import Donald26 from "../assets/donald st images/woofs-3a_orig.jpeg";
 
 const galleryImages = [
   Donald1,
@@ -71,37 +69,33 @@ const galleryImages = [
   Donald22,
   Donald23,
   Donald24,
-  Donald25,
-  Donald26,
 ];
 
 const donaldFacilityDescriptions = [
-  "Professional bathing room with specialized grooming equipment",
-  "Second bathing room for efficient pet grooming services",
-  "Climate-controlled drying room for comfortable pet care",
-  "Additional drying space with professional equipment",
-  "Finishing room where the final grooming touches happen",
-  "Second finishing area for detailed grooming work",
-  "Bright and welcoming interior space for pets and owners",
-  "Clean hallways connecting our different service areas",
-  "Well-organized facility layout for smooth operations",
-  "Professional workspace designed for pet comfort",
-  "Another view of our organized and clean facility",
-  "Spacious areas designed for easy pet movement",
-  "The Waggler area - play space for smaller dogs under 30lbs",
-  "More of the Waggler room with safe play equipment",
-  "Waggler play area with engaging activities for small dogs",
-  "Additional Waggler space for supervised small dog play",
-  "Final view of our dedicated small dog play area",
-  "The Wiggler room - specialized space for very small dogs",
-  "More Wiggler area designed for the tiniest pups",
-  "Additional Wiggler play space with appropriate equipment",
-  "Final section of our Wiggler room for smallest dogs",
-  "The Woofs area - play space for larger dogs 30+ pounds",
-  "Additional Woofs room space for big dog activities",
-  "More of the Woofs area with equipment for large dogs",
-  "Extended Woofs play space for energetic larger dogs",
-  "Final view of our spacious Woofs play area",
+  "Spaw Bathing Area. Our spaw offers 3 areas specific to the path of our grooms from bath to blow to finish. Custom built and designed for optimal quiet, privacy and flow from bath to finish.",
+  "Spaw Bathing Area. Our first room in their dream Spaw.",
+  "Spaw Drying Room. Room 2. A private room that is private and spacious. Custom designed to flow from bath to finish.",
+  "Spaw Drying Room.",
+  "Spaw Finishing Room. This large and spacious area is where the magic of the custom styles happen. This area is 2 rooms in one to enhance the spaw's quiet and private area's for our guests.",
+  "Spaw Finishing Room. Designed as our guests last room before home time. Multi work stations to enhance the privacy for our visitors.",
+  "Welcome. Our reception area is directly in the middle of 2 buildings. To the left is our Waggler, Wiggler, and Spaw area. to the right is the entrance to our Woofer area.",
+  "Reception view to our Wigglers, Wagglers, and our Spaw.",
+  "Reception to our large Woofer play space.",
+  "Welcome To Our Woofers Play Area 1. Our Woofers area is designed for 55 pounds, and over, offers over 2000 square feet of Play Area. This large area has custom built play pieces. Your little one may jump over, rest or nibble on their friend from multi pieces and vantage points.",
+  "Woofers Play Area 1. Another angle of this large play space. The door in the rear open to another play space. This versatile area may be fully opened or we may offer 3 separate play spaces.",
+  "Woofer Play Area 1.",
+  "Waggler Play Area. This is the zoom zoom door. This little pass through may be closed or open. Closed give the ability to divide this play space into 2 area's. Open it up and the kids love to run circles in the entirety of this large play space.",
+  "Waggler Play Area. This play area is for our friends that are 20 pounds to 50 pounds. This area is over 1500 square feet and offers a nook area, zoom zoom door, custom built bench and more.",
+  "Waggler Play Area. This custom made bench is a favourite area for our visitors to get a vantage point to friends, or simply perch on and cuddle with other fur friends.",
+  "Waggler Play Area. This picture shows the little nook that the K9 kids like to go for a quiet moment or to play hide and seek:)",
+  "Waggler Play Area.",
+  "Wiggler Play Area. Unique throughout our play spaces each one has the ability to open up to one large play area or multi. This door closed creates 2 large play area's.",
+  "Wiggler Play Area.",
+  "Welcome to our Wiggler Play Area. This area is special for our little ones under 20 pounds. It offers over 1000 Square feet for them to play in.",
+  "Wiggler Play Area.",
+  "Woofer Play Area 2.",
+  "Welcome to Woofers Play Area 2. This area offers additional customized play pieces that your K9 kids love! The pieces are multi level.",
+  "Woofer Play Area 3. This picture shows one of the entry doors to this area. We may close this area up or completely open up so all 3 area's become one big play area.",
 ];
 
 const donaldGalleryImages = [
