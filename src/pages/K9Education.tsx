@@ -1,12 +1,12 @@
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
-import K9EduImage from "../assets/k9edu.jpg";
+import K9EduImage from "../assets/k9ed_background.jpeg";
 
 function K9Education() {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat"
+        className="bg-cover bg-center bg-no-repeat pb-50"
         style={{ backgroundImage: `url(${K9EduImage})` }}
       >
         <Layout>
