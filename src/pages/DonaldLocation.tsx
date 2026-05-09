@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
-import DonaldImage from "../assets/donaldbackground.jpg";
+import DonaldImage from "../assets/donald_img.png";
 
 import Donald1 from "../assets/donald st images/bathing-room-1_orig.jpeg";
 import Donald2 from "../assets/donald st images/bathing-room-2_orig.jpeg";
@@ -267,54 +267,22 @@ function DonaldLocation() {
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
-            Play Areas - Over 6000 Square Feet
+            5000 square feet of customized dog play space.
           </h2>
 
           <div className="text-center mb-8 text-white">
             <p className="text-lg mb-4">
-              Over 6000 square feet of customized dog play space, customized Spa
-              area and a Sleep area.
-            </p>
-            <p className="text-lg mb-4">
-              Three areas of play designed for size, play style, age, and
+              Three area's of play designed for size, play style, age, and
               behaviour.
             </p>
             <p className="text-xl font-semibold">
-              We have a play area for every personality! Which one does your
-              little one fit into?
+              We have a play area for every personality!
+              <br />
+              Which one does your little one fit into?
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Woofer Play Space */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
-              <h3
-                className="text-2xl font-bold mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Woofer Play Space
-              </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs over 55 pounds
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Over 2000 Square Feet
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    This area hosts 3 play spaces that may be used as one large
-                    play area or 3 separate areas
-                  </p>
-                </div>
-              </div>
-            </div>
-
             {/* Waggler Play Space */}
             <div className="bg-white p-8 rounded-xl shadow-xl">
               <h3
@@ -324,10 +292,10 @@ function DonaldLocation() {
                 Waggler Play Space
               </h3>
               <p className="text-lg font-semibold mb-4 text-center">
-                For dogs 20-55 pounds
+                Over 1,500 square feet
               </p>
               <p className="text-lg font-semibold mb-4 text-center">
-                Over 1500 Square Feet
+                For dogs weighing between 20 pounds to about 55 pounds
               </p>
 
               <div className="space-y-3">
@@ -336,14 +304,48 @@ function DonaldLocation() {
                     className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                     style={{ backgroundColor: "#385662" }}
                   ></div>
-                  <p>Offers an open play area with zoom areas</p>
+                  <p>
+                    Offers an open play area with zoom areas, or can be designed
+                    to provide two feature play areas
+                  </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div
                     className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                     style={{ backgroundColor: "#385662" }}
                   ></div>
-                  <p>Can be configured to offer 2 feature play areas</p>
+                  <p>3/8 inch rubber matting</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    Share an air-conditioning and furnace system with our
+                    Wiggler play group. These units separate from the Woofer
+                    play area (our large in store area)
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    Play pieces are built into the design of this area and also
+                    extra play pieces
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    A couple quiet nook area's for those wanting to have some
+                    calm down or cuddles with a friend or two
+                  </p>
                 </div>
               </div>
             </div>
@@ -357,10 +359,10 @@ function DonaldLocation() {
                 Wiggler Play Space
               </h3>
               <p className="text-lg font-semibold mb-4 text-center">
-                For dogs under 20 pounds
+                Over 1000 square feet
               </p>
               <p className="text-lg font-semibold mb-4 text-center">
-                Over 1000 Square Feet
+                For dogs under 20 pounds
               </p>
 
               <div className="space-y-3">
@@ -370,8 +372,9 @@ function DonaldLocation() {
                     style={{ backgroundColor: "#385662" }}
                   ></div>
                   <p>
-                    Perfect for toy poodles, chihuahuas, pomeranians, papillons,
-                    and many more! :)
+                    The only Daycare in Winnipeg to offer a private play space
+                    exclusive for the little ones such as chihuahua's,
+                    pomeranians, papillons, yorkies and many more!
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -380,8 +383,98 @@ function DonaldLocation() {
                     style={{ backgroundColor: "#385662" }}
                   ></div>
                   <p>
-                    Can open to one larger play space or 2 separated areas for
-                    our little ones to play
+                    Designed to open to one larger play space or 2 separated
+                    area's for our little's to play
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    Heat and air conditioning regulated with the Waggler level
+                    to ensure the perfect temperature for these play spaces in
+                    our building
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>3/8 inch rubber matting</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    Special play pieces for them to play on, under and around
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>Toys and love each and every day :)</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Woofer Play Space */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
+                style={{ color: "#385662" }}
+              >
+                Woofer Play Space
+              </h3>
+              <p className="text-lg font-semibold mb-4 text-center">
+                Over 2000 square feet
+              </p>
+              <p className="text-lg font-semibold mb-4 text-center">
+                For dogs over 55 pounds
+              </p>
+
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    Hosts 3 play spaces that may be used as one large play area
+                    or 3 separate area's
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>3/8 inch rubber matting</p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    Dedicated furnace and ac unit for the Woofer area to ensure
+                    comfortable temperature throughout seasons
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    Built in play pieces for all our friends to play on and
+                    round
                   </p>
                 </div>
               </div>

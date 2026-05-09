@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import { client } from "../sanityClient";
 import Footer from "../components/Footer";
 import BackgroundImage from "../assets/dogs_playing.jpeg";
-import K9EduLogo from "../assets/Woof edu.jpg";
+import K9EduLogo from "../assets/k9ed_logo.png";
 import GroomingLogo from "../assets/woof_tub.png";
 import DogTwins from "../assets/dog_twins.jpeg";
 import WoofsLogo from "../assets/Woofs_logo-1.jpg";
@@ -96,6 +96,13 @@ function Home() {
 
               <div className="flex gap-4">
                 <button
+                  onClick={() => {
+                    const element = document.getElementById("meet-n-greet");
+                    element?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
                   className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: "#385662" }}
                 >
@@ -138,7 +145,7 @@ function Home() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-36 h-36 mx-auto mb-6 flex items-center justify-center p-2">
               <img
                 src={LocationLogo}
                 alt="Dog Daycare"
@@ -340,10 +347,155 @@ function Home() {
           </div>
         </section>
 
-        {/* Google Reviews Section */}
-        <section className="py-12 px-6" style={{ backgroundColor: "#f8f9fa" }}>
+        {/* Meet 'n Greet Section */}
+        <section
+          id="meet-n-greet"
+          className="py-12 px-6"
+          style={{ backgroundColor: "#ffffff" }}
+        >
           <div className="max-w-6xl mx-auto">
-            <h3 className="text-3xl font-bold text-center mb-8">
+            <h3
+              className="text-3xl font-bold text-center mb-8"
+              style={{ color: "#385662" }}
+            >
+              Meet 'n Greet
+            </h3>
+            <p className="text-center text-gray-800 text-lg mb-8">
+              We have two ways for your K9 kid(s) to join the play!
+            </p>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+              {/* Formal Meet 'n Greet */}
+              <div
+                className="p-8 rounded-xl shadow-xl"
+                style={{ backgroundColor: "#385662" }}
+              >
+                <h4 className="text-2xl font-bold mb-4 text-white">
+                  1. Our Formal Meet 'n Greet
+                </h4>
+                <p className="text-white leading-relaxed mb-4">
+                  This invites the family to book an appointment during the day,
+                  meet a couple new friends. If the meeting goes well your
+                  little one is invited to return and come to play on another
+                  day.
+                </p>
+                <p className="text-white leading-relaxed">
+                  This is ideal if you want to have a preliminary introduction
+                  to our facility and ensure your little one is comfortable with
+                  some new friends before their first day.
+                </p>
+              </div>
+
+              {/* Fast Track To Play */}
+              <div
+                className="p-8 rounded-xl shadow-xl"
+                style={{ backgroundColor: "#385662" }}
+              >
+                <h4 className="text-2xl font-bold mb-4 text-white">
+                  2. Fast Track To Play
+                </h4>
+                <p className="text-white leading-relaxed mb-4 font-semibold">
+                  No meet 'n greet is required.
+                </p>
+                <p className="text-white leading-relaxed mb-4">
+                  These little ones come right in for a day of play. The Fast
+                  Track is ideal for puppies 7 months and younger who are eager
+                  to meet and play with other fur friends.
+                </p>
+                <p className="text-white leading-relaxed mb-4">
+                  Your little one is invited to arrive (on your day of choice)
+                  at 7 a.m. At this time, we ask that the completed online
+                  registration forms and vaccination are brought in.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mb-8">
+              <p className="text-gray-800 text-lg font-semibold">
+                Please call or email us for details.
+              </p>
+            </div>
+
+            {/* Safety First */}
+            <div
+              className="p-6 rounded-xl shadow-xl"
+              style={{ backgroundColor: "#f5f5f5" }}
+            >
+              <h4
+                className="text-xl font-bold mb-4 text-center"
+                style={{ color: "#385662" }}
+              >
+                SAFETY FIRST
+              </h4>
+              <p className="text-gray-800 text-sm mb-4 text-center font-semibold">
+                Some conditions do apply for all our visitors:
+              </p>
+
+              <div className="space-y-4">
+                {/* Vaccinations */}
+                <div>
+                  <h5
+                    className="text-base font-bold mb-2"
+                    style={{ color: "#385662" }}
+                  >
+                    VACCINATIONS:
+                  </h5>
+                  <div className="space-y-1 text-gray-700 text-sm">
+                    <p>
+                      <strong>*</strong>Both our formal and fast track require
+                      up-to-date vaccinations (including bordetella/kennel
+                      cough).
+                    </p>
+                    <p>
+                      Puppies only require the first two sets of vaccinations
+                      and the first bordetella. Puppies do not require rabies
+                      until your veterinarian advises, and this is often when
+                      they may be 6-8 months of age.
+                    </p>
+                    <p>
+                      <strong>**</strong>We accept and encourage titer testing.
+                      If you question vaccinations or are concerned about
+                      over-vaccinating your dogs, consider speaking with your
+                      veterinarian about titer testing.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Spaying/Neutering */}
+                <div>
+                  <h5
+                    className="text-base font-bold mb-2"
+                    style={{ color: "#385662" }}
+                  >
+                    SPAYING/NEUTERING
+                  </h5>
+                  <p className="text-gray-700 text-sm">
+                    <strong>*</strong>All our visitors must be spayed or
+                    neutered at 7 months of age.
+                  </p>
+                </div>
+
+                {/* Friendly Days of Play */}
+                <div>
+                  <h5
+                    className="text-base font-bold mb-2"
+                    style={{ color: "#385662" }}
+                  >
+                    FRIENDLY DAYS OF PLAY
+                  </h5>
+                  <p className="text-gray-700 text-sm">
+                    <strong>*</strong>We have a strict NO aggression policy!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Google Reviews Section */}
+        <section className="py-12 px-6" style={{ backgroundColor: "#385662" }}>
+          <div className="max-w-6xl mx-auto">
+            <h3 className="text-3xl font-bold text-center mb-8 text-white">
               What Our Customers Say
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

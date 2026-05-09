@@ -37,12 +37,12 @@ import GalleryImg16 from "../assets/St.AnnesGallery/image1 copy.jpeg";
 import GalleryImg17 from "../assets/St.AnnesGallery/image1.jpeg";
 
 const galleryImages = [
+  StAnnes6,
   StAnnes1,
   StAnnes2,
   StAnnes3,
   StAnnes4,
   StAnnes5,
-  StAnnes6,
   StAnnes7,
   StAnnes8,
   StAnnes9,
@@ -53,19 +53,19 @@ const galleryImages = [
 ];
 
 const facilityDescriptions = [
-  "Our spacious bathing rooms with professional grooming equipment",
-  "Clean and comfortable reception area for pet parents",
-  "Another view of our well-equipped bathing facilities",
-  "Meet our friendly staff member ready to care for your pup",
-  "Cozy nap time area where tired dogs can rest and recharge",
-  "Welcoming reception desk where we greet you and your dog",
-  "The Wag Yard - our secure outdoor play area for exercise",
-  "Inside the Waggler room designed for smaller dogs under 30lbs",
-  "Another angle of our comfortable Waggler play space",
-  "Happy Wagglers enjoying supervised playtime together",
-  "More Wagglers having fun in their dedicated play area",
-  "The Woof Yard - outdoor space for our larger dog friends",
-  "Inside the Woofer room built for dogs 30+ pounds",
+  "Welcome to our reception area. We offer 5000 sq. Ft custom designed K9 play space.",
+  "Our Spaw. Custom built.",
+  "Woofer Play Area. Over 2000 sq. ft. Woofers are visitors over 35 pounds.",
+  "Our Spaw.",
+  "A smaller outdoor area. The building to the left is our enclosed outdoor potty area.",
+  "Our Wagglers have their own bedroom for their nap time with tv, beds and pillows:)",
+  "One of our many outdoor areas.This is our Waggler area. All area's lead to an additional enclosed outdoor potty area.",
+  "Welcome to our Waggler Area. Over 2000 sq. ft.",
+  "Our Waggler Area is the largest play space dedicated to small dogs under 30 pounds.",
+  "Wagglers play in two area's and have Waggler play equipment built for them.",
+  "Waggler Play Space.",
+  "Our Woofer outdoor area.",
+  "Woofer Play Area. To the left we have the ability to close a solid gate to introduce new friends slowly. Often used for a puppy play area:)",
 ];
 
 const stAnnesGalleryImages = [
@@ -232,10 +232,76 @@ function StAnnesLocation() {
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
-            Our 2 Play Areas - 5000 Square Feet Total
+            St Annes offers over 4000 square feet of play area for all our fur
+            kids!
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Waggler Level */}
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
+                style={{ color: "#385662" }}
+              >
+                Waggler Level
+              </h3>
+              <p className="text-lg font-semibold mb-4 text-center">
+                Calling small dogs up to 30 pounds!
+              </p>
+              <p className="text-lg font-semibold mb-4 text-center">
+                Winnipeg's largest dedicated small dog play space in Winnipeg.
+                Our Waggler Area, boasts 2,000 square feet exclusively for
+                little dogs weighing under 30 pounds.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    The flooring is 3/8-inch rubber and sealed, ensuring the
+                    safety of all dogs. It provides cushioning for their bones
+                    and joints, and offers traction during play. Little dogs
+                    need traction just as much as big dogs, as they play hard!
+                    :)
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    The play equipment is specifically designed for small dogs,
+                    allowing them to play hide-and-seek, run over, under, and
+                    through.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    The Waggler level has an independent furnace and air
+                    conditioner because their needs differ from our Woofer dogs.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    A central vacuum system is used to minimize odours and the
+                    spread of contagions throughout the facility.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             {/* Woofer Area */}
             <div className="bg-white p-8 rounded-xl shadow-xl">
               <h3
@@ -245,10 +311,10 @@ function StAnnesLocation() {
                 Woofer Area
               </h3>
               <p className="text-lg font-semibold mb-4 text-center">
-                For larger dogs (30+ pounds)
+                This area is for our larger dogs approximate 30 pounds and over.
               </p>
               <p className="text-lg font-semibold mb-4 text-center">
-                2000 Square Feet
+                2000 square feet of play area.
               </p>
 
               <div className="space-y-4">
@@ -258,9 +324,9 @@ function StAnnesLocation() {
                     style={{ backgroundColor: "#385662" }}
                   ></div>
                   <p>
-                    3/8 inch rubber flooring that is sealed - the safest floor
-                    for all dogs, adding cushion for bones and joints and
-                    traction during play
+                    3/8 inch rubber flooring that are sealed. This flooring is
+                    the safest floor for all dogs. It adds cushion for their
+                    bones and joints and traction during play.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -270,7 +336,7 @@ function StAnnesLocation() {
                   ></div>
                   <p>
                     Larger play equipment specifically designed for dogs to play
-                    hide and seek and run over, under and through
+                    hide and seek and run over, under and through.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -280,7 +346,7 @@ function StAnnesLocation() {
                   ></div>
                   <p>
                     HRV system and air conditioning for the perfect temperature
-                    for play
+                    for play.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -290,67 +356,7 @@ function StAnnesLocation() {
                   ></div>
                   <p>
                     Central vac system to minimize odor and contagions in our
-                    facility
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Waggler Area */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
-              <h3
-                className="text-2xl font-bold mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Waggler Area
-              </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Winnipeg's largest small dog play space
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs under 30 pounds - 2000 Square Feet
-              </p>
-
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    3/8 inch rubber flooring that is sealed - adds cushion for
-                    bones and joints, and traction during play. Little dogs need
-                    traction just as much as big dogs...they play hard! :)
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    Play equipment specifically designed for small dogs to play
-                    hide and seek, and run over, under, and through!
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    Independent furnace and air conditioner for the Waggler
-                    level as their needs are much different than our Woofer dogs
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    Central vac system to minimize odor and contagions in our
-                    facility
+                    facility.
                   </p>
                 </div>
               </div>
