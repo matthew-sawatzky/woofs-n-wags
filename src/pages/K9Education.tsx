@@ -18,10 +18,29 @@ function K9Education() {
 
               <div className="flex gap-4">
                 <button
+                  onClick={() => {
+                    const element = document.getElementById("our-classes");
+                    element?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
                   className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: "#385662" }}
                 >
-                  Professional Dog Training
+                  Our Classes
+                </button>
+                <button
+                  className="bg-white px-4 py-2 rounded-full flex items-center gap-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ color: "#385662" }}
+                  onClick={() =>
+                    window.open(
+                      "https://www.google.com/maps/place/491+St+Anne's+Rd,+Winnipeg,+MB,+Canada",
+                      "_blank",
+                    )
+                  }
+                >
+                  491 St. Anne's Road
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -37,12 +56,6 @@ function K9Education() {
                     />
                   </svg>
                 </button>
-                <button
-                  className="bg-white px-4 py-2 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
-                  style={{ color: "#385662" }}
-                >
-                  View Our Programs
-                </button>
               </div>
             </div>
             <div className="flex-1"></div>
@@ -51,59 +64,93 @@ function K9Education() {
       </div>
 
       {/* Instructors, Classes and Courses Overview */}
-      <section className="py-12 px-8 bg-gray-100">
+      <section className="py-16 px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl font-bold text-center mb-8"
-            style={{ color: "#385662" }}
-          >
-            K9 Education
-          </h2>
+          <div className="text-center mb-10">
+            <p
+              className="text-sm font-semibold uppercase tracking-[0.25em] mb-3"
+              style={{ color: "#385662" }}
+            ></p>
+            <h2
+              className="text-3xl md:text-4xl font-bold mb-4"
+              style={{ color: "#385662" }}
+            >
+              K9 Education
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Small classes, experienced instructors, and practical programs
+              designed to help dogs and handlers succeed together.
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {/* Instructors */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
+            <div
+              id="our-classes"
+              className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300"
+            >
               <h3
-                className="text-2xl font-bold mb-6 text-center"
+                className="text-2xl font-bold mb-4 text-center text-gray-900"
                 style={{ color: "#385662" }}
               >
                 Our Certified Instructors
               </h3>
-              <div className="text-center space-y-3">
-                <p className="text-xl font-semibold text-gray-800">
-                  Victoria Scott
-                </p>
-                <p className="text-xl font-semibold text-gray-800">
-                  Nikki Sherwin
-                </p>
+              <div className="space-y-3">
+                <div className="rounded-xl bg-gray-50 px-4 py-3">
+                  <p className="text-lg font-semibold text-gray-800">
+                    Victoria Scott
+                  </p>
+                </div>
+                <div className="rounded-xl bg-gray-50 px-4 py-3">
+                  <p className="text-lg font-semibold text-gray-800">
+                    Nikki Sherwin
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Classes */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
               <h3
-                className="text-2xl font-bold mb-6 text-center"
+                className="text-2xl font-bold mb-4 text-center text-gray-900"
                 style={{ color: "#385662" }}
               >
                 Our Classes
               </h3>
-              <div className="text-center space-y-3">
+              <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p className="text-lg">
                   All small classes: student to instructor ratio
                 </p>
+                <div className="rounded-xl border border-dashed border-gray-200 bg-gray-50 px-4 py-3">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-1">
+                    What this means
+                  </p>
+                  <p>
+                    More individual attention, clearer feedback, and a calmer
+                    learning environment for every dog.
+                  </p>
+                </div>
               </div>
             </div>
 
             {/* Courses */}
-            <div className="bg-white p-8 rounded-xl shadow-xl">
+            <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
               <h3
-                className="text-2xl font-bold mb-6 text-center"
+                className="text-2xl font-bold mb-4 text-center text-gray-900"
                 style={{ color: "#385662" }}
               >
                 Our Courses
               </h3>
-              <div className="space-y-4">
+              <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p className="text-lg">All classes are 5 weeks in duration.</p>
+                <div className="rounded-xl border border-dashed border-gray-200 bg-gray-50 px-4 py-3">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-1">
+                    Course structure
+                  </p>
+                  <p>
+                    A short, focused format that helps dogs build skills without
+                    overwhelming them.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

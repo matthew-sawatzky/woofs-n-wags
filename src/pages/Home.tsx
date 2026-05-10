@@ -4,11 +4,11 @@ import Layout from "../components/Layout";
 import { client } from "../sanityClient";
 import Footer from "../components/Footer";
 import BackgroundImage from "../assets/dogs_playing.jpeg";
-import K9EduLogo from "../assets/k9ed_logo.png";
+import K9EduLogo from "../assets/woof_edu.png";
 import GroomingLogo from "../assets/woof_tub.png";
 import DogTwins from "../assets/dog_twins.jpeg";
-import WoofsLogo from "../assets/Woofs_logo-1.jpg";
-import LocationLogo from "../assets/Woofs location.png";
+import WoofsLogo from "../assets/woof_sleepover.png";
+import LocationLogo from "../assets/woof_location.png";
 import BarksFromTheGuildPdf from "../assets/barks_from_the_guild_-_choosing_the_right_environment.pdf";
 
 declare global {
@@ -57,25 +57,6 @@ function Home() {
       "https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lexend:wght@100..900&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap";
     fontsLink.rel = "stylesheet";
     document.head.appendChild(fontsLink);
-
-    const instagramScript = document.createElement("script");
-    instagramScript.async = true;
-    instagramScript.src = "https://app.instaplug.app/platform/instaplug.js";
-    instagramScript.onload = () => {
-      if (window.renderApp) {
-        window.renderApp({
-          containerId: "d5bec290-fbff-4f2a-88ee-c72b71383051",
-          domain: "https://app.instaplug.app/",
-          widgetClass: "",
-          fontFamily: "",
-          color: "",
-          colorLink: "",
-          colorLinkActive: "",
-          colorLinkHover: "",
-        });
-      }
-    };
-    document.head.appendChild(instagramScript);
   }, []);
 
   return (
@@ -582,10 +563,6 @@ function Home() {
             </div>
           </div>
         </section>
-
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <div id="d5bec290-fbff-4f2a-88ee-c72b71383051"></div>
-        </div>
       </div>
       <Footer />
     </>

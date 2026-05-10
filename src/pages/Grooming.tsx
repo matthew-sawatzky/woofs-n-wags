@@ -13,7 +13,7 @@ function Grooming() {
           <section className="flex items-center justify-between gap-8 p-6 mt-100">
             <div className="flex-1">
               <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-6">
-                Woofs 'n Wags Dog Salon
+                Grooming
               </h1>
 
               <div className="flex gap-4">

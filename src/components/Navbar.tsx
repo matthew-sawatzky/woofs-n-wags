@@ -1,10 +1,10 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/logo.png";
-import K9EduLogo from "../assets/Woof edu.jpg";
+import K9EduLogo from "../assets/woof_edu.png";
 import GroomingLogo from "../assets/Woof_tub.png";
-import WoofsLogo from "../assets/Woofs_logo-1.jpg";
-import LocationLogo from "../assets/Woofs location.png";
+import WoofsLogo from "../assets/woof_sleepover.png";
+import LocationLogo from "../assets/woof_location.png";
 
 function Navbar() {
   const location = useLocation();
