@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/woof_logo.png";
 import K9EduLogo from "../assets/woof_edu.png";
 import GroomingLogo from "../assets/Woof_tub.png";
 import WoofsLogo from "../assets/woof_sleepover.png";

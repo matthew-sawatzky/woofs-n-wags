@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/woof_logo.png";
 
 function Footer() {
   return (
