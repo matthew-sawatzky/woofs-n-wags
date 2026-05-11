@@ -71,7 +71,13 @@ function Home() {
             className="flex items-center justify-between gap-8 p-6 mt-100"
           >
             <div className="flex-1">
-              <h1 className="text-5xl font-bold text-white drop-shadow-xl mb-6">
+              <h1
+                className="text-5xl font-bold text-white mb-6"
+                style={{
+                  textShadow:
+                    "-1px -1px 0 #385662, 1px -1px 0 #385662, -1px 1px 0 #385662, 1px 1px 0 #385662",
+                }}
+              >
                 We Know What Dogs Like
               </h1>
 

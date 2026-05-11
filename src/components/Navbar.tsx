@@ -1,14 +1,35 @@
 import { Link, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "../assets/woof_logo.png";
 import K9EduLogo from "../assets/woof_edu.png";
-import GroomingLogo from "../assets/Woof_tub.png";
+import GroomingLogo from "../assets/woof_tub.png";
 import WoofsLogo from "../assets/woof_sleepover.png";
 import LocationLogo from "../assets/woof_location.png";
 
 function Navbar() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isSignUpDropdownOpen, setIsSignUpDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsSignUpDropdownOpen(false);
+      }
+    };
+
+    if (isSignUpDropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isSignUpDropdownOpen]);
 
   const getCurrentLogo = () => {
     switch (location.pathname) {
@@ -63,7 +84,10 @@ function Navbar() {
           {/* Desktop Navigation */}
           <div
             className="hidden xl:flex flex-1 items-center justify-end text-white space-x-8 text-2xl font-semibold"
-            style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.8)" }}
+            style={{
+              textShadow:
+                "-1px -1px 0 #385662, 1px -1px 0 #385662, -1px 1px 0 #385662, 1px 1px 0 #385662",
+            }}
           >
             <div className="flex items-center space-x-6">
               <Link
@@ -109,29 +133,54 @@ function Navbar() {
                 The Team
               </Link>
             </div>
-            <a
-              href="https://secure.petexec.net/login.php"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105"
-              style={{ backgroundColor: "#385662" }}
-            >
-              Sign Up
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="relative" ref={dropdownRef}>
+              <button
+                onClick={() => setIsSignUpDropdownOpen(!isSignUpDropdownOpen)}
+                className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                style={{ backgroundColor: "#385662" }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </a>
+                Sign Up
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </button>
+              {isSignUpDropdownOpen && (
+                <div
+                  className="absolute right-0 mt-2 w-56 rounded-lg shadow-2xl z-40 border border-gray-200"
+                  style={{ backgroundColor: "#385662" }}
+                >
+                  <a
+                    href="https://woofsnwags.propetware.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsSignUpDropdownOpen(false)}
+                    className="block px-4 py-3 text-white hover:opacity-80 rounded-t-lg transition-colors duration-200 font-semibold"
+                  >
+                    St. Anne's Location
+                  </a>
+                  <a
+                    href="https://woofsnwagsdon.propetware.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setIsSignUpDropdownOpen(false)}
+                    className="block px-4 py-3 text-white hover:opacity-80 rounded-b-lg transition-colors duration-200 font-semibold border-t border-gray-400"
+                  >
+                    Donald Location
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile Hamburger Button */}
@@ -255,30 +304,60 @@ function Navbar() {
             >
               The Team
             </Link>
-            <a
-              href="https://secure.petexec.net/login.php"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={closeMenu}
-              className="text-white px-4 py-3 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 mt-6"
-              style={{ backgroundColor: "#385662" }}
-            >
-              Sign Up
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="relative mt-6" ref={dropdownRef}>
+              <button
+                onClick={() => setIsSignUpDropdownOpen(!isSignUpDropdownOpen)}
+                className="w-full text-white px-4 py-3 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 cursor-pointer"
+                style={{ backgroundColor: "#385662" }}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                />
-              </svg>
-            </a>
+                Sign Up
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                  />
+                </svg>
+              </button>
+              {isSignUpDropdownOpen && (
+                <div
+                  className="absolute left-0 right-0 mt-2 rounded-lg shadow-2xl z-40 border border-gray-200 w-full"
+                  style={{ backgroundColor: "#385662" }}
+                >
+                  <a
+                    href="https://woofsnwags.propetware.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      setIsSignUpDropdownOpen(false);
+                      closeMenu();
+                    }}
+                    className="block px-4 py-3 text-white hover:opacity-80 rounded-t-lg transition-colors duration-200 font-semibold text-center"
+                  >
+                    St. Anne's Location
+                  </a>
+                  <a
+                    href="https://woofsnwagsdon.propetware.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      setIsSignUpDropdownOpen(false);
+                      closeMenu();
+                    }}
+                    className="block px-4 py-3 text-white hover:opacity-80 rounded-b-lg transition-colors duration-200 font-semibold border-t border-gray-400 text-center"
+                  >
+                    Donald Location
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>

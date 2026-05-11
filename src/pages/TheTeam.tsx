@@ -9,25 +9,35 @@ import AllexPhoto from "../assets/Allex.jpg";
 
 function TheTeam() {
   return (
-    <Layout>
-      <section className="py-12 px-6" style={{ backgroundColor: "#f8f9fa" }}>
-        <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-center mb-4 text-gray-900">
-            Meet The Team
-          </h1>
-          <p className="text-center text-lg text-gray-700 mb-10 max-w-3xl mx-auto">
-            The Woofs 'n Wags team is built on education, compassion, and
-            behaviour-first care.
-          </p>
+    <>
+      <div
+        className="bg-cover bg-center bg-no-repeat pb-50"
+        style={{ backgroundImage: `url(${GroupWithDogs})` }}
+      >
+        <Layout>
+          <section className="flex items-center justify-between gap-8 p-6 mt-100">
+            <div className="flex-1 max-w-3xl text-white drop-shadow-xl">
+              <h1
+                className="text-4xl md:text-5xl font-bold mb-4"
+                style={{
+                  textShadow:
+                    "-1px -1px 0 #385662, 1px -1px 0 #385662, -1px 1px 0 #385662, 1px 1px 0 #385662",
+                }}
+              >
+                Meet The Team
+              </h1>
+              <p className="text-lg md:text-xl">
+                The Woofs 'n Wags team is built on education, compassion, and
+                behaviour-first care.
+              </p>
+            </div>
+            <div className="flex-1"></div>
+          </section>
+        </Layout>
+      </div>
 
-          <div className="mb-10">
-            <img
-              src={GroupWithDogs}
-              alt="Woofs 'n Wags team group with dogs"
-              className="w-full max-h-[500px] object-cover rounded-2xl shadow-xl"
-            />
-          </div>
-
+      <section style={{ backgroundColor: "#f8f9fa" }}>
+        <div className="max-w-6xl mx-auto px-6 py-12">
           <div className="space-y-8">
             <article className="bg-white rounded-2xl shadow-xl p-8">
               <img
@@ -391,7 +401,7 @@ function TheTeam() {
         </div>
       </section>
       <Footer />
-    </Layout>
+    </>
   );
 }
 export default TheTeam;
