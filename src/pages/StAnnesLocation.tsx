@@ -17,7 +17,6 @@ import StAnnes11 from "../assets/st annes images/st-annes-wagglerss_orig.jpg";
 import StAnnes12 from "../assets/st annes images/st-annes-woof-yard_orig.jpg";
 import StAnnes13 from "../assets/st annes images/st-annes-woofer-room_orig.jpg";
 
-// Gallery images from St.AnnesGallery folder
 import GalleryImg1 from "../assets/St.AnnesGallery/IMG_1914.jpg";
 import GalleryImg2 from "../assets/St.AnnesGallery/IMG_1932.jpg";
 import GalleryImg3 from "../assets/St.AnnesGallery/IMG_2032.jpg";
@@ -234,7 +233,6 @@ function StAnnesLocation() {
         </Layout>
       </div>
 
-      {/* Play Areas */}
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -243,7 +241,6 @@ function StAnnesLocation() {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Waggler Level */}
             <div className="bg-white p-8 rounded-xl shadow-xl">
               <h3
                 className="text-2xl font-bold mb-6 text-center"
@@ -308,7 +305,6 @@ function StAnnesLocation() {
               </div>
             </div>
 
-            {/* Woofer Area */}
             <div className="bg-white p-8 rounded-xl shadow-xl">
               <h3
                 className="text-2xl font-bold mb-6 text-center"
@@ -371,29 +367,31 @@ function StAnnesLocation() {
         </div>
       </section>
 
-      {/* St. Annes Gallery */}
-      <section className="py-12 px-8">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-16 px-8 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-5xl mx-auto">
           <h2
-            className="text-3xl font-bold text-center mb-8"
+            className="text-3xl font-bold text-center mb-12"
             style={{ color: "#385662" }}
           >
             Come Join the Fun!
           </h2>
 
-          <div className="relative">
+          <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
             {/* Main Image Display */}
-            <div className="relative rounded-lg overflow-hidden shadow-xl">
+            <div className="relative h-96 md:h-[600px] overflow-hidden bg-black">
               <img
+                key={currentGalleryIndex}
                 src={stAnnesGalleryImages[currentGalleryIndex]}
                 alt={`St. Anne's Gallery ${currentGalleryIndex + 1}`}
-                className="w-full h-[500px] object-cover"
+                className="w-full h-full object-cover animate-fadeIn"
               />
 
               {/* Previous button */}
               <button
                 onClick={prevGalleryImage}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
+                style={{ backgroundColor: "white", color: "#385662" }}
+                title="Previous image"
               >
                 ‹
               </button>
@@ -401,28 +399,38 @@ function StAnnesLocation() {
               {/* Next button */}
               <button
                 onClick={nextGalleryImage}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
+                style={{ backgroundColor: "white", color: "#385662" }}
+                title="Next image"
               >
                 ›
               </button>
 
               {/* Image counter */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+              <div
+                className="absolute bottom-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-full font-semibold shadow-lg"
+                style={{ backgroundColor: "white", color: "#385662" }}
+              >
                 {currentGalleryIndex + 1} / {stAnnesGalleryImages.length}
               </div>
             </div>
 
             {/* Thumbnail Navigation */}
-            <div className="flex justify-center mt-6 space-x-2 overflow-x-auto">
+            <div className="bg-white p-6 flex justify-center gap-3 overflow-x-auto">
               {stAnnesGalleryImages.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentGalleryIndex(index)}
-                  className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                  className={`flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden border-3 transition-all duration-300 hover:shadow-lg ${
                     index === currentGalleryIndex
-                      ? "border-blue-500 scale-110"
-                      : "border-gray-300 hover:border-blue-300"
+                      ? "scale-110 shadow-xl"
+                      : "hover:scale-105"
                   }`}
+                  style={{
+                    borderColor:
+                      index === currentGalleryIndex ? "#385662" : "#e5e7eb",
+                  }}
+                  title={`View image ${index + 1}`}
                 >
                   <img
                     src={image}
@@ -435,6 +443,20 @@ function StAnnesLocation() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.4s ease-in-out;
+        }
+      `}</style>
 
       {/* Pricing Section */}
       <section className="py-12 px-8 bg-gray-100">
@@ -636,28 +658,31 @@ function StAnnesLocation() {
       </section>
 
       {/* Photo Gallery */}
-      <section className="py-12 px-8 bg-gray-100">
-        <div className="max-w-4xl mx-auto">
+      <section className="py-16 px-8 bg-gradient-to-b from-white to-gray-50">
+        <div className="max-w-5xl mx-auto">
           <h2
-            className="text-3xl font-bold text-center mb-8"
+            className="text-3xl font-bold text-center mb-12"
             style={{ color: "#385662" }}
           >
             View Our Location
           </h2>
 
-          <div className="relative">
+          <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
             {/* Main Image Display */}
-            <div className="relative rounded-lg overflow-hidden shadow-xl">
+            <div className="relative h-96 md:h-[600px] overflow-hidden bg-black">
               <img
+                key={currentImageIndex}
                 src={galleryImages[currentImageIndex]}
                 alt={`St. Anne's Location ${currentImageIndex + 1}`}
-                className="w-full h-[500px] object-cover"
+                className="w-full h-full object-cover animate-fadeIn"
               />
 
               {/* Previous button */}
               <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
+                style={{ backgroundColor: "white", color: "#385662" }}
+                title="Previous image"
               >
                 ‹
               </button>
@@ -665,35 +690,45 @@ function StAnnesLocation() {
               {/* Next button */}
               <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white text-3xl bg-black bg-opacity-50 rounded-full w-12 h-12 flex items-center justify-center hover:bg-opacity-75 transition-all duration-300 hover:scale-105"
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
+                style={{ backgroundColor: "white", color: "#385662" }}
+                title="Next image"
               >
                 ›
               </button>
 
               {/* Image counter */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-lg">
+              <div
+                className="absolute bottom-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-full font-semibold shadow-lg"
+                style={{ backgroundColor: "white", color: "#385662" }}
+              >
                 {currentImageIndex + 1} / {galleryImages.length}
               </div>
             </div>
 
             {/* Image Description */}
-            <div className="mt-6 text-center bg-gray-50 p-4 rounded-lg">
-              <p className="text-xl font-medium text-gray-800">
+            <div className="bg-white px-8 py-6 text-center">
+              <p className="text-lg font-medium" style={{ color: "#385662" }}>
                 {facilityDescriptions[currentImageIndex]}
               </p>
             </div>
 
             {/* Thumbnail Navigation */}
-            <div className="flex justify-center mt-6 space-x-2 overflow-x-auto">
+            <div className="bg-white p-6 flex justify-center gap-3 overflow-x-auto">
               {galleryImages.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
-                  className={`flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
+                  className={`flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden border-3 transition-all duration-300 hover:shadow-lg ${
                     index === currentImageIndex
-                      ? "border-blue-500 scale-110"
-                      : "border-gray-300 hover:border-blue-300"
+                      ? "scale-110 shadow-xl"
+                      : "hover:scale-105"
                   }`}
+                  style={{
+                    borderColor:
+                      index === currentImageIndex ? "#385662" : "#e5e7eb",
+                  }}
+                  title={`View image ${index + 1}`}
                 >
                   <img
                     src={image}
@@ -706,6 +741,20 @@ function StAnnesLocation() {
           </div>
         </div>
       </section>
+
+      <style>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 0.4s ease-in-out;
+        }
+      `}</style>
 
       {/* Contact Information */}
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
@@ -721,11 +770,17 @@ function StAnnesLocation() {
               <p className="text-lg text-gray-600">
                 (Just north of Bishop Grandin)
               </p>
-              <p className="text-xl font-semibold text-gray-800">
-                204-255-9247
-              </p>
+              <p className="text-lg text-gray-600">204-255-9247</p>
               <p className="text-lg text-gray-600">info@woofsnwags.ca</p>
-              <p className="text-lg text-gray-600">PetExec Registration</p>
+              <a
+                href="https://woofsnwags.propetware.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-semibold underline hover:opacity-80 transition-opacity duration-300"
+                style={{ color: "#385662" }}
+              >
+                Register Now
+              </a>
             </div>
           </div>
 

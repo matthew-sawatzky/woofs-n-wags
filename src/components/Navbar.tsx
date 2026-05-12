@@ -157,27 +157,44 @@ function Navbar() {
               </button>
               {isSignUpDropdownOpen && (
                 <div
-                  className="absolute right-0 mt-2 w-56 rounded-lg shadow-2xl z-40 border border-gray-200"
-                  style={{ backgroundColor: "#385662" }}
+                  className="absolute right-0 mt-3 w-64 overflow-hidden rounded-2xl shadow-2xl z-40 border border-white/20 backdrop-blur-sm"
+                  style={{ backgroundColor: "rgba(56, 86, 98, 0.98)" }}
                 >
-                  <a
-                    href="https://woofsnwags.propetware.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsSignUpDropdownOpen(false)}
-                    className="block px-4 py-3 text-white hover:opacity-80 rounded-t-lg transition-colors duration-200 font-semibold"
+                  <div className="px-4 py-3 border-b border-white/15">
+                    <p className="text-xs uppercase tracking-[0.2em] text-white/70">
+                      Choose a location
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onMouseDown={(event) => {
+                      event.preventDefault();
+                      setIsSignUpDropdownOpen(false);
+                      window.location.href =
+                        "https://woofsnwags.propetware.com/";
+                    }}
+                    className="block w-full px-4 py-4 text-left text-white/95 hover:bg-white/10 transition-colors duration-200 font-semibold cursor-pointer"
                   >
-                    St. Anne's Location
-                  </a>
-                  <a
-                    href="https://woofsnwagsdon.propetware.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={() => setIsSignUpDropdownOpen(false)}
-                    className="block px-4 py-3 text-white hover:opacity-80 rounded-b-lg transition-colors duration-200 font-semibold border-t border-gray-400"
+                    <span className="block text-base">St. Anne's Location</span>
+                    <span className="block text-sm text-white/70 mt-1">
+                      491 St. Anne's Road
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    onMouseDown={(event) => {
+                      event.preventDefault();
+                      setIsSignUpDropdownOpen(false);
+                      window.location.href =
+                        "https://woofsnwagsdon.propetware.com/";
+                    }}
+                    className="block w-full px-4 py-4 text-left text-white/95 hover:bg-white/10 transition-colors duration-200 font-semibold border-t border-white/15 cursor-pointer"
                   >
-                    Donald Location
-                  </a>
+                    <span className="block text-base">Donald Location</span>
+                    <span className="block text-sm text-white/70 mt-1">
+                      7 Donald Street
+                    </span>
+                  </button>
                 </div>
               )}
             </div>

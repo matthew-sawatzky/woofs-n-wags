@@ -93,7 +93,7 @@ function Home() {
                   className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: "#385662" }}
                 >
-                  It all starts with our Meet n Greet
+                  It all starts with our Meet 'n Greet
                 </button>
                 <button
                   className="bg-white px-4 py-2 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
