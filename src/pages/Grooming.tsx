@@ -24,6 +24,19 @@ function Grooming() {
 
               <div className="flex gap-4">
                 <button
+                  onClick={() => {
+                    const element = document.getElementById("education-centre");
+                    element?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
+                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ backgroundColor: "#385662" }}
+                >
+                  Grooming Education Centre
+                </button>
+                <button
                   className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: "#385662" }}
                 >
@@ -273,6 +286,129 @@ function Grooming() {
               <p className="text-lg">
                 Patience, understanding, massage, and loves!
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Grooming Education Centre */}
+      <section id="education-centre" className="py-16 px-8 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p
+              className="text-sm font-semibold uppercase tracking-[0.25em] mb-3"
+              style={{ color: "#385662" }}
+            >
+              Grooming Education Centre
+            </p>
+            <h2
+              className="text-4xl md:text-5xl font-bold mb-4"
+              style={{ color: "#385662" }}
+            >
+              A Cut Above the Rest
+            </h2>
+            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Our program is designed to give newcomers to the grooming industry
+              a complete understanding of what a professional grooming career
+              involves, both mentally and physically. Led by multi-certified
+              professionals and award-winning community leaders, students
+              receive personalized, hands-on education in a supportive learning
+              environment.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <h3
+                className="text-2xl font-bold mb-5 text-center"
+                style={{ color: "#385662" }}
+              >
+                Why Choose Our Program?
+              </h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>One on one, student with instructor experience.</p>
+                <p>Hands on participation, supervised, and guided learning.</p>
+                <p>Up to date industry focused education and mentorship.</p>
+                <p>
+                  Compassionate, safe, and fear free centred grooming practices.
+                </p>
+                <p>Over 25 years of combined experience.</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <h3
+                className="text-2xl font-bold mb-5 text-center"
+                style={{ color: "#385662" }}
+              >
+                Program Focus
+              </h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p>
+                  Students learn the practical and professional side of the
+                  grooming industry with direct instruction, mentorship, and
+                  real-world support.
+                </p>
+                <p>
+                  The goal is to build confidence, technical skill, and a clear
+                  understanding of what it takes to thrive in a grooming career.
+                </p>
+                <div className="rounded-xl border border-dashed border-gray-200 bg-gray-50 px-4 py-3">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-1">
+                    Learning environment
+                  </p>
+                  <p>
+                    Supportive, hands-on, and designed to help newcomers grow at
+                    a steady pace.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
+              <h3
+                className="text-2xl font-bold mb-5 text-center"
+                style={{ color: "#385662" }}
+              >
+                Meet the Head Instructor
+              </h3>
+              <div className="space-y-4 text-gray-700 leading-relaxed">
+                <p className="font-semibold text-gray-900">Troi Smith</p>
+                <p>
+                  Troi leads the program with pride, professionalism, and
+                  extensive industry experience across multiple areas of pet
+                  care and education.
+                </p>
+                <p>
+                  With more than 10 years in the grooming industry, along with
+                  years of experience coaching equestrians, Troi brings a unique
+                  combination of leadership, patience, and technical expertise
+                  to every student she mentors.
+                </p>
+                <div className="space-y-2 rounded-xl bg-gray-50 p-4">
+                  <p>Former President of PPGAM.</p>
+                  <p>Currently affiliated with CPPS.</p>
+                  <p>A multi-certified pet stylist.</p>
+                  <p>Passionate about continued education and mentorship.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 bg-white rounded-2xl p-8 shadow-xl border border-gray-100 text-center">
+            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Troi is dedicated to raising the standard of compassionate
+              grooming while helping students build confidence, professionalism,
+              and lasting careers in the industry.
+            </p>
+            <div className="mt-6">
+              <a
+                href="mailto:woofsgroomingteam@gmail.com"
+                className="inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{ backgroundColor: "#385662" }}
+              >
+                Email us at woofsgroomingteam@gmail.com
+              </a>
             </div>
           </div>
         </div>

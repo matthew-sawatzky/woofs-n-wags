@@ -396,7 +396,6 @@ function StAnnesLocation() {
                 ‹
               </button>
 
-              {/* Next button */}
               <button
                 onClick={nextGalleryImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -406,7 +405,6 @@ function StAnnesLocation() {
                 ›
               </button>
 
-              {/* Image counter */}
               <div
                 className="absolute bottom-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-full font-semibold shadow-lg"
                 style={{ backgroundColor: "white", color: "#385662" }}
@@ -415,7 +413,6 @@ function StAnnesLocation() {
               </div>
             </div>
 
-            {/* Thumbnail Navigation */}
             <div className="bg-white p-6 flex justify-center gap-3 overflow-x-auto">
               {stAnnesGalleryImages.map((image, index) => (
                 <button
