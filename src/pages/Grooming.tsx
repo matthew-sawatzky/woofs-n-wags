@@ -24,19 +24,6 @@ function Grooming() {
 
               <div className="flex gap-4">
                 <button
-                  onClick={() => {
-                    const element = document.getElementById("education-centre");
-                    element?.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    });
-                  }}
-                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
-                  style={{ backgroundColor: "#385662" }}
-                >
-                  Grooming Education Centre
-                </button>
-                <button
                   className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: "#385662" }}
                 >
@@ -57,10 +44,17 @@ function Grooming() {
                   </svg>
                 </button>
                 <button
-                  className="bg-white px-4 py-2 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  onClick={() => {
+                    const element = document.getElementById("education-centre");
+                    element?.scrollIntoView({
+                      behavior: "smooth",
+                      block: "start",
+                    });
+                  }}
+                  className="bg-white px-4 py-2 rounded-full flex items-center gap-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ color: "#385662" }}
                 >
-                  View Our Services
+                  Grooming Education Centre
                 </button>
               </div>
             </div>

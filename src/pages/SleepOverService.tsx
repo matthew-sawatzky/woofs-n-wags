@@ -17,21 +17,21 @@ function SleepOverService() {
               Two Exceptional Services Under One "Woof"
             </h1>
             <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
-              Welcome to Sleepy Howls Sleep Over Service and Woofs 'n Wags Dog
-              Daycare, where two trusted names have come together to provide
-              unparalleled care for your canine kids.
+              Welcome to Sleepy Howls: A Third-Party Business Apart from Woofs
+              'n Wags Dog Daycare Services.
             </p>
 
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p>
-                Sleepy Howls offers their exclusive sleepover service within the
-                facility of Woofs 'n Wags. This exclusive service is provided by
-                Sleepy Howls, owned and managed by Clara Bestard.
+                Sleepy Howls is an exclusive dog sleepover service owned and
+                managed by Clara Bestard. Sleepy Howls' mission is to provide a
+                loving and caring environment for your best friend while you are
+                away.
               </p>
               <p>
-                Sleepy Howls ensures that your beloved pets are cherished and
-                well-cared for during their sleepovers. Our service stands out
-                as an exceptional overnight experience.
+                This exclusive service is designed to give your dog a safe,
+                comfortable, and attention-filled overnight stay with plenty of
+                play, rest, and socialization.
               </p>
             </div>
 
@@ -45,11 +45,13 @@ function SleepOverService() {
                 </h2>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
                   <li>Maximum capacity of 10 sleepover guests</li>
-                  <li>Auntie Clara's presence with guests</li>
-                  <li>Overnights in a bedroom atmosphere</li>
+                  <li>Auntie Clara sleeps in the room with her guests</li>
                   <li>Private feeding times</li>
-                  <li>No crates unless requested</li>
-                  <li>Medication by discussion and approval</li>
+                  <li>Lots of love, attention, smooches, and cuddles</li>
+                  <li>
+                    Use of our state of the art facility for ample space, play,
+                    rest, and socialization
+                  </li>
                 </ul>
               </div>
 
@@ -61,10 +63,9 @@ function SleepOverService() {
                   Pricing
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  The cost of this exclusive service is{" "}
-                  <strong>$70 per night plus GST</strong>. This price
-                  encompasses both the playtime at Woofs 'n Wags and the
-                  sleepovers at Sleepy Howls.
+                  The cost for this service is <strong>$70 per night</strong> up
+                  until 10 am. This cost includes the services of Woofs 'n Wags,
+                  as our guests play during the daycare hours.
                 </p>
                 <p className="mt-4 text-gray-700 leading-relaxed">
                   For further information, please contact the reception at Woofs
