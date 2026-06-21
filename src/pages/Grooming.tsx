@@ -3,6 +3,28 @@ import Footer from "../components/Footer";
 import GroomingImage from "../assets/IMG_3618.jpeg";
 
 function Grooming() {
+  const salonServiceGroups = [
+    {
+      title: "Standard Services",
+      items: ["Full groom", "Bath and Brush", "Blow outs"],
+      accent: "Everyday care",
+    },
+    {
+      title: "Specialty Services",
+      items: ["Spawdicure", "Face, Paws, and bum clean ups"],
+      accent: "Detail focused",
+    },
+    {
+      title: "Creative Grooming",
+      items: [
+        "Tails",
+        "Stencilling",
+        "Up to your imagination - our pet stylists are award winning in this area!",
+      ],
+      accent: "Style forward",
+    },
+  ];
+
   return (
     <>
       <div
@@ -160,125 +182,70 @@ function Grooming() {
       </section>
 
       {/* Grooming Services */}
-      <section className="py-12 px-8 bg-gray-100">
+      <section className="py-16 px-8 bg-gradient-to-b from-slate-100 via-slate-50 to-white">
         <div className="max-w-6xl mx-auto">
-          <h2
-            className="text-3xl font-bold text-center mb-8"
-            style={{ color: "#385662" }}
-          >
-            Grooming Salon Services
-          </h2>
-
-          <div className="bg-white p-8 rounded-xl shadow-xl mb-6">
-            <p className="text-lg mb-6 text-center">
-              Our Salon caters to any of your dogs needs.
+          <div className="text-center mb-8">
+            <p
+              className="text-sm font-semibold uppercase tracking-[0.22em] mb-2"
+              style={{ color: "#385662" }}
+            >
+              Grooming Salon Services
             </p>
+            <h2
+              className="text-3xl md:text-4xl font-bold mb-3"
+              style={{ color: "#385662" }}
+            >
+              Tailored Care for Every Coat Type
+            </h2>
+            <p className="text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
+              From essential maintenance to creative styling, our salon team
+              delivers gentle, high-quality care based on your dog&apos;s comfort,
+              coat, and personality.
+            </p>
+          </div>
 
+          <div className="bg-white/95 border border-slate-200 p-8 rounded-3xl shadow-2xl shadow-slate-200/70 mb-8 backdrop-blur-sm">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3
-                  className="text-xl font-bold mb-4 text-center"
-                  style={{ color: "#385662" }}
+              {salonServiceGroups.map((group) => (
+                <article
+                  key={group.title}
+                  className="relative overflow-hidden rounded-2xl border border-slate-100 bg-gradient-to-b from-white to-slate-50 p-6 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
                 >
-                  Standard Services
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>Full groom</p>
+                  <p
+                    className="inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wider mb-4"
+                    style={{ backgroundColor: "#e6eef1", color: "#385662" }}
+                  >
+                    {group.accent}
+                  </p>
+                  <h3
+                    className="text-2xl font-bold mb-5"
+                    style={{ color: "#385662" }}
+                  >
+                    {group.title}
+                  </h3>
+                  <div className="space-y-3">
+                    {group.items.map((item) => (
+                      <div key={item} className="flex items-start gap-3">
+                        <span
+                          className="mt-1.5 inline-flex h-5 w-5 items-center justify-center rounded-full text-white text-xs font-bold flex-shrink-0"
+                          style={{ backgroundColor: "#385662" }}
+                        >
+                          ✓
+                        </span>
+                        <p className="text-slate-700 leading-relaxed">{item}</p>
+                      </div>
+                    ))}
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>Bath and Brush</p>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>Blow outs</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3
-                  className="text-xl font-bold mb-4 text-center"
-                  style={{ color: "#385662" }}
-                >
-                  Specialty Services
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>Spawdicure</p>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>Face, Paws, and bum clean ups</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 p-6 rounded-xl">
-                <h3
-                  className="text-xl font-bold mb-4 text-center"
-                  style={{ color: "#385662" }}
-                >
-                  Creative Grooming
-                </h3>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>Tails</p>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>Stencilling</p>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "#385662" }}
-                    ></div>
-                    <p>
-                      Up to your imagination - our pet stylists are award
-                      winning in this area!
-                    </p>
-                  </div>
-                </div>
-              </div>
+                </article>
+              ))}
             </div>
           </div>
 
-          <div className="text-center">
-            <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#385662" }}
-              >
-                Extras Always Include
-              </h3>
-              <p className="text-lg">
-                Patience, understanding, massage, and loves!
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="rounded-2xl p-7 shadow-xl text-white" style={{ backgroundColor: "#385662" }}>
+              <h3 className="text-2xl font-bold mb-3">Extras Always Include</h3>
+              <p className="text-lg text-slate-100 leading-relaxed">
+                Patience, understanding, massage, and loves.
               </p>
             </div>
           </div>
