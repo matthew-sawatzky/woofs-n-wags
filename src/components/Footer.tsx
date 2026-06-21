@@ -21,6 +21,24 @@ function Footer() {
           >
             info@woofsnwags.com
           </a>
+          &nbsp;|&nbsp;
+          <a
+            href="https://www.facebook.com/winnipegdogdaycare/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[#385662]"
+          >
+            Facebook
+          </a>
+          &nbsp;|&nbsp;
+          <a
+            href="https://www.instagram.com/woofsnwags/?hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-[#385662]"
+          >
+            Instagram
+          </a>
         </p>
       </div>
     </footer>

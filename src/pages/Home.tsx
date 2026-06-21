@@ -465,6 +465,43 @@ function Home() {
           </div>
         </section>
 
+        {/* Social Media */}
+        <section className="py-12 px-6" style={{ backgroundColor: "#f8f9fa" }}>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
+              <h3
+                className="text-3xl font-bold mb-4"
+                style={{ color: "#385662" }}
+              >
+                Follow Us On Social Media!
+              </h3>
+              <p className="text-lg text-gray-700 mb-6">
+                Stay connected for updates, photos, and daily dog fun.
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a
+                  href="https://www.facebook.com/winnipegdogdaycare/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  style={{ backgroundColor: "#385662" }}
+                >
+                  Facebook
+                </a>
+                <a
+                  href="https://www.instagram.com/woofsnwags/?hl=en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                  style={{ backgroundColor: "#385662" }}
+                >
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Google Reviews Section */}
         <section className="py-12 px-6" style={{ backgroundColor: "#385662" }}>
           <div className="max-w-6xl mx-auto">

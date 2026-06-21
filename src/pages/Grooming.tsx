@@ -199,8 +199,8 @@ function Grooming() {
             </h2>
             <p className="text-lg text-slate-700 max-w-3xl mx-auto leading-relaxed">
               From essential maintenance to creative styling, our salon team
-              delivers gentle, high-quality care based on your dog&apos;s comfort,
-              coat, and personality.
+              delivers gentle, high-quality care based on your dog&apos;s
+              comfort, coat, and personality.
             </p>
           </div>
 
@@ -242,7 +242,10 @@ function Grooming() {
           </div>
 
           <div className="text-center max-w-4xl mx-auto">
-            <div className="rounded-2xl p-7 shadow-xl text-white" style={{ backgroundColor: "#385662" }}>
+            <div
+              className="rounded-2xl p-7 shadow-xl text-white"
+              style={{ backgroundColor: "#385662" }}
+            >
               <h3 className="text-2xl font-bold mb-3">Extras Always Include</h3>
               <p className="text-lg text-slate-100 leading-relaxed">
                 Patience, understanding, massage, and loves.
