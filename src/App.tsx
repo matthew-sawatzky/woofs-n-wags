@@ -30,8 +30,8 @@ function App() {
         <Route path="/donald-location" element={<DonaldLocation />} />
         <Route path="/k9-education" element={<K9Education />} />
         <Route path="/grooming" element={<Grooming />} />
-        <Route path="/sleep-over-service" element={<SleepOverService />} />
         <Route path="/the-team" element={<TheTeam />} />
+        <Route path="/sleep-over-service" element={<SleepOverService />} />
       </Routes>
     </Router>
   );

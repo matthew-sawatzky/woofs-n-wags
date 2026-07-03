@@ -1,10 +1,66 @@
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
+import SleepoverImage from "../assets/sleepover_bg.jpg";
 
 function SleepOverService() {
   return (
-    <Layout>
-      <section className="py-12 px-6" style={{ backgroundColor: "#f8f9fa" }}>
+    <>
+      <div
+        className="bg-cover bg-center bg-no-repeat pb-50"
+        style={{ backgroundImage: `url(${SleepoverImage})` }}
+      >
+        <Layout>
+          <section className="flex items-center justify-between gap-8 p-6 mt-100">
+            <div className="flex-1 max-w-2xl">
+              <p
+                className="text-sm font-semibold uppercase tracking-[0.2em] mb-4 text-white"
+                style={{
+                  textShadow:
+                    "-1px -1px 0 #385662, 1px -1px 0 #385662, -1px 1px 0 #385662, 1px 1px 0 #385662",
+                }}
+              >
+                Sleepy Howls
+              </p>
+              <h1
+                className="text-5xl font-bold text-white mb-4"
+                style={{
+                  textShadow:
+                    "-1px -1px 0 #385662, 1px -1px 0 #385662, -1px 1px 0 #385662, 1px 1px 0 #385662",
+                }}
+              >
+                Sleep Over Service
+              </h1>
+              <p className="text-lg text-white/95 mb-6 leading-relaxed">
+                Comfort, care, and overnight attention for your dog in a calm,
+                home-style setting.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <button
+                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ backgroundColor: "#385662" }}
+                  onClick={() =>
+                    document
+                      .getElementById("sleepover-details")
+                      ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                  }
+                >
+                  Learn More
+                </button>
+                <button
+                  className="bg-white px-4 py-2 rounded-full flex items-center gap-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  style={{ color: "#385662" }}
+                  onClick={() => window.open("tel:2045054041")}
+                >
+                  Call 204-505-4041
+                </button>
+              </div>
+            </div>
+            <div className="flex-1"></div>
+          </section>
+        </Layout>
+      </div>
+
+      <section id="sleepover-details" className="py-12 px-8 bg-gray-100">
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
             <p
@@ -13,9 +69,9 @@ function SleepOverService() {
             >
               Sleepy Howls
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-900">
               Two Exceptional Services Under One "Woof"
-            </h1>
+            </h2>
             <p className="text-lg text-gray-700 text-center max-w-3xl mx-auto mb-8 leading-relaxed">
               Welcome to Sleepy Howls: A Third-Party Business Apart from Woofs
               'n Wags Dog Daycare Services.
@@ -37,12 +93,12 @@ function SleepOverService() {
 
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                <h2
+                <h3
                   className="text-2xl font-bold mb-4"
                   style={{ color: "#385662" }}
                 >
                   Key Features of Our Exclusive Service
-                </h2>
+                </h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
                   <li>Maximum capacity of 10 sleepover guests</li>
                   <li>Auntie Clara sleeps in the room with her guests</li>
@@ -56,12 +112,12 @@ function SleepOverService() {
               </div>
 
               <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
-                <h2
+                <h3
                   className="text-2xl font-bold mb-4"
                   style={{ color: "#385662" }}
                 >
                   Pricing
-                </h2>
+                </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   The cost for this service is <strong>$70 per night</strong> up
                   until 10 am. This cost includes the services of Woofs 'n Wags,
@@ -78,9 +134,9 @@ function SleepOverService() {
               className="mt-10 rounded-xl p-6"
               style={{ backgroundColor: "#385662" }}
             >
-              <h2 className="text-2xl font-bold mb-3 text-white">
+              <h3 className="text-2xl font-bold mb-3 text-white">
                 Important Note
-              </h2>
+              </h3>
               <p className="text-white/95 leading-relaxed">
                 Woofs 'n Wags is responsible for supervising daily play during
                 their operating hours. After Woofs 'n Wags' hours, Sleepy Howls
@@ -92,7 +148,8 @@ function SleepOverService() {
         </div>
       </section>
       <Footer />
-    </Layout>
+    </>
   );
 }
+
 export default SleepOverService;

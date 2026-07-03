@@ -377,7 +377,7 @@ function StAnnesLocation() {
           </h2>
 
           <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-            {/* Main Image Display */}
+            
             <div className="relative h-96 md:h-[600px] overflow-hidden bg-black">
               <img
                 key={currentGalleryIndex}
@@ -386,7 +386,7 @@ function StAnnesLocation() {
                 className="w-full h-full object-cover animate-fadeIn"
               />
 
-              {/* Previous button */}
+              
               <button
                 onClick={prevGalleryImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -455,7 +455,7 @@ function StAnnesLocation() {
         }
       `}</style>
 
-      {/* Pricing Section */}
+      
       <section className="py-12 px-8 bg-gray-100">
         <div className="max-w-6xl mx-auto">
           <h2
@@ -466,7 +466,7 @@ function StAnnesLocation() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Single Dog Half Days */}
+            
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -490,7 +490,7 @@ function StAnnesLocation() {
               </div>
             </div>
 
-            {/* Single Dog Full Day */}
+            
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -526,7 +526,7 @@ function StAnnesLocation() {
               </div>
             </div>
 
-            {/* Double Dog */}
+            
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -590,7 +590,7 @@ function StAnnesLocation() {
         </div>
       </section>
 
-      {/* Hours of Operation */}
+      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -654,7 +654,7 @@ function StAnnesLocation() {
         </div>
       </section>
 
-      {/* Photo Gallery */}
+      
       <section className="py-16 px-8 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2
@@ -665,7 +665,7 @@ function StAnnesLocation() {
           </h2>
 
           <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-            {/* Main Image Display */}
+            
             <div className="relative h-96 md:h-[600px] overflow-hidden bg-black">
               <img
                 key={currentImageIndex}
@@ -674,7 +674,7 @@ function StAnnesLocation() {
                 className="w-full h-full object-cover animate-fadeIn"
               />
 
-              {/* Previous button */}
+              
               <button
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -684,7 +684,7 @@ function StAnnesLocation() {
                 ‹
               </button>
 
-              {/* Next button */}
+              
               <button
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -694,7 +694,7 @@ function StAnnesLocation() {
                 ›
               </button>
 
-              {/* Image counter */}
+              
               <div
                 className="absolute bottom-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-full font-semibold shadow-lg"
                 style={{ backgroundColor: "white", color: "#385662" }}
@@ -703,14 +703,14 @@ function StAnnesLocation() {
               </div>
             </div>
 
-            {/* Image Description */}
+            
             <div className="bg-white px-8 py-6 text-center">
               <p className="text-lg font-medium" style={{ color: "#385662" }}>
                 {facilityDescriptions[currentImageIndex]}
               </p>
             </div>
 
-            {/* Thumbnail Navigation */}
+            
             <div className="bg-white p-6 flex justify-center gap-3 overflow-x-auto">
               {galleryImages.map((image, index) => (
                 <button
@@ -753,7 +753,7 @@ function StAnnesLocation() {
         }
       `}</style>
 
-      {/* Contact Information */}
+      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -781,7 +781,7 @@ function StAnnesLocation() {
             </div>
           </div>
 
-          {/* Google Map */}
+          
           <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
             <h3
               className="text-xl font-bold text-center mb-4"
@@ -827,7 +827,7 @@ function StAnnesLocation() {
         </div>
       </section>
 
-      {/* Vaccination Requirements */}
+      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -842,7 +842,7 @@ function StAnnesLocation() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Puppies */}
+              
               <div>
                 <h3
                   className="text-xl font-bold mb-4"
@@ -863,7 +863,7 @@ function StAnnesLocation() {
                 </div>
               </div>
 
-              {/* Adult Dogs */}
+              
               <div>
                 <h3
                   className="text-xl font-bold mb-4"

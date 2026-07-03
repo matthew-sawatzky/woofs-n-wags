@@ -228,14 +228,14 @@ function Home() {
           </div>
         </section>
 
-        {/* Contact Information */}
+        
         <section className="py-12 px-6" style={{ backgroundColor: "#385662" }}>
           <div className="max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-center mb-8 text-white">
               Visit Our Locations
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* St. Anne's Location */}
+              
               <div
                 className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                 onClick={() => handleServiceClick("/st-annes-location")}
@@ -276,7 +276,7 @@ function Home() {
                 </div>
               </div>
 
-              {/* Donald Location */}
+              
               <div
                 className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                 onClick={() => handleServiceClick("/donald-location")}
@@ -320,7 +320,7 @@ function Home() {
           </div>
         </section>
 
-        {/* Meet 'n Greet Section */}
+        
         <section
           id="meet-n-greet"
           className="py-12 px-6"
@@ -338,7 +338,7 @@ function Home() {
             </p>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              {/* Formal Meet 'n Greet */}
+              
               <div
                 className="p-8 rounded-xl shadow-xl"
                 style={{ backgroundColor: "#385662" }}
@@ -359,7 +359,7 @@ function Home() {
                 </p>
               </div>
 
-              {/* Fast Track To Play */}
+              
               <div
                 className="p-8 rounded-xl shadow-xl"
                 style={{ backgroundColor: "#385662" }}
@@ -389,7 +389,7 @@ function Home() {
               </p>
             </div>
 
-            {/* Safety First */}
+            
             <div
               className="p-6 rounded-xl shadow-xl"
               style={{ backgroundColor: "#f5f5f5" }}
@@ -405,7 +405,7 @@ function Home() {
               </p>
 
               <div className="space-y-4">
-                {/* Vaccinations */}
+                
                 <div>
                   <h5
                     className="text-base font-bold mb-2"
@@ -434,7 +434,7 @@ function Home() {
                   </div>
                 </div>
 
-                {/* Spaying/Neutering */}
+                
                 <div>
                   <h5
                     className="text-base font-bold mb-2"
@@ -448,7 +448,7 @@ function Home() {
                   </p>
                 </div>
 
-                {/* Friendly Days of Play */}
+                
                 <div>
                   <h5
                     className="text-base font-bold mb-2"
@@ -465,7 +465,7 @@ function Home() {
           </div>
         </section>
 
-        {/* Social Media */}
+        
         <section className="py-12 px-6" style={{ backgroundColor: "#f8f9fa" }}>
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl shadow-xl p-8 text-center">
@@ -502,7 +502,7 @@ function Home() {
           </div>
         </section>
 
-        {/* Google Reviews Section */}
+        
         <section className="py-12 px-6" style={{ backgroundColor: "#385662" }}>
           <div className="max-w-6xl mx-auto">
             <h3 className="text-3xl font-bold text-center mb-8 text-white">

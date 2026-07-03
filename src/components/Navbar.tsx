@@ -81,7 +81,7 @@ function Navbar() {
             />
           </Link>
 
-          {/* Desktop Navigation */}
+          
           <div
             className="hidden xl:flex flex-1 items-center justify-end text-white space-x-8 text-2xl font-semibold"
             style={{
@@ -121,16 +121,16 @@ function Navbar() {
                 Grooming
               </Link>
               <Link
-                to="/sleep-over-service"
-                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
-              >
-                Sleep Over
-              </Link>
-              <Link
                 to="/the-team"
                 className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
               >
                 The Team
+              </Link>
+              <Link
+                to="/sleep-over-service"
+                className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
+              >
+                Sleep Over
               </Link>
             </div>
             <div className="relative" ref={dropdownRef}>
@@ -200,7 +200,7 @@ function Navbar() {
             </div>
           </div>
 
-          {/* Mobile Hamburger Button */}
+          
           <button
             onClick={toggleMenu}
             className="xl:hidden p-2 rounded-md transition-colors duration-300 relative z-50"
@@ -232,7 +232,7 @@ function Navbar() {
           </button>
         </nav>
 
-        {/* Mobile Navigation Menu */}
+        
         <div
           className={`xl:hidden fixed top-0 right-0 h-full w-80 z-50 transition-transform duration-300 ease-in-out bg-white shadow-2xl ${
             isMenuOpen
@@ -240,7 +240,6 @@ function Navbar() {
               : "transform translate-x-full"
           }`}
         >
-          {/* Close button at top right of menu */}
           <div className="flex justify-end p-4">
             <button
               onClick={closeMenu}
@@ -306,20 +305,20 @@ function Navbar() {
               Grooming
             </Link>
             <Link
-              to="/sleep-over-service"
-              onClick={closeMenu}
-              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
-              style={{ color: "#385662" }}
-            >
-              Sleep Over
-            </Link>
-            <Link
               to="/the-team"
               onClick={closeMenu}
               className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
               The Team
+            </Link>
+            <Link
+              to="/sleep-over-service"
+              onClick={closeMenu}
+              className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
+              style={{ color: "#385662" }}
+            >
+              Sleep Over
             </Link>
             <div className="relative mt-6" ref={dropdownRef}>
               <button

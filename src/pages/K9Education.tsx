@@ -69,7 +69,7 @@ function K9Education() {
         </Layout>
       </div>
 
-      {/* Instructors, Classes and Courses Overview */}
+      
       <section className="py-16 px-8 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
@@ -114,7 +114,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Classes */}
+            
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
               <h3
                 className="text-2xl font-bold mb-4 text-center text-gray-900"
@@ -138,7 +138,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Courses */}
+            
             <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 hover:shadow-2xl transition-shadow duration-300">
               <h3
                 className="text-2xl font-bold mb-4 text-center text-gray-900"
@@ -163,7 +163,7 @@ function K9Education() {
         </div>
       </section>
 
-      {/* Classes We Offer */}
+      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-white">
@@ -171,7 +171,7 @@ function K9Education() {
           </h2>
 
           <div className="space-y-12">
-            {/* Leash Reactivity */}
+            
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
                 Leash Reactivity
@@ -215,7 +215,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Agility Foundations */}
+            
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
                 Agility Foundations
@@ -253,7 +253,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* K9 Aerobics */}
+            
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
                 K9 Aerobics
@@ -287,7 +287,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* K9 Life Skills Program */}
+            
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
                 K9 Life Skills Program
@@ -322,7 +322,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Rally-O */}
+            
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
                 Rally-O
@@ -382,7 +382,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Puppy Manners & Socialization */}
+            
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
                 Puppy Manners & Socialization
@@ -418,7 +418,7 @@ function K9Education() {
         </div>
       </section>
 
-      {/* Location and Fees */}
+      
       <section className="py-12 px-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -435,7 +435,7 @@ function K9Education() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Course Fees */}
+            
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -475,7 +475,7 @@ function K9Education() {
               </div>
             </div>
 
-            {/* Terms */}
+            
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -503,7 +503,7 @@ function K9Education() {
         </div>
       </section>
 
-      {/* Vaccination Requirements */}
+      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -518,7 +518,7 @@ function K9Education() {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {/* Puppies */}
+              
               <div>
                 <h3
                   className="text-xl font-bold mb-4"
@@ -539,7 +539,7 @@ function K9Education() {
                 </div>
               </div>
 
-              {/* Adult Dogs */}
+              
               <div>
                 <h3
                   className="text-xl font-bold mb-4"

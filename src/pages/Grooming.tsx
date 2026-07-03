@@ -85,7 +85,7 @@ function Grooming() {
         </Layout>
       </div>
 
-      {/* Styling from both Locations */}
+      
       <section className="py-12 px-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-xl p-8 shadow-xl">
@@ -114,7 +114,7 @@ function Grooming() {
         </div>
       </section>
 
-      {/* Our Facilities */}
+      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -181,7 +181,7 @@ function Grooming() {
         </div>
       </section>
 
-      {/* Grooming Services */}
+      
       <section className="py-16 px-8 bg-gradient-to-b from-slate-100 via-slate-50 to-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
@@ -255,7 +255,7 @@ function Grooming() {
         </div>
       </section>
 
-      {/* Grooming Education Centre */}
+      
       <section id="education-centre" className="py-16 px-8 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -378,7 +378,7 @@ function Grooming() {
         </div>
       </section>
 
-      {/* Vaccination Requirements */}
+      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center">

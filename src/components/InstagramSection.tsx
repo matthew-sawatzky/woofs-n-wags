@@ -28,7 +28,7 @@ const InstagramPostCard: React.FC<InstagramPostCardProps> = ({ post }) => {
       className="group block"
     >
       <div className="relative aspect-square overflow-hidden rounded-lg bg-gray-100 hover:shadow-lg transition-all duration-300">
-        {/* Image */}
+        
         <img
           src={post.media_url}
           alt={post.caption || "Instagram post"}
@@ -36,7 +36,7 @@ const InstagramPostCard: React.FC<InstagramPostCardProps> = ({ post }) => {
           loading="lazy"
         />
 
-        {/* Video indicator */}
+        
         {post.media_type === "VIDEO" && (
           <div className="absolute top-2 right-2">
             <div className="bg-black bg-opacity-60 rounded-full p-1">
@@ -51,7 +51,7 @@ const InstagramPostCard: React.FC<InstagramPostCardProps> = ({ post }) => {
           </div>
         )}
 
-        {/* Carousel indicator */}
+        
         {post.media_type === "CAROUSEL_ALBUM" && (
           <div className="absolute top-2 right-2">
             <div className="bg-black bg-opacity-60 rounded-full p-1">
@@ -69,7 +69,7 @@ const InstagramPostCard: React.FC<InstagramPostCardProps> = ({ post }) => {
           </div>
         )}
 
-        {/* Hover overlay with caption */}
+        
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-all duration-300 flex items-end p-3 opacity-0 group-hover:opacity-100">
           {post.caption && (
             <p className="text-white text-sm font-medium leading-relaxed">
