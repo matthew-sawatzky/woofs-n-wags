@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import StAnnesImage from "../assets/stannes.jpeg";
+import StExterior from "../assets/St.jpg";
 
 import StAnnes1 from "../assets/st annes images/bathing-rooms1_orig.jpg";
 import StAnnes2 from "../assets/st annes images/resized-r_orig.jpg";
@@ -177,11 +178,11 @@ function StAnnesLocation() {
   return (
     <>
       <div
-        className="bg-cover bg-center bg-no-repeat pb-50"
+        className="relative overflow-hidden bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${StAnnesImage})` }}
       >
         <Layout>
-          <section className="flex items-center justify-between gap-8 p-6 mt-100">
+          <section className="relative flex min-h-[380px] items-center justify-between gap-8 p-6 mt-100 pb-24 lg:pb-16">
             <div className="flex-1">
               <h1
                 className="text-5xl font-bold text-white mb-4"
@@ -228,7 +229,15 @@ function StAnnesLocation() {
                 </button>
               </div>
             </div>
-            <div className="flex-1"></div>
+            <div className="pointer-events-none absolute right-6 top-1/2 hidden w-full max-w-md -translate-y-1/2 justify-end lg:flex">
+              <div className="relative w-full overflow-hidden rounded-3xl border-4 border-white/70 bg-white/10 shadow-2xl backdrop-blur-sm rotate-1">
+                <img
+                  src={StExterior}
+                  alt="St. Anne's building exterior"
+                  className="w-full h-[280px] md:h-[360px] object-cover"
+                />
+              </div>
+            </div>
           </section>
         </Layout>
       </div>

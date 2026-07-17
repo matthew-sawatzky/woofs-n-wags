@@ -51,7 +51,7 @@ function SleepOverService() {
                   style={{ color: "#385662" }}
                   onClick={() => window.open("tel:2045054041")}
                 >
-                  Call 204-505-4041
+                  204-505-4041
                 </button>
               </div>
             </div>

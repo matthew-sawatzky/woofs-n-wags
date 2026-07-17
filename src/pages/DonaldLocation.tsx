@@ -2,6 +2,7 @@ import { useState } from "react";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import DonaldImage from "../assets/donald_img.png";
+import DonaldBuilding from "../assets/Donald Building.jpg";
 
 import Donald1 from "../assets/donald st images/bathing-room-1_orig.jpeg";
 import Donald2 from "../assets/donald st images/bathing-room-2_orig.jpeg";
@@ -207,11 +208,11 @@ function DonaldLocation() {
   return (
     <>
       <div
-        className="bg-cover bg-top bg-no-repeat pb-50"
+        className="relative overflow-hidden bg-cover bg-top bg-no-repeat"
         style={{ backgroundImage: `url(${DonaldImage})` }}
       >
         <Layout>
-          <section className="flex items-center justify-between gap-8 p-6 mt-100">
+          <section className="relative flex min-h-[380px] items-center justify-between gap-8 p-6 mt-100 pb-24 lg:pb-16">
             <div className="flex-1">
               <h1
                 className="text-5xl font-bold text-white mb-4"
@@ -258,7 +259,15 @@ function DonaldLocation() {
                 </button>
               </div>
             </div>
-            <div className="flex-1"></div>
+            <div className="pointer-events-none absolute right-6 top-1/2 hidden w-full max-w-md -translate-y-1/2 justify-end lg:flex">
+              <div className="relative w-full overflow-hidden rounded-3xl border-4 border-white/70 bg-white/10 shadow-2xl backdrop-blur-sm rotate-1">
+                <img
+                  src={DonaldBuilding}
+                  alt="Donald location building exterior"
+                  className="w-full h-[280px] md:h-[360px] object-cover"
+                />
+              </div>
+            </div>
           </section>
         </Layout>
       </div>
