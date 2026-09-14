@@ -9,10 +9,10 @@ function Footer() {
           &copy; {new Date().getFullYear()} Woofs n Wags. All rights reserved.
           &nbsp;|&nbsp;
           <a
-            href="tel:204-123-4567"
+            href="tel:204-255-9247"
             className="transition-colors hover:text-[#385662]"
           >
-            (204) 123-4567
+            1 (204) 255 WAGS (9247)
           </a>
           &nbsp;|&nbsp;
           <a

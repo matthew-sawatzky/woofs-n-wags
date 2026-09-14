@@ -35,7 +35,7 @@ function Navbar() {
     switch (location.pathname) {
       case "/k9-education":
         return K9EduLogo;
-      case "/grooming":
+      case "/dog-spaw":
         return GroomingLogo;
       case "/sleep-over-service":
         return WoofsLogo;
@@ -52,8 +52,8 @@ function Navbar() {
     switch (location.pathname) {
       case "/k9-education":
         return "K9 Education Logo";
-      case "/grooming":
-        return "Grooming Logo";
+      case "/dog-spaw":
+        return "Dog Spaw Logo";
       case "/sleep-over-service":
         return "Sleep Over Service Logo";
       default:
@@ -115,10 +115,10 @@ function Navbar() {
                 K9 Education
               </Link>
               <Link
-                to="/grooming"
+                to="/dog-spaw"
                 className="hover:shadow-2xl transition-all duration-300 hover:scale-105 px-2 py-1 rounded"
               >
-                Grooming
+                Dog Spaw
               </Link>
               <Link
                 to="/the-team"
@@ -139,7 +139,7 @@ function Navbar() {
                 className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                 style={{ backgroundColor: "#385662" }}
               >
-                Sign Up
+                Start Wagging
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -297,12 +297,12 @@ function Navbar() {
               K9 Education
             </Link>
             <Link
-              to="/grooming"
+              to="/dog-spaw"
               onClick={closeMenu}
               className="text-xl font-semibold hover:bg-gray-100 px-3 py-3 rounded transition-all duration-300"
               style={{ color: "#385662" }}
             >
-              Grooming
+              Dog Spaw
             </Link>
             <Link
               to="/the-team"

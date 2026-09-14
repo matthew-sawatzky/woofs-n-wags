@@ -1,12 +1,13 @@
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 import GroomingImage from "../assets/IMG_3618.jpeg";
+import { Link } from "react-router-dom";
 
 function Grooming() {
   const salonServiceGroups = [
     {
       title: "Standard Services",
-      items: ["Full groom", "Bath and Brush", "Blow outs"],
+      items: ["Full groom", "Bath and Brush", "Blow outs", "Hand Scissoring"],
       accent: "Everyday care",
     },
     {
@@ -15,7 +16,7 @@ function Grooming() {
       accent: "Detail focused",
     },
     {
-      title: "Creative Grooming",
+      title: "Creative Dog Spaw",
       items: [
         "Tails",
         "Stencilling",
@@ -41,7 +42,7 @@ function Grooming() {
                     "-1px -1px 0 #385662, 1px -1px 0 #385662, -1px 1px 0 #385662, 1px 1px 0 #385662",
                 }}
               >
-                Grooming
+                Dog Spaw
               </h1>
 
               <div className="flex gap-4">
@@ -49,7 +50,7 @@ function Grooming() {
                   className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ backgroundColor: "#385662" }}
                 >
-                  Professional Grooming Services
+                  Professional Dog Spaw Services
                   <svg
                     className="w-4 h-4"
                     fill="none"
@@ -65,19 +66,13 @@ function Grooming() {
                     />
                   </svg>
                 </button>
-                <button
-                  onClick={() => {
-                    const element = document.getElementById("education-centre");
-                    element?.scrollIntoView({
-                      behavior: "smooth",
-                      block: "start",
-                    });
-                  }}
+                <Link
+                  to="/grooming-education"
                   className="bg-white px-4 py-2 rounded-full flex items-center gap-2 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                   style={{ color: "#385662" }}
                 >
-                  Grooming Education Centre
-                </button>
+                  Are you interested in a career in Grooming?
+                </Link>
               </div>
             </div>
             <div className="flex-1"></div>
@@ -85,7 +80,6 @@ function Grooming() {
         </Layout>
       </div>
 
-      
       <section className="py-12 px-8 bg-gray-100">
         <div className="max-w-4xl mx-auto">
           <div className="bg-white rounded-xl p-8 shadow-xl">
@@ -99,13 +93,13 @@ function Grooming() {
               <p className="text-lg text-center">
                 Our Exclusive Dog Salon combines patience and expertise which
                 promotes an environment that caters to each dogs' unique
-                individual grooming needs.
+                individual Dog Spaw needs.
               </p>
               <p className="text-lg font-semibold text-center">
                 Specializes in everything dog. Just ask us.
               </p>
               <p className="text-lg text-center">
-                We have certified groomers who specialize in DOODLES, DESHEDS,
+                We have certified Dog Spaw staff who specialize in DOODLES, DESHEDS,
                 DOUBLE COATS, SMALL DOGS, WIRE COATS... Our stylist have
                 certificates in every coat...just ask.
               </p>
@@ -114,7 +108,6 @@ function Grooming() {
         </div>
       </section>
 
-      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -129,14 +122,14 @@ function Grooming() {
                     className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                     style={{ backgroundColor: "#385662" }}
                   ></div>
-                  <p>Certified Groomers</p>
+                  <p>Our long term Certified Professional Pet Stylists.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div
                     className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                     style={{ backgroundColor: "#385662" }}
                   ></div>
-                  <p>Groomers with experience in Canine Behaviour</p>
+                  <p>Dog Spaw staff with experience in Canine Behaviour.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div
@@ -144,8 +137,8 @@ function Grooming() {
                     style={{ backgroundColor: "#385662" }}
                   ></div>
                   <p>
-                    All our groomers attend regular seminars and conventions in
-                    Dog Grooming and Dog Behaviour
+                    All our Dog Spaw staff attend regular seminars and conventions in
+                    Dog Spaw and Dog Behaviour.
                   </p>
                 </div>
               </div>
@@ -159,8 +152,8 @@ function Grooming() {
                     style={{ backgroundColor: "#385662" }}
                   ></div>
                   <p>
-                    All our groomers are long term which means that your K9 kids
-                    will be groomed by the same person (as requested). This
+                    All our Dog Spaw staff are long term which means that your K9 kids
+                    will be cared for by the same person (as requested). This
                     means trusting and lifelong relationships.
                   </p>
                 </div>
@@ -170,7 +163,7 @@ function Grooming() {
                     style={{ backgroundColor: "#385662" }}
                   ></div>
                   <p>
-                    Our groomers are keen dog handlers with an innate ability
+                    Our Dog Spaw staff are keen dog handlers with an innate ability
                     and passion to learn. They continue to develop their skill
                     set, refine, and set high standards within our community.
                   </p>
@@ -181,7 +174,6 @@ function Grooming() {
         </div>
       </section>
 
-      
       <section className="py-16 px-8 bg-gradient-to-b from-slate-100 via-slate-50 to-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8">
@@ -189,7 +181,7 @@ function Grooming() {
               className="text-sm font-semibold uppercase tracking-[0.22em] mb-2"
               style={{ color: "#385662" }}
             >
-              Grooming Salon Services
+              Dog Spaw Salon Services
             </p>
             <h2
               className="text-3xl md:text-4xl font-bold mb-3"
@@ -255,130 +247,6 @@ function Grooming() {
         </div>
       </section>
 
-      
-      <section id="education-centre" className="py-16 px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <p
-              className="text-sm font-semibold uppercase tracking-[0.25em] mb-3"
-              style={{ color: "#385662" }}
-            >
-              Grooming Education Centre
-            </p>
-            <h2
-              className="text-4xl md:text-5xl font-bold mb-4"
-              style={{ color: "#385662" }}
-            >
-              A Cut Above the Rest
-            </h2>
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Our program is designed to give newcomers to the grooming industry
-              a complete understanding of what a professional grooming career
-              involves, both mentally and physically. Led by multi-certified
-              professionals and award-winning community leaders, students
-              receive personalized, hands-on education in a supportive learning
-              environment.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <h3
-                className="text-2xl font-bold mb-5 text-center"
-                style={{ color: "#385662" }}
-              >
-                Why Choose Our Program?
-              </h3>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>One on one, student with instructor experience.</p>
-                <p>Hands on participation, supervised, and guided learning.</p>
-                <p>Up to date industry focused education and mentorship.</p>
-                <p>
-                  Compassionate, safe, and fear free centred grooming practices.
-                </p>
-                <p>Over 25 years of combined experience.</p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <h3
-                className="text-2xl font-bold mb-5 text-center"
-                style={{ color: "#385662" }}
-              >
-                Program Focus
-              </h3>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Students learn the practical and professional side of the
-                  grooming industry with direct instruction, mentorship, and
-                  real-world support.
-                </p>
-                <p>
-                  The goal is to build confidence, technical skill, and a clear
-                  understanding of what it takes to thrive in a grooming career.
-                </p>
-                <div className="rounded-xl border border-dashed border-gray-200 bg-gray-50 px-4 py-3">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-1">
-                    Learning environment
-                  </p>
-                  <p>
-                    Supportive, hands-on, and designed to help newcomers grow at
-                    a steady pace.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-              <h3
-                className="text-2xl font-bold mb-5 text-center"
-                style={{ color: "#385662" }}
-              >
-                Meet the Head Instructor
-              </h3>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p className="font-semibold text-gray-900">Troi Smith</p>
-                <p>
-                  Troi leads the program with pride, professionalism, and
-                  extensive industry experience across multiple areas of pet
-                  care and education.
-                </p>
-                <p>
-                  With more than 10 years in the grooming industry, along with
-                  years of experience coaching equestrians, Troi brings a unique
-                  combination of leadership, patience, and technical expertise
-                  to every student she mentors.
-                </p>
-                <div className="space-y-2 rounded-xl bg-gray-50 p-4">
-                  <p>Former President of PPGAM.</p>
-                  <p>Currently affiliated with CPPS.</p>
-                  <p>A multi-certified pet stylist.</p>
-                  <p>Passionate about continued education and mentorship.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-8 bg-white rounded-2xl p-8 shadow-xl border border-gray-100 text-center">
-            <p className="text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Troi is dedicated to raising the standard of compassionate
-              grooming while helping students build confidence, professionalism,
-              and lasting careers in the industry.
-            </p>
-            <div className="mt-6">
-              <a
-                href="mailto:woofsgroomingteam@gmail.com"
-                className="inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-                style={{ backgroundColor: "#385662" }}
-              >
-                Email us at woofsgroomingteam@gmail.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center">

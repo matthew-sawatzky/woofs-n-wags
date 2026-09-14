@@ -50,7 +50,7 @@ export const useInstagram = (accessToken?: string): UseInstagramReturn => {
               "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=center",
             permalink: "https://www.instagram.com/woofsnwags/?hl=en",
             caption:
-              "Grooming day! ✨ Professional care for every pup. Look at this beautiful transformation! #DogGrooming #PamperedPups #WoofsNWags",
+              "Dog Spaw day! ✨ Professional care for every pup. Look at this beautiful transformation! #DogSpaw #PamperedPups #WoofsNWags",
             timestamp: new Date(Date.now() - 172800000).toISOString(),
           },
           {
@@ -167,7 +167,7 @@ export const useInstagram = (accessToken?: string): UseInstagramReturn => {
               "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=400&fit=crop&crop=center",
             permalink: "https://www.instagram.com/woofsnwags/?hl=en",
             caption:
-              "Grooming day! ✨ Professional care for every pup. Look at this beautiful transformation! #DogGrooming #PamperedPups #WoofsNWags",
+              "Dog Spaw day! ✨ Professional care for every pup. Look at this beautiful transformation! #DogSpaw #PamperedPups #WoofsNWags",
             timestamp: new Date(Date.now() - 172800000).toISOString(),
           },
           {

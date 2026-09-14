@@ -100,13 +100,13 @@ function SleepOverService() {
                   Key Features of Our Exclusive Service
                 </h3>
                 <ul className="list-disc pl-6 space-y-2 text-gray-700">
-                  <li>Maximum capacity of 10 sleepover guests</li>
-                  <li>Auntie Clara sleeps in the room with her guests</li>
-                  <li>Private feeding times</li>
-                  <li>Lots of love, attention, smooches, and cuddles</li>
+                  <li>Maximum capacity of 10 sleepover guests.</li>
+                  <li>Auntie Clara sleeps in the room with her guests.</li>
+                  <li>Private feeding times.</li>
+                  <li>Lots of love, attention, smooches, and cuddles.</li>
                   <li>
                     Use of our state of the art facility for ample space, play,
-                    rest, and socialization
+                    rest, and socialization.
                   </li>
                 </ul>
               </div>

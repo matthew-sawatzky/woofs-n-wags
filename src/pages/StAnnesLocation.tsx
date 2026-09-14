@@ -245,7 +245,7 @@ function StAnnesLocation() {
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
-            St Annes offers over 4000 square feet of play area for all our fur
+            St. Anne's offers over 4000 square feet of play area for all our fur
             kids!
           </h2>
 
@@ -262,7 +262,7 @@ function StAnnesLocation() {
               </p>
               <p className="text-lg font-semibold mb-4 text-center">
                 Winnipeg's largest dedicated small dog play space in Winnipeg.
-                Our Waggler Area, boasts 2,000 square feet exclusively for
+                Our Waggler Area boasts 2,000 square feet exclusively for
                 little dogs weighing under 30 pounds.
               </p>
 
@@ -276,8 +276,7 @@ function StAnnesLocation() {
                     The flooring is 3/8-inch rubber and sealed, ensuring the
                     safety of all dogs. It provides cushioning for their bones
                     and joints, and offers traction during play. Little dogs
-                    need traction just as much as big dogs, as they play hard!
-                    :)
+                      need traction just as much as big dogs, as they play hard.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -580,9 +579,9 @@ function StAnnesLocation() {
               <p className="mb-2">
                 <strong>Expiry Dates:</strong>
               </p>
-              <p>• 5 day packages expire 7 weeks after purchase date</p>
-              <p>• 10 day packages expire 14 weeks after purchase date</p>
-              <p>• 20 day packages expire 25 weeks after purchase date</p>
+              <p>• 5 day packages expire 5 weeks after purchase date</p>
+              <p>• 10 day packages expire 15 weeks after purchase date</p>
+              <p>• 20 day packages expire 30 weeks after purchase date</p>
               <p className="mt-2">
                 <strong>Note:</strong> Monthly 5 day is based on 21 days in a
                 month average. Monthly 6 day is based on 25 days including the
@@ -620,7 +619,13 @@ function StAnnesLocation() {
                     {entry.day}
                   </h3>
                   <p className="text-sm font-semibold text-gray-800 mb-2">
-                    {entry.location}
+                    {entry.location === "Donald Location" ? (
+                      <strong style={{ color: "#b5322f" }}>
+                        Exclusively at Donald Location
+                      </strong>
+                    ) : (
+                      entry.location
+                    )}
                   </p>
                   <div className="space-y-1 text-sm text-gray-700">
                     <p>
@@ -655,7 +660,7 @@ function StAnnesLocation() {
             >
               * We are closed for all statutory holidays *
             </p>
-            <p className="text-sm italic">
+            <p className="text-sm italic text-white">
               *Please note that if we do not see a play friend within 6 months
               of last play date, a reassessment is required to come and play*
             </p>
@@ -774,7 +779,7 @@ function StAnnesLocation() {
                 491 St. Anne's Road
               </p>
               <p className="text-lg text-gray-600">
-                (Just north of Bishop Grandin)
+                (Just north of Abinoji Mikanah)
               </p>
               <p className="text-lg text-gray-600">204-255-9247</p>
               <p className="text-lg text-gray-600">info@woofsnwags.ca</p>

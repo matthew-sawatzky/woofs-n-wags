@@ -103,7 +103,7 @@ function K9Education() {
               <div className="space-y-3">
                 <div className="rounded-xl bg-gray-50 px-4 py-3">
                   <p className="text-lg font-semibold text-gray-800">
-                    Victoria Scott
+                    Victoria Eddy
                   </p>
                 </div>
                 <div className="rounded-xl bg-gray-50 px-4 py-3">
@@ -174,50 +174,6 @@ function K9Education() {
             
             <div>
               <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
-                Leash Reactivity
-              </h3>
-              <div className="text-white">
-                <p className="text-gray-200 mb-4 italic">
-                  Only 3 dog/handler teams • First week is humans only • $200.00
-                </p>
-                <div className="grid md:grid-cols-2 gap-8">
-                  <div>
-                    <p className="mb-4">
-                      This is an exclusive class with only 3 dogs and is managed
-                      safely for entry, exit and interaction. Partitioned areas
-                      are used to give privacy while your dog learns to choose
-                      to pay attention to their owners and not the distractions.
-                    </p>
-                    <p className="mb-4 font-semibold">
-                      This course is for the dogs that while on walks barks or
-                      pulls towards:
-                    </p>
-                    <ul className="space-y-1 text-sm text-gray-200 mb-4">
-                      <li>• People</li>
-                      <li>• Other dogs</li>
-                      <li>• Bikes</li>
-                      <li>• Cars</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="mb-4">
-                      These dogs are not aggressive dogs. These dogs may be
-                      fearful, high energy dogs and super happy dogs.
-                    </p>
-                    <p className="text-sm text-gray-200">
-                      Energy is energy but this class is to aid in having your
-                      high pulling dog calm themselves down and cue to their
-                      owner and learn positive alternative choices to barking or
-                      pulling.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-            <div>
-              <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
                 Agility Foundations
               </h3>
               <div className="text-white">
@@ -247,6 +203,49 @@ function K9Education() {
                       Dogs must be able to work comfortably around other dogs in
                       class, be able to sit and down stay with some basic
                       distraction and be comfortable with other dogs moving.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold mb-8 text-white border-b-2 border-white pb-2">
+                Leash Reactivity
+              </h3>
+              <div className="text-white">
+                <p className="text-gray-200 mb-4 italic">
+                  Only 3 dog/handler teams • First week is humans only • $200.00
+                </p>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <p className="mb-4">
+                      This is an exclusive class with only 3 dogs and is managed
+                      safely for entry, exit and interaction. Partitioned areas
+                      are used to give privacy while your dog learns to choose
+                      to pay attention to their owners and not the distractions.
+                    </p>
+                    <p className="mb-4 font-semibold">
+                      This course is for the dogs that while on walks barks or
+                      pulls towards:
+                    </p>
+                    <ul className="space-y-1 text-sm text-gray-200 mb-4">
+                      <li>• People</li>
+                      <li>• Other dogs</li>
+                      <li>• Bikes</li>
+                      <li>• Cars</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="mb-4">
+                      These dogs are not aggressive dogs. These dogs may be
+                      fearful, high energy, and super happy!
+                    </p>
+                    <p className="text-sm text-gray-200">
+                      Energy is energy but this class is to aid in having your
+                      high pulling dog calm themselves down and cue to their
+                      owner and learn positive alternative choices to barking or
+                      pulling.
                     </p>
                   </div>
                 </div>
@@ -400,6 +399,11 @@ function K9Education() {
                   Life Skills Class BUT STRONGLY SUGGESTED.
                 </p>
                 <p className="mb-4">
+                  They require their first 2 sets of vaccinations and the
+                  bordetella vaccine (to protect from the most serious strain
+                  of kennel cough).
+                </p>
+                <p className="mb-4">
                   Our Puppy Manners class will guide them in building
                   confidence, navigate their puppy world and set them on a
                   positive path and have fun.
@@ -437,129 +441,36 @@ function K9Education() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4 text-center"
-                style={{ color: "#385662" }}
-              >
+              <h3 className="text-xl font-bold mb-4 text-center" style={{ color: "#385662" }}>
                 Course Fees
               </h3>
               <div className="space-y-4">
                 <div>
-                  <p className="font-semibold mb-3">
-                    Life Skills & Puppy Class:
-                  </p>
+                  <p className="font-semibold mb-3">Life Skills & Puppy Class:</p>
                   <div className="flex justify-between items-center">
                     <span>5 week course:</span>
                     <span className="font-semibold text-lg">$140.00</span>
                   </div>
                 </div>
-                <div className="border-t pt-4">
-                  <p className="font-semibold mb-3">
-                    Agility, K9 Aerobics & Rally-O:
-                  </p>
-                  <div className="flex justify-between items-center">
-                    <span>5 week course:</span>
-                    <span className="font-semibold text-lg">$150.00</span>
+
+                <div>
+                  <h3 className="text-xl font-bold mb-4" style={{ color: "#385662" }}>
+                    Dogs over the age of 7 Months:
+                  </h3>
+                  <div className="space-y-3">
+                    <p>
+                      Dogs over the age of 7 months are required to have all up to
+                      date vaccinations and bordetella vaccine
+                    </p>
+                    <p>
+                      Our visitors must be spayed or neutered at 7 months of age.
+                      Please contact us for more information.
+                    </p>
+                    <p>
+                      Dogs in heat are asked not to attend classes during heat
+                      cycle.
+                    </p>
                   </div>
-                </div>
-                <div className="border-t pt-4">
-                  <p className="font-semibold mb-3">Leash Reactivity:</p>
-                  <div className="flex justify-between items-center">
-                    <span>5 week course (3 teams only):</span>
-                    <span className="font-semibold text-lg">$200.00</span>
-                  </div>
-                  <p className="text-sm mt-2 text-gray-600">
-                    *First week is humans only and dogs do not attend.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            
-            <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4 text-center"
-                style={{ color: "#385662" }}
-              >
-                Terms & Conditions
-              </h3>
-              <div className="space-y-2 text-sm">
-                <p>** Prices subject to taxes</p>
-                <p>
-                  ** To participate in any of our programs we require payment at
-                  time of reservations.
-                </p>
-                <p>
-                  ** All reservations are non-refundable and non-transferable.
-                  For further information please contact us at (204) 255-9247
-                </p>
-                <p>
-                  ** Exceptions may be made but solely at the owner's
-                  discretion.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-      <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-white">
-            Vaccination Requirements
-          </h2>
-
-          <div className="bg-white p-8 rounded-xl shadow-xl mb-6">
-            <p className="text-lg mb-6">
-              To keep our facility safe from potentially serious and deadly
-              disease we require all our visitors to have up to date
-              vaccinations and bordetella.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
-              <div>
-                <h3
-                  className="text-xl font-bold mb-4"
-                  style={{ color: "#385662" }}
-                >
-                  Puppies:
-                </h3>
-                <div className="space-y-3">
-                  <p>
-                    Puppies are invited to come to play in our daycare and
-                    attend our K9 Classes as young as 12 weeks of age.
-                  </p>
-                  <p>
-                    They require their first 2 sets of vaccinations and the
-                    bordetella vaccine (to protect from the most serious strain
-                    of kennel cough).
-                  </p>
-                </div>
-              </div>
-
-              
-              <div>
-                <h3
-                  className="text-xl font-bold mb-4"
-                  style={{ color: "#385662" }}
-                >
-                  Dogs over the age of 7 Months:
-                </h3>
-                <div className="space-y-3">
-                  <p>
-                    Dogs over the age of 7 months are required to have all up to
-                    date vaccinations and bordetella vaccine
-                  </p>
-                  <p>
-                    Our visitors must be spayed or neutered at 7 months of age.
-                    Please contact us for more information.
-                  </p>
-                  <p>
-                    Dogs in heat are asked not to attend classes during heat
-                    cycle.
-                  </p>
                 </div>
               </div>
             </div>

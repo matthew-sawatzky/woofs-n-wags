@@ -272,7 +272,6 @@ function DonaldLocation() {
         </Layout>
       </div>
 
-      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -292,7 +291,64 @@ function DonaldLocation() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            
+
+            <div className="bg-white p-8 rounded-xl shadow-xl">
+              <h3
+                className="text-2xl font-bold mb-6 text-center"
+                style={{ color: "#385662" }}
+              >
+                Wiggler Play Space
+              </h3>
+              <p className="text-lg font-semibold mb-4 text-center">Over 1000 square feet</p>
+              <p className="text-lg font-semibold mb-4 text-center">For dogs under 20 pounds</p>
+
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    The flooring is 3/8-inch rubber and sealed, ensuring the
+                    safety of all dogs. It provides cushioning for their bones
+                    and joints, and offers traction during play. Little dogs
+                    need traction just as much as big dogs, as they play hard.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    The play equipment is specifically designed for small dogs,
+                    allowing them to play hide-and-seek, run over, under, and
+                    through.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    The Waggler level has an independent furnace and air
+                    conditioner because their needs differ from our Woofer dogs.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div
+                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
+                    style={{ backgroundColor: "#385662" }}
+                  ></div>
+                  <p>
+                    A central vacuum system is used to minimize odours and the
+                    spread of contagions throughout the facility.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="bg-white p-8 rounded-xl shadow-xl">
               <h3
                 className="text-2xl font-bold mb-6 text-center"
@@ -300,12 +356,8 @@ function DonaldLocation() {
               >
                 Waggler Play Space
               </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Over 1,500 square feet
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs weighing between 20 pounds to about 55 pounds
-              </p>
+              <p className="text-lg font-semibold mb-4 text-center">Over 1,500 square feet</p>
+              <p className="text-lg font-semibold mb-4 text-center">For dogs weighing between 20 pounds to about 55 pounds</p>
 
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
@@ -315,7 +367,7 @@ function DonaldLocation() {
                   ></div>
                   <p>
                     Offers an open play area with zoom areas, or can be designed
-                    to provide two feature play areas
+                    to provide two feature play areas.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -323,7 +375,7 @@ function DonaldLocation() {
                     className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                     style={{ backgroundColor: "#385662" }}
                   ></div>
-                  <p>3/8 inch rubber matting</p>
+                  <p>3/8 inch rubber matting.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div
@@ -333,7 +385,7 @@ function DonaldLocation() {
                   <p>
                     Share an air-conditioning and furnace system with our
                     Wiggler play group. These units separate from the Woofer
-                    play area (our large in store area)
+                    play area (our large in store area).
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -343,7 +395,7 @@ function DonaldLocation() {
                   ></div>
                   <p>
                     Play pieces are built into the design of this area and also
-                    extra play pieces
+                    extra play pieces.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -353,87 +405,12 @@ function DonaldLocation() {
                   ></div>
                   <p>
                     A couple quiet nook area's for those wanting to have some
-                    calm down or cuddles with a friend or two
+                    calm down or cuddles with a friend or two.
                   </p>
                 </div>
               </div>
             </div>
 
-            
-            <div className="bg-white p-8 rounded-xl shadow-xl">
-              <h3
-                className="text-2xl font-bold mb-6 text-center"
-                style={{ color: "#385662" }}
-              >
-                Wiggler Play Space
-              </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Over 1000 square feet
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs under 20 pounds
-              </p>
-
-              <div className="space-y-3">
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    The only Daycare in Winnipeg to offer a private play space
-                    exclusive for the little ones such as chihuahua's,
-                    pomeranians, papillons, yorkies and many more!
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    Designed to open to one larger play space or 2 separated
-                    area's for our little's to play
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    Heat and air conditioning regulated with the Waggler level
-                    to ensure the perfect temperature for these play spaces in
-                    our building
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>3/8 inch rubber matting</p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>
-                    Special play pieces for them to play on, under and around
-                  </p>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <div
-                    className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
-                    style={{ backgroundColor: "#385662" }}
-                  ></div>
-                  <p>Toys and love each and every day :)</p>
-                </div>
-              </div>
-            </div>
-
-            
             <div className="bg-white p-8 rounded-xl shadow-xl">
               <h3
                 className="text-2xl font-bold mb-6 text-center"
@@ -441,12 +418,8 @@ function DonaldLocation() {
               >
                 Woofer Play Space
               </h3>
-              <p className="text-lg font-semibold mb-4 text-center">
-                Over 2000 square feet
-              </p>
-              <p className="text-lg font-semibold mb-4 text-center">
-                For dogs over 55 pounds
-              </p>
+              <p className="text-lg font-semibold mb-4 text-center">Over 2000 square feet</p>
+              <p className="text-lg font-semibold mb-4 text-center">For dogs over 55 pounds</p>
 
               <div className="space-y-3">
                 <div className="flex items-start space-x-3">
@@ -456,7 +429,7 @@ function DonaldLocation() {
                   ></div>
                   <p>
                     Hosts 3 play spaces that may be used as one large play area
-                    or 3 separate area's
+                    or 3 separate area's.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -464,7 +437,7 @@ function DonaldLocation() {
                     className="w-2 h-2 rounded-full mt-2 flex-shrink-0"
                     style={{ backgroundColor: "#385662" }}
                   ></div>
-                  <p>3/8 inch rubber matting</p>
+                  <p>3/8 inch rubber matting.</p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div
@@ -473,7 +446,7 @@ function DonaldLocation() {
                   ></div>
                   <p>
                     Dedicated furnace and ac unit for the Woofer area to ensure
-                    comfortable temperature throughout seasons
+                    comfortable temperature throughout seasons.
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
@@ -483,7 +456,7 @@ function DonaldLocation() {
                   ></div>
                   <p>
                     Built in play pieces for all our friends to play on and
-                    round
+                    round.
                   </p>
                 </div>
               </div>
@@ -492,7 +465,6 @@ function DonaldLocation() {
         </div>
       </section>
 
-      
       <section className="py-16 px-8 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2
@@ -503,7 +475,7 @@ function DonaldLocation() {
           </h2>
 
           <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-            
+
             <div className="relative h-96 md:h-[600px] overflow-hidden bg-black">
               <img
                 key={currentGalleryIndex}
@@ -512,7 +484,6 @@ function DonaldLocation() {
                 className="w-full h-full object-cover animate-fadeIn"
               />
 
-              
               <button
                 onClick={prevGalleryImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -522,7 +493,6 @@ function DonaldLocation() {
                 ‹
               </button>
 
-              
               <button
                 onClick={nextGalleryImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -532,7 +502,6 @@ function DonaldLocation() {
                 ›
               </button>
 
-              
               <div
                 className="absolute bottom-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-full font-semibold shadow-lg"
                 style={{ backgroundColor: "white", color: "#385662" }}
@@ -541,7 +510,6 @@ function DonaldLocation() {
               </div>
             </div>
 
-            
             <div className="bg-white p-6 flex justify-center gap-3 overflow-x-auto">
               {donaldGalleryImages.map((image, index) => (
                 <button
@@ -584,7 +552,6 @@ function DonaldLocation() {
         }
       `}</style>
 
-      
       <section className="py-12 px-8 bg-gray-100">
         <div className="max-w-6xl mx-auto">
           <h2
@@ -595,7 +562,7 @@ function DonaldLocation() {
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
+
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -619,7 +586,6 @@ function DonaldLocation() {
               </div>
             </div>
 
-            
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -655,7 +621,6 @@ function DonaldLocation() {
               </div>
             </div>
 
-            
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <h3
                 className="text-xl font-bold mb-4 text-center"
@@ -700,9 +665,9 @@ function DonaldLocation() {
               <p className="mb-2">
                 <strong>Expiry Dates:</strong>
               </p>
-              <p>• 5 day packages expire 7 weeks after purchase date</p>
-              <p>• 10 day packages expire 14 weeks after purchase date</p>
-              <p>• 20 day packages expire 25 weeks after purchase date</p>
+              <p>• 5 day packages expire 5 weeks after purchase date</p>
+              <p>• 10 day packages expire 15 weeks after purchase date</p>
+              <p>• 20 day packages expire 30 weeks after purchase date</p>
               <p className="mt-2">
                 <strong>Note:</strong> Monthly 5 day is based on 21 days in a
                 month average. Monthly 6 day is based on 25 days including the
@@ -719,7 +684,6 @@ function DonaldLocation() {
         </div>
       </section>
 
-      
       <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8 text-white">
@@ -740,7 +704,13 @@ function DonaldLocation() {
                     {entry.day}
                   </h3>
                   <p className="text-sm font-semibold text-gray-800 mb-2">
-                    {entry.location}
+                    {entry.day === "Saturday" || entry.day === "Sunday" ? (
+                      <strong style={{ color: "#b5322f" }}>
+                        Exclusively at Donald Location
+                      </strong>
+                    ) : (
+                      entry.location
+                    )}
                   </p>
                   <div className="space-y-1 text-sm text-gray-700">
                     <p>
@@ -775,7 +745,7 @@ function DonaldLocation() {
             >
               * We are closed for all statutory holidays *
             </p>
-            <p className="text-sm italic">
+            <p className="text-sm italic text-white">
               *Please note that if we do not see a play friend within 6 months
               of last play date, a reassessment is required to come and play*
             </p>
@@ -783,7 +753,6 @@ function DonaldLocation() {
         </div>
       </section>
 
-      
       <section className="py-16 px-8 bg-gradient-to-b from-white to-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2
@@ -794,7 +763,7 @@ function DonaldLocation() {
           </h2>
 
           <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
-            
+
             <div className="relative h-96 md:h-[600px] overflow-hidden bg-black">
               <img
                 key={currentImageIndex}
@@ -803,7 +772,6 @@ function DonaldLocation() {
                 className="w-full h-full object-cover animate-fadeIn"
               />
 
-              
               <button
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -813,7 +781,6 @@ function DonaldLocation() {
                 ‹
               </button>
 
-              
               <button
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-4xl rounded-full w-14 h-14 flex items-center justify-center hover:scale-110 transition-all duration-300 cursor-pointer shadow-lg"
@@ -823,7 +790,6 @@ function DonaldLocation() {
                 ›
               </button>
 
-              
               <div
                 className="absolute bottom-6 left-1/2 transform -translate-x-1/2 px-6 py-3 rounded-full font-semibold shadow-lg"
                 style={{ backgroundColor: "white", color: "#385662" }}
@@ -832,27 +798,25 @@ function DonaldLocation() {
               </div>
             </div>
 
-            
             <div className="bg-white px-8 py-6 text-center">
               <p className="text-lg font-medium" style={{ color: "#385662" }}>
                 {donaldFacilityDescriptions[currentImageIndex]}
               </p>
             </div>
 
-            
             <div className="bg-white p-6 flex justify-center gap-3 overflow-x-auto">
               {galleryImages.map((image, index) => (
                 <button
                   key={index}
                   onClick={() => setCurrentImageIndex(index)}
                   className={`flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden border-3 transition-all duration-300 hover:shadow-lg ${
-                    index === currentImageIndex
+                    index === currentGalleryIndex
                       ? "scale-110 shadow-xl"
                       : "hover:scale-105"
                   }`}
                   style={{
                     borderColor:
-                      index === currentImageIndex ? "#385662" : "#e5e7eb",
+                      index === currentGalleryIndex ? "#385662" : "#e5e7eb",
                   }}
                   title={`View image ${index + 1}`}
                 >
@@ -868,191 +832,9 @@ function DonaldLocation() {
         </div>
       </section>
 
-      <style>{`
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-          }
-          to {
-            opacity: 1;
-          }
-        }
-        .animate-fadeIn {
-          animation: fadeIn 0.4s ease-in-out;
-        }
-      `}</style>
-
-      
-      <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-white">
-            Contact Information
-          </h2>
-          <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl mb-8">
-            <div className="text-center space-y-3">
-              <button
-                className="text-xl font-semibold text-gray-800 cursor-pointer hover:underline"
-                onClick={() =>
-                  window.open(
-                    "https://www.google.com/maps/place/7+Donald+St,+Winnipeg,+MB,+Canada",
-                    "_blank",
-                  )
-                }
-              >
-                7 Donald Street
-              </button>
-              <br />
-              <button
-                className="text-xl font-semibold text-gray-800 cursor-pointer hover:underline"
-                onClick={() => window.open("tel:204-505-4041", "_self")}
-              >
-                204-505-4041
-              </button>
-              <a
-                href="mailto:info.donald@woofsnwags.ca"
-                className="block text-lg text-gray-600 hover:underline"
-              >
-                info.donald@woofsnwags.ca
-              </a>
-              <a
-                href="https://woofsnwagsdon.propetware.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lg text-gray-600 underline"
-              >
-                Register Now
-              </a>
-            </div>
-          </div>
-
-          
-          <div className="bg-white bg-opacity-95 rounded-xl p-8 shadow-xl">
-            <h3
-              className="text-xl font-bold text-center mb-4"
-              style={{ color: "#385662" }}
-            >
-              Find Us Here
-            </h3>
-            <div className="w-full h-96 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.4567890123456!2d-97.1234567!3d49.7890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea715ecf123456%3A0x1234567890abcdef!2s7%20Donald%20St%2C%20Winnipeg%2C%20MB%2C%20Canada!5e0!3m2!1sen!2sca!4v1234567890123!5m2!1sen!2sca"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Woofs n Wags Donald Location"
-              ></iframe>
-            </div>
-            <div className="text-center mt-4">
-              <a
-                href="https://www.google.com/maps/place/7+Donald+St,+Winnipeg,+MB,+Canada"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-white hover:opacity-90 transition-all duration-300 hover:scale-105"
-                style={{ backgroundColor: "#385662" }}
-              >
-                <svg
-                  className="w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                Get Directions
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-      <section className="py-12 px-8" style={{ backgroundColor: "#385662" }}>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-8 text-white">
-            Vaccination Requirements
-          </h2>
-
-          <div className="bg-white p-8 rounded-xl shadow-xl mb-6">
-            <p className="text-lg mb-6">
-              To keep our facility safe from potentially serious and deadly
-              disease we require all our visitors to have up to date
-              vaccinations and bordetella.
-            </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
-              <div>
-                <h3
-                  className="text-xl font-bold mb-4"
-                  style={{ color: "#385662" }}
-                >
-                  Puppies:
-                </h3>
-                <div className="space-y-3">
-                  <p>
-                    Puppies are invited to come to play in our daycare and
-                    attend our K9 Classes as young as 12 weeks of age.
-                  </p>
-                  <p>
-                    They require their first 2 sets of vaccinations and the
-                    bordetella vaccine (to protect from the most serious strain
-                    of kennel cough).
-                  </p>
-                </div>
-              </div>
-
-              
-              <div>
-                <h3
-                  className="text-xl font-bold mb-4"
-                  style={{ color: "#385662" }}
-                >
-                  Dogs over the age of 7 Months:
-                </h3>
-                <div className="space-y-3">
-                  <p>
-                    Dogs over the age of 7 months are required to have all up to
-                    date vaccinations and bordetella vaccine
-                  </p>
-                  <p>
-                    Our visitors must be spayed or neutered at 7 months of age.
-                    Please contact us for more information.
-                  </p>
-                  <p>
-                    Dogs in heat are asked not to attend classes during heat
-                    cycle.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <div className="bg-white p-6 rounded-xl shadow-xl">
-              <h3
-                className="text-xl font-bold mb-4"
-                style={{ color: "#385662" }}
-              >
-                OUR FACILITY ACCEPTS TITER TESTS IN LIEU OF VACCINATIONS!
-              </h3>
-              <p>
-                To learn more about our vaccination requirements please contact
-                us to read about what each vaccination is protecting your dogs
-                from.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </>
   );
 }
+
 export default DonaldLocation;

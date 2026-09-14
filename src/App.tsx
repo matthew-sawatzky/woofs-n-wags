@@ -7,6 +7,7 @@ import StAnnesLocation from "./pages/StAnnesLocation";
 import DonaldLocation from "./pages/DonaldLocation";
 import K9Education from "./pages/K9Education";
 import Grooming from "./pages/Grooming";
+import GroomingEducation from "./pages/GroomingEducation";
 import SleepOverService from "./pages/SleepOverService";
 import TheTeam from "./pages/TheTeam";
 
@@ -29,7 +30,8 @@ function App() {
         <Route path="/st-annes-location" element={<StAnnesLocation />} />
         <Route path="/donald-location" element={<DonaldLocation />} />
         <Route path="/k9-education" element={<K9Education />} />
-        <Route path="/grooming" element={<Grooming />} />
+        <Route path="/dog-spaw" element={<Grooming />} />
+        <Route path="/grooming-education" element={<GroomingEducation />} />
         <Route path="/the-team" element={<TheTeam />} />
         <Route path="/sleep-over-service" element={<SleepOverService />} />
       </Routes>

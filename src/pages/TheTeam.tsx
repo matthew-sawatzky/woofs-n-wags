@@ -27,8 +27,7 @@ function TheTeam() {
                 Meet The Team
               </h1>
               <p className="text-lg md:text-xl">
-                The Woofs 'n Wags team is built on education, compassion, and
-                behaviour-first care.
+                The Woofs ’n Wags team is founded on the principles of K9 education, compassion, and consistently implementing our positive behavioural approach to all of our K9 kids on a daily basis.
               </p>
             </div>
             <div className="flex-1"></div>
@@ -199,7 +198,7 @@ function TheTeam() {
                 <p>
                   Victoria boasts a comprehensive skill set and extensive
                   experience in both teaching and behaviour management,
-                  supported by a well-rounded portfolio of grooming and training
+                  supported by a well-rounded portfolio of Dog Spaw and training
                   certifications. This multifaceted approach has been
                   instrumental in shaping her career since 2011. Victoria
                   actively advocates, exemplifies, and upholds the fundamental
@@ -211,15 +210,15 @@ function TheTeam() {
                 <p>
                   Victoria has been an invaluable member of Woofs ’n Wags in
                   every department. Her expertise encompasses management,
-                  grooming, and our K9 Education department.
+                  Dog Spaw, and our K9 Education department.
                 </p>
                 <p>
                   Since 2020, Victoria has held the position of Manager at our
-                  Donald location. Notably, she founded our grooming department
+                  Donald location. Notably, she founded our Dog Spaw department
                   in 2012, transforming it into the esteemed and professional
                   program it is today. During her tenure, Victoria imparted and
                   guided numerous new stylists, who have since become the
-                  backbone of our grooming team. Furthermore, she served as Head
+                  backbone of our Dog Spaw team. Furthermore, she served as Head
                   of our K9 Education Department, where she mentored staff and
                   contributed to the development of our behaviour-based training
                   philosophy.
@@ -230,7 +229,7 @@ function TheTeam() {
                   certifications and continuing education in:
                 </p>
                 <ul className="list-disc pl-6 space-y-1">
-                  <li>Creative Grooming</li>
+                  <li>Creative Dog Spaw</li>
                   <li>Sporting Breeds</li>
                   <li>Non-Sporting Breeds</li>
                   <li>Long-Legged Terriers</li>
@@ -247,7 +246,7 @@ function TheTeam() {
                 </ul>
                 <p>
                   She specializes in working with reactive and sensitive dogs,
-                  assisting in transforming the grooming experience for dogs who
+                  assisting in transforming the Dog Spaw experience for dogs who
                   have previously experienced fear or stress. Her composed,
                   respectful, and force-free approach has positively impacted
                   the lives of numerous dogs and their families.
@@ -255,7 +254,7 @@ function TheTeam() {
                 <p>
                   Victoria has also completed numerous courses and holds
                   certifications in behaviour, handling, pressure points, and
-                  fear-free, force-free grooming approaches.
+                  fear-free, force-free Dog Spaw approaches.
                 </p>
                 <p className="font-semibold">Educational Background</p>
                 <p>
@@ -351,7 +350,7 @@ function TheTeam() {
               </h2>
               <div className="space-y-4 text-gray-700">
                 <p>
-                  Troi has been with Woofs since 2017, grooming since 2019, and
+                  Troi has been with Woofs since 2017, Dog Spaw since 2019, and
                   working in pet care since 2015.
                 </p>
                 <p className="font-semibold">
@@ -371,12 +370,12 @@ function TheTeam() {
                   Troi also served as President of the Professional Pet Groomers
                   Association of Manitoba, where she promoted continuing
                   education and hosted seminars, including behavioural topics
-                  for grooming professionals.
+                  for Dog Spaw professionals.
                 </p>
                 <p>
-                  She specializes in double coat repair, puppy grooming starts,
+                  She specializes in double coat repair, puppy Dog Spaw starts,
                   and senior dog care. Under Victoria's mentorship, she has also
-                  developed a strong focus on supporting dogs with grooming fear
+                  developed a strong focus on supporting dogs with Dog Spaw fear
                   and anxiety.
                 </p>
                 <p>
@@ -391,9 +390,9 @@ function TheTeam() {
                   and outdoor adventures.
                 </p>
                 <p>
-                  As Grooming Education Instructor at Woofs 'n Wags, Troi's goal
+                  As Dog Spaw Education Instructor at Woofs 'n Wags, Troi's goal
                   is to mentor students with the skills and confidence needed to
-                  begin successful grooming careers.
+                  begin successful Dog Spaw careers.
                 </p>
               </div>
             </article>

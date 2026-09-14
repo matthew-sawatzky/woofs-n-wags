@@ -118,42 +118,42 @@ function Home() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
-            <div className="w-36 h-36 mx-auto mb-6 flex items-center justify-center p-2">
+            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={LocationLogo}
-                alt="Dog Daycare"
+                alt="Dog Playcare"
                 className="w-full h-full object-contain"
               />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">
-              Dog Daycare
+              Dog Playcare
             </h4>
             <p className="text-gray-600 leading-relaxed">
               Safe and fun environment for your furry friends to play and
-              socialize
+              socialize.
             </p>
           </div>
           <div
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
-            onClick={() => handleServiceClick("/grooming")}
+            onClick={() => handleServiceClick("/dog-spaw")}
           >
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={GroomingLogo}
-                alt="Grooming"
+                alt="Dog Spaw"
                 className="w-full h-full object-cover"
               />
             </div>
-            <h4 className="text-xl font-bold mb-3 text-gray-800">Grooming</h4>
+            <h4 className="text-xl font-bold mb-3 text-gray-800">Dog Spaw</h4>
             <p className="text-gray-600 leading-relaxed">
-              Professional grooming services for all breeds with expert care
+              Professional Dog Spaw services for all breeds with expert care.
             </p>
           </div>
           <div
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/k9-education")}
           >
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={K9EduLogo}
                 alt="K9 Education"
@@ -164,14 +164,14 @@ function Home() {
               K9 Education
             </h4>
             <p className="text-gray-600 leading-relaxed">
-              Training and education programs for well-behaved, happy pets
+              Training and education programs for well-behaved, happy pets.
             </p>
           </div>
           <div
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/sleepover-service")}
           >
-            <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
               <img
                 src={WoofsLogo}
                 alt="Sleep Over Service"
@@ -182,7 +182,7 @@ function Home() {
               Sleep Over Service
             </h4>
             <p className="text-gray-600 leading-relaxed">
-              Overnight care and comfort when you're away from home
+              Overnight care and comfort when you're away from home.
             </p>
           </div>
         </div>
@@ -241,7 +241,7 @@ function Home() {
                 onClick={() => handleServiceClick("/st-annes-location")}
               >
                 <h4
-                  className="text-xl font-bold text-center mb-4"
+                  className="text-2xl font-bold text-center mb-4"
                   style={{ color: "#385662" }}
                 >
                   St. Anne's Location
@@ -282,7 +282,7 @@ function Home() {
                 onClick={() => handleServiceClick("/donald-location")}
               >
                 <h4
-                  className="text-xl font-bold text-center mb-4"
+                  className="text-2xl font-bold text-center mb-4"
                   style={{ color: "#385662" }}
                 >
                   Donald Location
@@ -347,10 +347,7 @@ function Home() {
                   1. Our Formal Meet 'n Greet
                 </h4>
                 <p className="text-white leading-relaxed mb-4">
-                  This invites the family to book an appointment during the day,
-                  meet a couple new friends. If the meeting goes well your
-                  little one is invited to return and come to play on another
-                  day.
+                  This invites the family to book an appointment during the day and let their best friend meet a couple of new play friends. If the meeting goes well your little one is invited to return for their first day of play on another day.
                 </p>
                 <p className="text-white leading-relaxed">
                   This is ideal if you want to have a preliminary introduction
@@ -550,7 +547,7 @@ function Home() {
                   <span className="text-sm text-gray-600">Google Review</span>
                 </div>
                 <p className="text-gray-700 mb-3">
-                  "The grooming service is top-notch! My dog looks fantastic and
+                  "The Dog Spaw service is top-notch! My dog looks fantastic and
                   the team is so professional. Highly recommend Woofs n Wags to
                   everyone."
                 </p>
