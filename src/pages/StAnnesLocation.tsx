@@ -94,7 +94,7 @@ const weekSchedule = [
     location: "St. Anne's",
     playTime: "6:30am - 7:00pm",
     dropOff: "6:30am - 10:00am",
-    napTime: "12:30pm - 2:00pm",
+    napTime: "12:15pm - 2:15pm",
     notes: [],
   },
   {
@@ -102,7 +102,7 @@ const weekSchedule = [
     location: "St. Anne's",
     playTime: "6:30am - 7:00pm",
     dropOff: "6:30am - 10:00am",
-    napTime: "12:30pm - 2:00pm",
+    napTime: "12:15pm - 2:15pm",
     notes: [],
   },
   {
@@ -110,7 +110,7 @@ const weekSchedule = [
     location: "St. Anne's",
     playTime: "6:30am - 7:00pm",
     dropOff: "6:30am - 10:00am",
-    napTime: "12:30pm - 2:00pm",
+    napTime: "12:15pm - 2:15pm",
     notes: [],
   },
   {
@@ -118,7 +118,7 @@ const weekSchedule = [
     location: "St. Anne's",
     playTime: "6:30am - 7:00pm",
     dropOff: "6:30am - 10:00am",
-    napTime: "12:30pm - 2:00pm",
+    napTime: "12:15pm - 2:15pm",
     notes: [],
   },
   {
@@ -126,7 +126,7 @@ const weekSchedule = [
     location: "St. Anne's",
     playTime: "6:30am - 7:00pm",
     dropOff: "6:30am - 10:00am",
-    napTime: "12:30pm - 2:00pm",
+    napTime: "12:15pm - 2:15pm",
     notes: [],
   },
   {

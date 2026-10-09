@@ -139,7 +139,7 @@ function Navbar() {
                 className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
                 style={{ backgroundColor: "#385662" }}
               >
-                Start Wagging
+                Join The Fun
                 <svg
                   className="w-4 h-4"
                   fill="none"
@@ -326,7 +326,7 @@ function Navbar() {
                 className="w-full text-white px-4 py-3 rounded-full flex items-center justify-center gap-2 hover:opacity-90 transition-all duration-300 cursor-pointer"
                 style={{ backgroundColor: "#385662" }}
               >
-                Sign Up
+                JOIN THE FUN
                 <svg
                   className="w-4 h-4"
                   fill="none"
