@@ -202,7 +202,9 @@ function Home() {
                     Our Story
                   </h2>
                   <div className="prose prose-lg text-gray-700">
-                    <p className="text-lg leading-relaxed">{textSection}</p>
+                    <p className="text-lg leading-relaxed whitespace-pre-line">
+                      {textSection}
+                    </p>
                     <a
                       href={BarksFromTheGuildPdf}
                       target="_blank"
