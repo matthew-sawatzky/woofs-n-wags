@@ -81,7 +81,7 @@ function Home() {
                 We Know What Dogs Like
               </h1>
 
-              <div className="flex gap-4">
+              <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
                 <button
                   onClick={() => {
                     const element = document.getElementById("meet-n-greet");
@@ -90,13 +90,13 @@ function Home() {
                       block: "start",
                     });
                   }}
-                  className="text-white px-4 py-2 rounded-full flex items-center gap-2 hover:opacity-90 hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  className="flex w-full items-center justify-center rounded-full px-4 py-3 text-center leading-snug text-white transition-all duration-300 hover:scale-105 hover:opacity-90 hover:shadow-2xl cursor-pointer sm:w-auto sm:whitespace-nowrap"
                   style={{ backgroundColor: "#385662" }}
                 >
                   It all starts with our Meet 'n Greet
                 </button>
                 <button
-                  className="bg-white px-4 py-2 rounded-full hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                  className="w-full rounded-full bg-white px-4 py-3 text-center leading-snug transition-all duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer sm:w-auto sm:whitespace-nowrap"
                   style={{ color: "#385662" }}
                   onClick={scrollToServices}
                 >
