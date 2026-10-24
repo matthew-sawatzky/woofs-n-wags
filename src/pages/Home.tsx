@@ -118,11 +118,11 @@ function Home() {
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105">
-            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full flex items-center justify-center">
               <img
                 src={LocationLogo}
                 alt="Dog Playcare"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain scale-125"
               />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">
@@ -137,11 +137,11 @@ function Home() {
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/dog-spaw")}
           >
-            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full flex items-center justify-center">
               <img
                 src={GroomingLogo}
                 alt="Dog Spaw"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-125"
               />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">Dog Spaw</h4>
@@ -153,11 +153,11 @@ function Home() {
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/k9-education")}
           >
-            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full flex items-center justify-center">
               <img
                 src={K9EduLogo}
                 alt="K9 Education"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-125"
               />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">
@@ -171,11 +171,11 @@ function Home() {
             className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 text-center border border-gray-100 hover:scale-105 cursor-pointer"
             onClick={() => handleServiceClick("/sleepover-service")}
           >
-            <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden flex items-center justify-center">
+            <div className="w-48 h-48 mx-auto mb-6 rounded-full flex items-center justify-center">
               <img
                 src={WoofsLogo}
                 alt="Sleep Over Service"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover scale-145"
               />
             </div>
             <h4 className="text-xl font-bold mb-3 text-gray-800">
